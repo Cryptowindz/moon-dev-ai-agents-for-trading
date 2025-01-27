@@ -9,6 +9,7 @@ secrets.json
 config.private.py
 MYNOTES.md
 temp_data/
+secret.py
 
 # Python
 __pycache__/
