@@ -1,0 +1,234 @@
+deep seek ai is 96% cheaper than openai, just as good if not better, and faster. it’s a game-changer for trading automation, especially with their rbi system framework. the cost savings alone are insane.
+
+built an ai agent flow for trading that researches, backtests, and codes strategies. debugging was the bottleneck, but with deep seek’s cost efficiency, it’s now way more accessible. all the code is on github for anyone to use.
+
+automated trading is getting cheaper and faster thanks to deep seek. their ai model is a side project from a quant firm in china, and it’s changing the game. check out the roadmap and github for everything you need to get started.
+
+building out a deep seek model for the rbi agent today. adapting existing code to use deep seek instead of openai. goal is to simplify and document the process clearly. let's get it done.
+
+working on the rbi agent and setting up folders for data and strategies. deep seek integration is the focus, but no assistance feature means we'll use the chat api directly. keeping it simple and efficient.
+
+love coding because you build once and reuse later. today's task: adapt the rbi agent to use deep seek, document the process, and ensure api key handling is solid. let's make it happen.
+
+streamlined the rbii agent by removing assistance-related code and integrating deep seek's chat api directly. simplified the process to focus on research and backtesting trading strategies.
+
+the rbii agent now fetches youtube transcripts, analyzes trading strategies, and runs backtests. it uses indicators like ema and sma to identify trends and momentum for swing trading strategies.
+
+deep seek integration makes the rbii agent more efficient and cost-effective. it researches, codes backtests, and outputs strategies, though some fine-tuning is still needed for accuracy.
+
+open source tools are shaking things up, 96% cheaper than the big players. competition is heating up, and it's exciting to see innovation thrive in this space.
+
+just added a debugging agent to the pipeline. it scans back tests, fixes technical issues, and keeps the strategy intact. clean code, no mess. progress feels good.
+
+debugging phase is live. new folder for clean back tests, deepseek integration for fixing errors, and the ability to debug existing tests. moving fast, making decisions on the fly.
+
+when you say 'n' to debug existing backtests, it runs main and processes new ideas from ideas.txt. it also debugs any new backtests created, saving them in the backtest directory. the flow is clear and efficient.
+
+the focus agent is here to keep me on track, sampling my work and rating my focus out of 10. it's strict, like a drill sergeant, and helps me stay productive as i build agents this year. much love to the process.
+
+deep seek is being used for data processing, and it's pretty neat. pricing is 27 cents per million tokens, with a special discount. open source and efficient, it's a solid choice for handling large datasets.
+
+deep seek is 10x cheaper than other options, making it a no-brainer for anyone looking to save while still getting solid performance. it’s hard not to use it when the savings are that big.
+
+the reasoner is 4-5x cheaper than gbd 40, and it’s working well for backtesting strategies. swing trading instructions and entry rules look solid, but the backtest takes a while to run.
+
+no easter eggs, no emojis, no funny business in the code. these agents are serious, and the focus is on clean, efficient execution. keep it straightforward and effective.
+
+no need for emojis or easter eggs in the work, just keep it clean and focused. you're doing great, much love and keep moving forward. stay locked in and keep building.
+
+machine learning is about testing what works and tossing what doesn't. no fancy equations, just data and results. keep it simple and keep iterating.
+
+success is small efforts repeated daily. stay focused, stay in the gym, and optimize for fun. things move fast, but don't miss the joy in the process.
+
+working on naming conventions for the backtest code outputs. adding dcr for deep seek reasoner and dc for deeps chat to keep things clear. gotta make sure the data is clean and nothing sketchy gets uploaded.
+
+private data folder is hidden to avoid clutter in the ide. not trying to hide anything, just keeping things tidy for ai processing. per token visibility can get messy, so keeping it streamlined.
+
+updating the code to let each ai agent pick its own model. messaging is now more agent-focused. speed is key, so leaning on the chat agent for faster results. gotta keep moving forward every day.
+
+half a trillion dollars is flowing into ai development, and it's wild to see how much it's changing the game. learning to code feels like unlocking a cheat code for the future.
+
+optimizing with ai tools is slow but worth it. using chat for testing is fire, and having multiple models to work with is a solid move. debugging is part of the process, but it’s all coming together.
+
+ai keeps getting cheaper and better, and it’s exciting to see how far it’s come. automating the repetitive stuff is the next step, and it’s crazy to think about where this tech will be in a year.
+
+half a trillion dollars for ai agents? that's wild. if it's true, openai better step on the gas because deepseek is already making moves. this ai battle is heating up every week.
+
+deepseek is at 96% and the competition is fierce. new models dropping every week, getting closer and closer. this is the kind of progress that keeps the ai space exciting. just keep pushing forward.
+
+automating trading with ai agents is the future. if you're curious, check out the roadmap at mv.com. it's all there—discord, github, and the tools to get started. let's keep building and improving.
+
+debugging and pushing through the grind, just like mlk said—can't fly? run. can't run? walk. can't walk? crawl. just keep it pushing. discipline is doing what you hate like you love it. that's the key.
+
+optimizing for fun is the move. added a rotating moon animation to the terminal to gamify the process. it’s the little things that keep the vibe alive and the work enjoyable.
+
+figured out the bug after some panic and persistence. sometimes it’s tedious, but making prompts fire and handling data properly is worth it. gotta keep pushing, even when it feels overwhelming.
+
+updating the rbi agent back test prompt to include data cleaning and fibonacci levels. debugging sessions are paying off, and the prompt keeps improving. let's keep pushing forward.
+
+deep seek r1 is a game-changer—open source, 30x cheaper, and almost as good as 01. running it on consumer hardware feels like playing with alien minds. the ai race is heating up.
+
+running deep seek r1 on two m2 ultras is wild. it's fast, efficient, and opens up new possibilities for ai at home. the competitive environment is driving innovation faster than ever.
+
+deep seek r1 is a free, open-source model that rivals top-tier ai like openai. you can run it on your own computer, and it’s surprisingly fast on m4 macbooks. open-source ai is getting closer to consumer hardware than ever.
+
+bite dance just open-sourced a tool to control your computer with ai. it’s free, lightweight, and takes 2 minutes to set up. open-source ai is moving fast, and it’s exciting to see what’s next.
+
+deep seek r1 shows that restricting access to ai is nearly impossible. you can run a frontier model on a usb stick, and it’s getting faster on consumer hardware. open-source ai is here to stay, and it
+
+focus is key to unlocking your potential, especially when refining code and pushing through the messy parts. no magic pill, just consistent effort and improvement.
+
+deep seek r1 is a new open-source ai model that matches top models like open ai 01 in math, coding, and reasoning. best part? you can run it locally with total privacy and for free.
+
+thrifty cloud hosting can save you big time. upgraded from google cloud to heiter and now running 20 vms across regions for less. sometimes the best tools are the ones you don’t overpay for.
+
+running deep seek r1 locally with oama is straightforward. start with smaller models to test, then scale up if your gpu can handle it. bigger models like 32b and 70b need serious hardware, so take it step by step.
+
+chatbox is a clean, privacy-focused desktop interface for ai models. it’s free, easy to set up, and works with most models. started as a side project, it’s now a powerful tool for running ai locally.
+
+deep seek rag agent lets you run ai reasoning 100% locally using oama. it’s perfect for creating a ratchat bot or offline coding assistant. hardware requirements vary, but local setups are getting cheaper and more accessible.
+
+imagine having everything you ever wanted and capturing that feeling. that's the easiest way to manifest what you want. it's all about the vision and creating your own environment.
+
+building a front end for an rbi agent with fastapi. user inputs links, gets backtest results, and can download strategies. keeping it fun with a rotating moon in the terminal.
+
+just launched the front end and it's working. playing around with fastapi to tweak the wording and make it even better. proud of the progress and grateful for the team.
+
+the front end structure is organized into four main files: main.py for the fastapi backend, index.html for the main webpage, and static files for styling and js. it's all about customization and ease of use.
+
+the ai agents can learn trading strategies from links, create backtests, and show if they're profitable. it's all about making the process interactive and fun for the user while keeping it functional.
+
+real-time terminal output synced with the front end could make the experience more seamless. using websockets or adjusting timers might help bridge the gap between the backend processes and frontend animations.
+
+working on syncing front-end animations with realistic back-end timings. tweaking javascript to match processing times. it's a grind but it's coming together.
+
+building a system where ai agents learn trading strategies from youtube videos, pdfs, or written inputs. they backtest to see if it's profitable. small steps toward big gains.
+
+debugging duplicate messages and refining strategy outputs. front-end needs to show results clearly as they come in. it's messy but progress is progress.
+
+the strategy flows from front to back, then loops through multiple ideas. real-time updates make it interactive and efficient. coding tweaks keep it clean and functional.
+
+we're optimizing the loop for research, backtest, and implementation phases. animations and debug clears ensure a smoother user experience. back to the basics for better results.
+
+enter trading strategies or youtube links for ai analysis and backtesting. the ai builds, debugs, and sends back the code so you can see past performance. keep it simple and effective.
+
+dude, if you're looking to deploy something quick, check out replit. it gives you a public url instantly and makes the whole process way easier than heroku. just rep it and you're good to go.
+
+rest at the end, not in the middle. that's the mindset to keep pushing forward, even when you don't have all the answers. keep building, keep coding, and figure it out as you go. the grind doesn't stop.
+
+head to mav.com for a step-by-step roadmap on trading strategies. the github page has all the code you need, and you can fork it to get your own copy. stay focused on the code, not the chaos. every line brings you closer to your goals.
+
+working on machine learning models means testing predictive features on historical data. if it works, keep it. if not, toss it. no fancy equations, just results.
+
+deploying code on replit? keep your api keys safe. use their built-in secrets system to encrypt sensitive data, even if your repo is public.
+
+updating your replit project? pull the latest changes from github using the three dots menu. stay focused, every line of code gets you closer to your goal.
+
+debugging a deployment issue with the rbi agent. trying to figure out if i need the anthropic key or if deep seek is enough. running into some weird errors with fastapi and requirements.txt.
+
+got the web view up but the machine learning flickers when testing strategies. not sure if it's a server issue or something else. gotta eat something real quick before diving back in.
+
+finally got the output running but it's still flickering. thought it would backtest locally like before. gonna grab the latest updates and try again. every problem is a step closer to the solution.
+
+debugging a form submission issue where it's using a get request instead of post. fixing the html form and pushing changes. small efforts add up, stay consistent and keep pushing through the grind.
+
+running into backend errors but logging is helping track them down. the ui looks great locally but not on the hosted version. trying to figure out why subtitles aren't showing up anymore.
+
+considering switching from repet to heroku for hosting. repet costs $25/month and isn't as easy as expected. heroku might be more scalable and cost-effective. decisions, decisions.
+
+pivoting from github to heroku for deployment. deleting all repetitive stuff and setting up a new heroku app. gotta reset the password and verify the account first.
+
+deploying on heroku step by step. setting up environment variables, pushing to main, and running commands. hit a snag with instant outputs but working through it.
+
+successful deployment on heroku but still troubleshooting instant strategy outputs. adding detailed logging and redeploying to figure it out. persistence pays off.
+
+front end's throwing errors but the back end seems to be working fine. logs show progress, but the output files are missing. gotta figure out why it's not syncing up.
+
+running into a weird bug where the front end instantly errors out, but the back end logs look clean. feels like a disconnect somewhere in the flow. time to dig deeper.
+
+back end's doing its thing, but the front end keeps crashing. logs show it's processing, but the output files aren't showing up. gotta keep pushing through and figure this out.
+
+the backend is working but the front end is throwing errors. timeouts are killing me, but we’ll figure it out. gotta keep running it back until it clicks.
+
+spent hours down a rabbit hole trying to fix the front end, but honestly, i’m not a front end dev. time to focus on what matters—building and refining the backend.
+
+built a trading bot framework that’s made me hundreds of thousands. if you’re serious about trading, i’ll show you how to automate it and take the emotion out of the game. no gimmicks, just results.
+
+trading bots can change your game if you do it right. research, backtest, and implement with small size. it’s not about luck—it’s about strategy and discipline. automate your trading and take emotions out of the equation.
+
+one good trading bot can erase years of bad financial decisions. it’s not magic, it’s about building, testing, and refining your ideas. success in algo trading is repeatable if you follow the right framework.
+
+you don’t need to be a coding expert to automate your trading. start small, test your strategies, and scale up. the key is consistency and learning from mistakes. trading bots can give you the edge you’ve been missing.
+
+automating trading isn't about downloading someone else's bot—it's about building your own. learn to code, test strategies, and create bots that work for you. that's how you avoid scams and build real cash flow.
+
+jim simons made billions with automated trading by finding patterns humans couldn't see. he tested, refined, and executed strategies for years. if you're serious about trading, automation is the way to go.
+
+most people treat trading like gambling, but if you're committed, automation can change your life. learn to build bots, test strategies, and create generational wealth. it's not easy, but it's worth it.
+
+lifetime access to the boot camp includes inner circle calls every friday on zoom with replays. the vip option is where the real magic happens—roll up your sleeves and dive deep into automated trading. 90-day cosmic guarantee means zero risk to try it out.
+
+automate your trading with a proven bot system backed by real data and thousands of hours of research. no overnight billionaires here, just a framework i use to manage my own portfolio. step up, join the algo trade camp, and let’s make it happen.
+
+one good trading bot can erase all your past financial mistakes. build great trading ideas, test them, and deploy with tiny size. if you’re ready to automate your trading and dominate the crypto market,
+
+success isn't just possible, it's repeatable with the right framework. my rbi method—research, backtest, implement—helps automate trading strategies. no fancy office, just me, my computer, and a whiteboard.
+
+if you're new to coding, don't worry. i started from zero too. i’ll teach you step by step. automate your trading now, not later. it’s about building cash flow for life, not chasing quick wins.
+
+never run someone else’s bot. i lost $10k on my first try. the key is testing your own strategies. research, backtest, implement small. it’s the only way to avoid scams and build something real.
+
+jim simons built a $31 billion fortune through automated trading, proving that robots can spot market patterns humans can't. his relentless focus on research and testing created generational wealth and billions in profits.
+
+most people treat trading like gambling, but if you're serious about building a provable edge, automation is the key. it's not about luck—it's about systems, testing, and execution.
+
+the algo trade camp offers a 15-day blueprint to automate your trading. with a 90-day money-back guarantee, you can explore the framework, connect with traders, and see if it works for you. no risk, just results.
+
+trading is tough, especially when emotions get in the way. but automating your strategy can change everything. it’s about research, backtesting, and implementing with small steps. success is repeatable if you follow the process.
+
+one good trading bot can erase years of bad financial decisions. it’s not about fancy tools or teams—just solid ideas, testing, and small, consistent steps. automate your trading and take control of your future.
+
+you don’t need to be a coding expert to automate trading. start with research, test your ideas, and implement them with small sizes. it’s a simple framework that can turn you into a profitable algo trader. the key is consistency and patience.
+
+i could automate trading bots and make a solid living, but the key is to never run someone else's bot. i lost $10k on my first bot because you can't trust what you download. build your own or risk losing everything.
+
+jim simons built generational wealth with automated trading. he found patterns in the market that humans couldn't see and executed his system for years. if you're serious about trading, automation is the way to go.
+
+most people just want to gamble, but if you're committed to automating your trading, you need a provable edge. my algo trade camp simplifies it so anyone can do it. vip tickets get lifetime access and inner circle calls every friday.
+
+if you're tired of losing money trading due to emotions, this is for you. i’ve built a trading bot framework that’s helped me automate my portfolio and avoid the stress of manual trading. join the algo trade camp and see if it’s for you—90-day money-back guarantee.
+
+trading bots can change the game. i’ve used my system to build bots that manage my portfolio while i sleep. no more staring at charts or losing sleep over trades. if you’re ready to step up, i’ll show you how to automate your strategy in 15 days.
+
+one good trading bot can wipe out years of bad financial decisions. i’ve seen it happen. in the algo trade camp, i’
+
+if you don’t know how to code, don’t worry. i didn’t either. i’ll teach you step by step in the next 15 days. i built a bot that made me hundreds of thousands, and i’m just a guy in a bedroom with a whiteboard. no team, no investors, just me and my computer.
+
+my first bot lost $10k in 30 days. that’s when i created the rbi framework: research strategies, backtest them, and implement with small size. it’s how i turned things around. never run someone else’s bot—test your own. that’s the key to avoiding scams.
+
+jim simons built a $31b
+
+jim didn't just become a billionaire—he changed bloodlines and created generational wealth. he returned over $1b in profits and gave $4b to charities. imagine having even a fraction of that impact. but most people just want to gamble, not build a real edge.
+
+if you're serious about automating your trading, the 15-day algo trade camp is for you. it’s not about making it complicated—it’s about simplifying it so anyone can do it. vip tickets get lifetime access and weekly inner circle calls. don’t miss out.
+
+trading bots aren’t magic, but they can change your life. i’ve made hundreds of thousands with this framework, and i’m giving it all
+
+trading is tough, especially when emotions take over. staring at charts all night only to wake up to a liquidation email is brutal. but automating your trading can change everything. it’s about building, testing, and deploying strategies with discipline.
+
+one good trading bot can erase years of bad financial decisions. it’s not magic—it’s about researching, backtesting, and implementing with small sizes. success isn’t just possible, it’s repeatable if you follow the process.
+
+you don’t need to be a coding expert to automate your trading. i started in my bedroom, learned to code, and built bots that changed my life. if you’re willing to put in the work, you can do it too
+
+never run someone else's trading bot. it's the #1 rule. i lost $10k on my first bot because you can't trust what it's doing. if it promises easy money, it's a scam. build your own or stick to proven strategies.
+
+jim simons built generational wealth with automated trading. his bots found patterns humans couldn't. he tested, refined, and executed for years. if you're serious about trading, automation is the key to success.
+
+automating your trading doesn't have to be complicated. i've spent 1,200+ hours creating free tutorials to help you get started. if you're ready to take it seriously, check out the algo trade camp. vip gets lifetime access and weekly
+
+if you're tired of losing money to emotions in trading, imagine having a bot that trades for you 24/7. i’ve built a system that works, and i’m sharing it in the algo trade camp. no lambos, just real results.
+
+trading bots changed the game for me. no more staring at charts all night or losing sleep to liquidation emails. if you’re ready to step up, i’ll show you how to automate your trading and take control.
+
+% of manual traders lose money. i want to help you break free from that cycle. join the algo trade camp and learn how to build bots that trade for you, so you can focus on what really matters.
+

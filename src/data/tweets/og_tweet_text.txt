@@ -1,0 +1,8190 @@
+all right so today I want to show you
+
+step by step how to use AI agents for
+
+Solana trading um actually you know what
+
+I'm just going to show you around this
+
+GitHub real quick because this has all
+
+of my code and it's not going to be here
+
+forever I I won't have it here forever I
+
+promise that so if you want access to it
+
+just go to mv.com you get the road map
+
+resources and the GitHub here you can
+
+see the GitHub has literally all of my
+
+code and 10 plus agents maybe not 10 yet
+
+but we have one two got this trading
+
+Trading agent the strategy agent the
+
+risk agent the copy agent the whale
+
+agent the sentiment agent the listing
+
+ARB agent the focus agent the funding
+
+agent and the liquidation agent and the
+
+chart analysis agent dude this is crazy
+
+we have so many agents here running and
+
+we have them running all day dude so I
+
+actually have the focus agent here that
+
+I'm launching right now so let's go
+
+ahead and uh go ahead and read the read
+
+me once you get to the GitHub read the
+
+read me all you got to do is go to
+
+mv.com you can then get your starter
+
+pack which has your road map and
+
+everything and the road map actually has
+
+the AI GitHub here so you have
+
+everything dude everything I have you
+
+have all you do is go hit star hit the
+
+star here and then Fork allows you to
+
+copy the code once you copy the code
+
+then you'll have all the code that I
+
+have and that's beautiful dude that's
+
+beautiful so much love to you and um
+
+first things first today I want to go
+
+ahead and you can see there's a little
+
+bit of a error here um but also I want
+
+to go ahead and launch a couple new uh
+
+Lambda in or one Lambda instance so the
+
+last two days dude that I've done this
+
+you can see the usage here um I'm using
+
+it's a type of machine learning and
+
+evolutionary algorithms to build out
+
+millions of trading strategies and you
+
+can see here I spent
+
+$164 uh on Friday I believe and I and
+
+the day before I spent 160 but both days
+
+I left the house with it running it was
+
+crazy dude I just burnt so much cash so
+
+I'm going to try to be more locked in
+
+today and I'm going to get this live
+
+here so I'm launching this at
+
+$14.32 per hour um so it's very
+
+expensive but yeah dude I left for like
+
+hours I left for hours dude and I was
+
+just running I was hot I was hot I was
+
+like oh F I'm so grateful that I didn't
+
+fall asleep with it at least so you know
+
+this part of the game so since it's part
+
+of the game I'm just grateful to play
+
+dude I'm just I'm just grateful to be
+
+here dog just another day in this
+
+beautiful life I'm so so grateful I see
+
+your 777s Anthony how are you dude 777
+
+holy Keith good to see you
+
+777 dude this is beautiful beautiful
+
+beautiful beautiful humans Shilling
+
+something tell me your pitch bro what's
+
+good about it okay so what else do we
+
+need to do you can see my API is messing
+
+up too dude I don't know what's going on
+
+here okay this is good though this is
+
+good this is good we having some we're
+
+having some API problems remember I
+
+launched the API last
+
+week hi moev 777 chart analysis for BTC
+
+on the 15minute time frame the trend is
+
+sideways I'm going to turn her off
+
+because we got a problem here you can
+
+see there's a error there's a nun type
+
+here so my funding rate's not working
+
+and my copy box not working Bruh Bruh so
+
+what do we do about that we got to fix
+
+it okay we got a couple minutes fix it
+
+here let me go ahead and make sure my
+
+copi clipboard is here dude I want to be
+
+ready for that okay so I'm going to go
+
+here and get all that ready I got my my
+
+Lambda notes here um I'mma set a I'm not
+
+going to set a timer oh yeah serly P
+
+timer set timer so I can uh make sure
+
+to not forget about this okay now I'm
+
+going to go here and first off I'm going
+
+to grab my GitHub here because actually
+
+there's a couple new people I got to get
+
+on the
+
+API so let me go ahead and do that real
+
+quick and fix this here at the same damn
+
+time at the same damn
+
+time all right so I'm going to fix the
+
+I'm going add the person to the API real
+
+quick but the API don't even work right
+
+now clearly That's crazy dude
+
+so here's the AI agents for trading and
+
+I already showed you how to get all of
+
+that so you're
+
+Gucci remember you just go to mv.com and
+
+you get all the code so all the code
+
+you're going to see today you're going
+
+to have all access to it it's right here
+
+Moon just go to mb.com grab the road map
+
+Discord and GitHub you go down to the
+
+road map the road map has everything how
+
+do you get started algo training and you
+
+go to the GitHub dude and you click the
+
+GitHub and you hit the star on the
+
+GitHub and then all the code in the
+
+GitHub is in the source file bro look at
+
+this we got everything here this is
+
+crazy I can't believe I give all this
+
+away for free agents here can see all
+
+the agents here 777 dude much love much
+
+[Music]
+
+love he said bro going crazy dude I I
+
+always been crazy bro bro glad you're
+
+here I'm glad you're finally waking up
+
+to it I'm glad you're finally waking up
+
+to it I'm way too crazy I go way too
+
+hard for you fam so glad that you're
+
+here
+
+though I'm always going
+
+crazy I'm always going crazy dude I'm
+
+always going crazy of course of course
+
+everybody else is sleeping much love to
+
+you dude
+
+777 so we got five minutes to fix this
+
+bug dude what's going on 2.0 out 10 stay
+
+focused go after your dreams and keep
+
+moving towards your goals L thank you
+
+okay
+
+so um
+
+I need to check this out so copy scanner
+
+let's go check out what's going on with
+
+that
+
+green oh was just there it was just
+
+there AI on boarding AI Discord
+
+[Music]
+
+all right so dude I don't know what's
+
+going on with the servers the thing okay
+
+so how do I fix this I go I'll check out
+
+the API here
+
+yeah screen
+
+R oh it got killed that's why
+
+[Applause]
+
+okay there we go we
+
+back we back dude we back wait so why
+
+did it
+
+die why did it die bro bro so you can
+
+see my funding rate party here so my
+
+server just died I don't know
+
+why I'm going to ask AI dude
+
+I'm an AI guy I'm an AI
+
+guy of course I'm going use
+
+AI AO Moon Dev 777 fcoin has high
+
+funding at
+
+48.63 annual AI suggests nothing with
+
+50% confidence analysis fcoin has a high
+
+funding rate of
+
+48.63 indicating a speculative Market
+
+with salana has negative funding at Mana
+
+15.12% annual AI suggests nothing with
+
+50% confidence analysis the funding rate
+
+for so is negative but the overall
+
+Bitcoin Market is in an uptrend
+
+so you can see that my server actually
+
+shut down on me which is super
+
+weird can you explain what may have
+
+happened here um it killed my API and I
+
+just came back and all I had to do is
+
+restart it but um yeah it kind of
+
+confused me and concerns me for the
+
+future what can I do to make sure that
+
+it doesn't happen again and what
+
+happened looking at the logs I can
+
+explain exactly what
+
+happened so memory overflow the CSV file
+
+is too
+
+large here's how to fix it add memory
+
+monitoring add rate
+
+limiting the server killed itself
+
+because it ran out of memory trying to
+
+load and convert 10 M plus Rose CSV
+
+file does the above approach change
+
+anything else like would all of the
+
+calls be the same
+
+still is there anything that is going to
+
+break it like on the other side when I
+
+call it do I have to change anything
+
+do I need to change anything on the
+
+server calls or will this just
+
+help fix
+
+it I don't want to have to change
+
+anything on the call side on the like
+
+non-server side
+
+dude my thing's not working anymore I
+
+think I got to pay for it
+
+I mean
+
+[ __ ] can you hear me
+
+now yeah she ain't working bro bro you
+
+think I need to pay for yo 777
+
+dude good to see y'all Michael Cod
+
+Trader what up
+
+damn my AI thing's not working anymore
+
+you think I got
+
+to I'm going reset
+
+it my whisper flow
+
+what's up
+
+homie damn dude it's not working no more
+
+can't I can't code without it I don't
+
+type I don't type anymore so let me try
+
+to get Flo flow Pro beard
+
+build GNA build it try to get it I'm
+
+trying to buy
+
+it try to buy it right now dude
+
+cuz I I am not paying for
+
+it as of
+
+now and I was wondering how long it's
+
+going to let me not pay for it for but
+
+maybe today is the day so maybe I'll
+
+just pay for it real quick and see if
+
+it's Gucci
+
+what's the day today 120
+
+ow I just hurt my
+
+hand all right now I got
+
+Pro you working now bro
+
+bro damn I have upgrade it's just
+
+[Music]
+
+broken they got me to upgrade they got
+
+me to upgrade it's just
+
+broken oh gosh that's funny okay okay
+
+that's okay they deserve it
+
+anyways they deserve to be paid dude CU
+
+that it's probably the best tool I've
+
+seen Minute dude a
+
+minute so that's far bro that's far it's
+
+not working today
+
+but maybe there's an update or
+
+something they fall about whisper hide
+
+View
+
+about this Mac whisper flow 2.010
+
+distractions will always exist it's up
+
+to you to decide if they overpower your
+
+focus on greatness thank you thank
+
+you are you working
+
+yet all right she don't work
+
+anymore okay so I guess I'll have to
+
+learn how to type today so I'm sorry fam
+
+ain't going to be as fast as usual
+
+damn dude that's too
+
+bad that's too
+
+bad it's okay
+
+though make it happen make it happen no
+
+matter what we always make it happen oh
+
+boy there I go yapping
+
+again there I go yapping again we live
+
+yet still booting okay good good good
+
+that's the next step dude we fixed the
+
+server
+
+it up
+
+oh we're running now perfect that was
+
+that was right right when I came back
+
+that's awesome grab some coffee and then
+
+we're live okay so first things first
+
+here we're going to go here and we're
+
+going to say new and we're going to say
+
+um we're going to get up in there and
+
+then I'm going to go ahead and do that
+
+actually with the
+
+um the other thing so let me go ahead
+
+and have you read this real quick CU
+
+this is quite
+
+important just read it read it look at
+
+it slowly and read
+
+it you read
+
+it you read it yet
+
+BR read
+
+it read it D don't play read the whole
+
+thing
+
+all of it I don't care how good you are
+
+and anything you don't have discipline
+
+you ain't nobody nobody nothing nothing
+
+because you give up under the slightest
+
+struggle without discipline 100% with
+
+discipline is doing what you hate to do
+
+but do it like you love it doing what
+
+you hate to do but do it like you love
+
+it that's that is a great quote and if
+
+you can do that you could be successful
+
+in anything well you normally are you
+
+normally
+
+are you normally are
+
+I clicked the wrong button
+
+honestly click the wrong folder got to
+
+get in G December here we'll be back in
+
+half a second don't worry BR
+
+bruh don't worry Bruh Bruh we gonna be
+
+back I know you miss me I miss you too
+
+come on here we go I'm back okay I'm
+
+back now so what up dude okay
+
+this is moev live here on a Tuesday
+
+Morning [ __ ] it's
+
+Monday it's Monday B I had no idea the
+
+thing is is every day is the same for me
+
+I love my life dude I keep
+
+consistent every day let's go yes let's
+
+say CD g d EC okay let's say CD
+
+Pony 77 fcoin has high funding at 58.2
+
+6% annual AI suggests nothing with 50%
+
+confidence analysis the BTC Market data
+
+indicates an uptrend but the high
+
+funding rate ofcoin salana has negative
+
+funding at M
+
+14.29% annual AI suggests nothing with
+
+ti or requirements.
+
+txt yes yes dude yes step on the gas
+
+every day we have one chance at this
+
+life dude we got one shot you don't
+
+don't drop it don't drop the ball now
+
+it's the time it's the only time that we
+
+get the only time that we get it right
+
+[Music]
+
+now so what were we working on last week
+
+we got the third one done I believe
+
+so this coffee good
+
+boy this Cofe
+
+good the Cofe is really really really
+
+good it's really really
+
+good it's really really good on a Monday
+
+morning oh I better turn some air on
+
+though let me get the air on okay the
+
+Air's on blessed to have air
+
+conditioning dude I can't believe it I
+
+got air conditioning are you kidding me
+
+are you kidding me dude I got Wi-Fi and
+
+air
+
+conditioning so grateful dude I'm so
+
+grateful blessed to be here much love to
+
+you thank you for having
+
+me hello can you hear me
+
+now yes she can
+
+perfect sweet she's
+
+back I've done folds one through three
+
+so far so today I'm going to try to do
+
+four and five and not be a [ __ ] and
+
+let it run all day without me running
+
+something okay um so fourth number
+
+four launch four
+
+now five
+
+later and then
+
+hopefully then
+
+hopefully six and seven
+
+Manana Manana Manana Manana Manana
+
+Manana Manana damn dude this taking a
+
+long time Mund moving slow Mund that
+
+moving so so slow dude come on step on
+
+the guys
+
+boy come on you getting super Puerto
+
+Rican on them all Puerto Ricans get free
+
+free uh free boot camp access actually
+
+so you are Puerto Rican and you live
+
+here
+
+dude I believe CO's a great equalizer so
+
+of course it's
+
+free SRC here the Fitness we want to go
+
+up in the fitness here and then we want
+
+to go to fitness BT Fitness vbt and
+
+we're going to sa 4 four this
+
+time and we're going to hit save and
+
+then we're going to hit run just run it
+
+up please because this is the only
+
+chance we have Let's test it out first
+
+because we don't want to be some Noob
+
+tubing Noob tubing Moos okay let's go
+
+ahead and just give it a quick little
+
+runny
+
+run
+
+CD SRC okay okay we CD SRC we're going
+
+to have one little run here see if it
+
+does
+
+anything that copy good boy okay so what
+
+else we got here
+
+dude what's up what's up what's up oh it
+
+did not work okay so what's the
+
+eror
+
+404 turns new man
+
+damn it didn't work dude okay so let's
+
+go
+
+see what do we do wrong here what did we
+
+do
+
+[Music]
+
+wrong I didn't write the answer down it
+
+was something something with number
+
+though fud dude
+
+fold four here let's see the data sets
+
+make sure we data dog
+
+still full four 60 Minute data full four
+
+okay there's clearly something wrong
+
+here why do I know that
+
+because because I do
+
+dude I've done this so many times
+
+now repetition is key repetition
+
+repetition repetition I don't know
+
+anything till I do it a ton of times and
+
+then I kind of kind of know it you
+
+know so let's go see what the eror
+
+is number okay so this is the same
+
+one
+
+um let's see if I can go here am I back
+
+yet am I back yet you can still see the
+
+screen
+
+damn
+
+dude I wonder where
+
+I put
+
+that okay so um let's just go ask AI
+
+damn dude this is tough
+
+because um um okay no no it's not that
+
+tough though it's just it sucks
+
+because okay let's just talk about it I
+
+get this bug here and I got the same bug
+
+last week I can't remember exactly what
+
+I did but it definitely had something to
+
+do with uninstalling n and then
+
+reinstalling the correct version so
+
+let's try to debug this uh with that and
+
+you can see my requirements.txt here uh
+
+I thought I changed it to the right
+
+version but I clearly didn't because I
+
+still get the same bug we got last week
+
+and we fixed it by uninstalling and then
+
+reinstalling the right version it was
+
+just a conflict between I think Vector
+
+BT and number so we just got to get on
+
+the right version but you got to tell me
+
+which one it is
+
+dude all right so let's say
+
+requirements.txt here as
+
+well let's run it
+
+up let's run it up dude this is the game
+
+we play all day I love it so so much
+
+dude love it I love I love it copy
+
+okay let's just keep running it up they
+
+tell us to slow down we just keep
+
+running it up dude we just keep running
+
+it up yes we have to it's all we can do
+
+it's all we can do dude copy paste
+
+what you think about this
+
+though okay let's say
+
+csrc and now let's run the thing again
+
+and see if we can get it
+
+going let's try it again that's all we
+
+can do is we can just keep trying just
+
+keep swimming that's all we can do d
+
+nope same
+
+bu so let's go ahead and try it again
+
+copy let's say CD dot dot okay and then
+
+P uninstall and then we're going to say
+
+pip
+
+install I knew I was going to make it I
+
+just ain't know how a nobody
+
+but I knew this world is what you make
+
+it you create your own environment it
+
+all starts with a vision what you can
+
+imagine you can
+
+create you can imagine you can
+
+create facts B big
+
+facts big fact
+
+B CD
+
+SRC big fax B which you can imagine you
+
+can create
+
+what you can imagine you can
+
+create give me some Bible verses around
+
+this three of them
+
+please all right certainly so we got uh
+
+3:20 says now to him who is able to
+
+immeasurably immeasurably more than all
+
+ask or imagine according to his
+
+power that is at work within
+
+us make sure these have layman's terms
+
+explanations to to him as well as
+
+they're a little
+
+confusing for as he thinketh in his
+
+heart all right so let's read this one
+
+again with the the
+
+explanation now to him who is able to do
+
+immeasurably more than all we ask or
+
+imagine according to his power that is
+
+at work within us
+
+God is capable of doing far more than we
+
+can even think about or dream of we
+
+might have big ideas and hopes but go
+
+God can surpass those in ways we can't
+
+even
+
+comprehend it's a reminder that his
+
+power is at work in our
+
+lives helping us achieve our great
+
+greatest dreams 777 dude much love much
+
+love 237 here we got four as he thinketh
+
+in his heart so he so is he eat and
+
+drink
+
+Scythe he to thee but his heart is not
+
+with
+
+thee these are so complex dude that's
+
+the only part that's hard for me
+
+explanation this verse means that our
+
+thoughts and beliefs shape who we are if
+
+someone thinks negatively or poorly
+
+about themselves that's often how
+
+they'll Act
+
+it also suggests that sometimes people
+
+might say one thing but mean another
+
+it's a reminder to be
+
+authentic and true to our beliefs and
+
+intentions Genesis 1:1 in the beginning
+
+God created the heavens and the
+
+Earth
+
+explanation 777 this verse tells us that
+
+God started everything by creating the
+
+universe and the world we live in it
+
+emphasizes that all of creation came
+
+from God's desire and
+
+Imagination this shows the incredible
+
+power of creation and sets the stage for
+
+understanding our own ability to create
+
+in our lives 777 dude I think this is
+
+working because it's taking so freaking
+
+long how many we got population size of
+
+120 gener generations of
+
+12 0% done here you can
+
+see okay okay okay
+
+okay okay okay okay
+
+okay yes dude yes much love much love
+
+let's get it dude let's get it every day
+
+every day they try to slow us down no
+
+way no way no
+
+way okay I believe this works now and I
+
+also believe that code is a great
+
+equalizer that's why I show this stuff
+
+dude CU if I can Inspire one of you cool
+
+cats if I could if I could Inspire one
+
+of you cool cats to code dude
+
+[ __ ] that's it that's all I
+
+[Music]
+
+need Hebrews 1211 thank you
+
+bro explain this one to
+
+me 7% done
+
+perfect uh no discipline seems Pleasant
+
+at the time but painful later on however
+
+it produces a harvest of righteousness
+
+and peace for those who have been
+
+trained by it yo 777 thank you
+
+bro this verse is discussing the idea of
+
+discipline and how it affects our lives
+
+here's a breakdown discipline is
+
+difficult the verse starts by
+
+acknowledging that discipline is often
+
+hard and
+
+uncomfortable when we go through
+
+discipline whether it's from parents
+
+teachers or even
+
+God it usually feels painful at the
+
+time this could refer to the struggles
+
+we face when learning life lessons or
+
+correcting our behaviors long-term
+
+benefits
+
+here however the verse offers Hope by
+
+starting that or stating that although
+
+the experience of discipline is tough it
+
+leads to positive outcomes over time
+
+this discipline helps us grow and
+
+develop into better
+
+people the Harvest of righteousness and
+
+peace suggests that through difficult
+
+lessons we can become more virtuous
+
+righteous and find inner calm
+
+peace the phrase those who have been
+
+trained by it implies that it's
+
+important to accept and learn from the
+
+difficult experiences rather than
+
+resisting
+
+them when we embrace the lessons that
+
+discipline teaches us we can cultivate
+
+good character traits and a sense of
+
+peace in our
+
+lives Hebrews 1211 reminds us that while
+
+going through challenges and discipline
+
+might be tough those experiences can
+
+lead to significant personal growth and
+
+peace in the long run it encourages us
+
+to view hard times as opportunities for
+
+improvement rather than just hardships
+
+thank you dude
+
+777 much love munde grandfather was a
+
+crusader Mev do you have a way to use
+
+Crusader for free 1410 concentrate all
+
+your thoughts upon the work at hand the
+
+sun's rays do not burn until brought to
+
+a focus Alexander Crader
+
+coding code crusader
+
+no I don't know what Crusader
+
+is just don't know what it is
+
+Dude Looks like we finished here yes
+
+negative 142 perfect we're live here
+
+okay so that's beautiful that works
+
+um so let's just go ahead and update our
+
+our requirements at txt so next time it
+
+will it will work right away you know
+
+it will work right away right away right
+
+away right away much love to you dude
+
+I'm glad you're here 777 thank you thank
+
+you thank you thank you thank you thank
+
+you for being here thank you for sharing
+
+your love and your Bible verses your
+
+ideas your sevens dude let's get it all
+
+day okay yes okay okay okay okay okay
+
+okay let's say uh
+
+screen screen
+
+s it's S1
+
+okay so this is going to be the first
+
+one right here we're going to run three
+
+screens three screens because we're
+
+going to do it triple time he's going to
+
+do it triple
+
+time he's a triple he's a triple time
+
+kind of guy python run
+
+it okay that's live okay let's get
+
+screen two here
+
+yes triple
+
+time did I just run that one
+
+it's looking a little suspicious
+
+here okay which one did I write py g85
+
+85 okay grammar F .1 grammar F 110 okay
+
+BC BTC basic vbbt basic vbbt
+
+what dude no
+
+way I did not do that bro I did not do
+
+that don't tell me that don't tell me
+
+that right now grammar fall
+
+PTC basic in I'm not negotiating with
+
+myself yeah the deal was already made
+
+the deal was made when I set out at the
+
+beginning of the summer and said this is
+
+the training plan I'm doing I signed
+
+that contract with myself I'm doing it
+
+I'm doing it you know throughout the
+
+that process you'll start talking to
+
+yourself like man I got to I think I
+
+need to maybe if we nope
+
+no this is nonnegotiable so this one BTC
+
+basic
+
+vbt and the next one is basic okay so
+
+we're Gucci at least thank
+
+God I just had a a typo
+
+here luckily it didn't
+
+matter okay we got the second one
+
+running now we're going get the third
+
+one
+
+running that's
+
+three okay so we got all three running
+
+perfect so um if you're new here welcome
+
+777 but we got these three evolutionary
+
+algorithms running here these are
+
+creating a million strategies but I got
+
+three of them so if you do the math
+
+there if you take the 1 million and you
+
+multiply it by three that equals 3
+
+million 3 million strategies here on a
+
+Monday morning so GM GM let's see how
+
+much money I've spent oh my God that
+
+would that took 04 hours dude or that
+
+took 39 hours dude what the hell that
+
+was I spent $6 right there dude Jesus
+
+that's
+
+crazy crazy crazy stuff kids kids this
+
+is crazy stuff AO Moon Dev 777 fcoin has
+
+high funding at 68.1 2% annual AI
+
+suggests nothing with 50% confidence
+
+analysis fcoin has a high funding rate
+
+of
+
+6812 indicating potential risk of long
+
+liqui salana has negative funding at
+
+minus
+
+14.52% annual AI suggests nothing with
+
+50% confidence analysis funding rate is
+
+negative but BTC is in an uptrend so no
+
+clear signal to
+
+buy you really be talking a
+
+lot you really be talking a lot okay so
+
+I want to look in the Deep seek deep
+
+seek in
+
+cursor so somebody said
+
+that 3.01 your focus determines your
+
+reality let's get back to coding and
+
+achieving your
+
+goals anybody know how to put deep seek
+
+in the cursor here I think people were
+
+talking about
+
+that uh deep sea
+
+I was able to get deep seek V3 working
+
+and cursor and the new code Myro running
+
+through incursor through the continue
+
+extension I was able to get deep SE
+
+three working on cursor though in cursor
+
+settings I just typed in the model deep
+
+seek V3 in my local
+
+AMA has anyone tried
+
+out so let's go ahead and try to get
+
+this deep seek going dude anybody use
+
+deep seek in
+
+cursor I'mma ask Trent
+
+let's ask
+
+him wake
+
+up wake
+
+up we just add it to the
+
+cursor settings wake up Trent wake
+
+up wake up dude
+
+wake
+
+up uh let's say deep seek deep seek um
+
+what's it called token list not token
+
+list deep seek how do we say that bro
+
+bro not token list deep seek uh Max
+
+tokens token length what's that call
+
+dude damn my brain is weak today dog
+
+deep seek uh token Max token token
+
+limit yeah context
+
+window uh let's say deep seek
+
+cursor Reddit nice dude now he's
+
+thinking okay nice got it okay I've been
+
+using deep seek as my coding assistant
+
+for a while was earlier using curer with
+
+GPT and Claude but I've run out of
+
+tokens deep seek Works equally good or
+
+slightly less better than gbt and Claude
+
+although it's making tail tall claims on
+
+his documentation is outpouring
+
+both I've heard literally nothing but
+
+good things about it I don't think it
+
+could be rated any
+
+higher nice dude code stroll 22 bill is
+
+King for me what is cod
+
+straw I mean this is this is why I love
+
+being a developer dude because like
+
+we're in the game we're in the game
+
+dude we're in the game
+
+dude locked bro we're always
+
+locked yeah I don't know though
+
+um deep seek let's just sign up and see
+
+if we can get this cracking I's say deep
+
+seek models in pricing I think it's
+
+cheap
+
+or I think it's much cheaper that's why
+
+we're using it okay Max token output
+
+contact link is 64k so input
+
+0.14 deduction rules how do you sign
+
+up how do we sign up up and give China
+
+our
+
+data I want China to have all my data CU
+
+I already know their data
+
+dogs your first API call here
+
+[Music]
+
+all right deep seek platform
+
+probably log
+
+in for sign
+
+up um I'm G sign up
+
+here and no way I might log in with my
+
+Google
+
+account no way sorry try
+
+sorry dog you know like I [ __ ] with you
+
+but at the same time I'm not going to
+
+sign with my Google account I don't [ __ ]
+
+with you like
+
+that not like that homeboy sorry China I
+
+love you though I love you I do I do I
+
+do I do it's all love it's all love it's
+
+all love but I ain't going to give you
+
+my I ain't going to give you my Gmail
+
+stuff you know like I know the extent to
+
+the to the to the love I'mma give y'all
+
+and while I [ __ ] with you heavy B hey
+
+try not [ __ ] with you heavy dude I ain't
+
+going to give you my Gmail direct you
+
+already probably have access to it you
+
+probably already have access to it let's
+
+be real dude let's be real you probably
+
+already got access but I'm not going to
+
+just like give it to you every
+
+day not just going to go sign up for
+
+Chinese companies and give you my Gmail
+
+every time I can I'm going at least try
+
+to be a
+
+little a little uh you
+
+know whatever cautious yeah I'm just
+
+going to be a little
+
+cautious yeah yeah how about
+
+that I think I'm just going to give
+
+China all my data on purpose well I'm
+
+going give it some of it I'm going to
+
+use Tik Tok
+
+yes I'm going to use your AI because
+
+it's cheaper yes yes you got me yes okay
+
+it's it is what it is let me top up my
+
+balance here let me give you some money
+
+I'll give you my credit card wait they
+
+give you
+
+$2
+
+oh they gave me $2 in credy what what
+
+nice people I love you thank you so this
+
+is my API key API key uh this is my uh
+
+Jan
+
+20 create API key
+
+here let's copy
+
+it done
+
+okay and then let's let's go here to uh
+
+where we at with it uh we're going to go
+
+to the AI
+
+agents we're going to go to
+
+the I see on the can you see my screen
+
+right now just double check triple check
+
+I don't think you can so I'm going to go
+
+to my EnV here and
+
+say
+
+deep seek
+
+key equals whatever the key is something
+
+that truly exists in all of us it's very
+
+simple this is what I
+
+believe and I'm willing to die for
+
+it in the example
+
+here un key deep SE key
+
+your deep seat key is here dude be
+
+careful be careful be careful be careful
+
+dude okay so don't share that with
+
+anybody okay um I actually need to put
+
+it in my in my cursor as well so let's
+
+go here and say settings Pro cursor
+
+settings here and models and then maybe
+
+it has it on here already deep seek oh
+
+V3 is that the one we're
+
+using deep seek V3
+
+here oh but I don't need to use my API
+
+key I don't know dude now I'm just
+
+lost now I'm just lost what am I even
+
+doing I I'm using cursor I don't
+
+I don't need to do all this
+
+right that's crazy
+
+stuff
+
+sheesh so you can see
+
+here
+
+screen I'm over here and I just have
+
+deep seek I just click
+
+it
+
+duh this isv example I just updated
+
+here
+
+API I don't know what I ch change
+
+there I don't
+
+know but it is what it
+
+is it's a time we got to be here AO moev
+
+777 fcoin has high funding at 66.0 5%
+
+annual AI suggests nothing with 50%
+
+confidence nothing analysis the overall
+
+BTC Market is in an uptrend but the high
+
+funding rate of 66.0 5 salana has
+
+negative funding at my
+
+14.11% annual AI suggest suggests
+
+nothing with 50% confidence analysis the
+
+funding rate for soul is negative
+
+indicating potential downward pressure
+
+but the overall Bitcoin Market is in
+
+okay
+
+so I'm curious to see if this deep seek
+
+works so let's say
+
+l can you just walk me through this API
+
+P step by step so I understand all the
+
+code okay so we can see here sure let's
+
+break down this should be deep seek V3
+
+okay and I wonder what it is like if I
+
+go here
+
+to
+
+[Music]
+
+um I mean sorry for tagging you Trent
+
+I'm an idiot honestly
+
+okay so I just want to see here what's
+
+it looking
+
+like does it call it correctly I mean
+
+this looks
+
+fine it's
+
+fast yeah deep seek right here okay well
+
+cursor makes this super easy
+
+so um deep seek is here in my cursor and
+
+I don't know what to tell you about it I
+
+don't know what I should do with it
+
+because now ai is just a
+
+commodity this is awkward now this is
+
+very very awkward because I thought I
+
+was going to have to do a lot of work
+
+here to like get it implemented or
+
+something but cursor just makes things
+
+super easy
+
+here okay that's cool that's cool that's
+
+cool with me dude I'm cool with easy
+
+okay so let's say we got that
+
+implemented uh launch new GES done fix
+
+copy bot and API
+
+done I got a funding R I kind of want to
+
+build wait it looks like this one back
+
+to claw though
+
+H Deep seek to save 80%
+
+so that's pretty fire if it's 80%
+
+cheaper but is it as good is the
+
+question that's the question
+
+dude is it as good
+
+so I kind of want to build out this
+
+funding or
+
+but so the one thing I need to figure
+
+out here is
+
+in hyper liquid how to get the funding
+
+rate so I got the funding agent
+
+here and what I want to do here is
+
+update
+
+her uh let's go ahead and
+
+say please push all and commit all and
+
+the commit message will be added deep
+
+seek
+
+AI into the
+
+that's all
+
+though oh God oh God that's all I did
+
+that's all I did
+
+dude I could do it I guess get
+
+ad get
+
+commit
+
+um get commit
+
+deep
+
+seek
+
+added that's it
+
+though okay get push
+
+all right dude so I just updated all the
+
+code here so you have access to all what
+
+I have access to just go to mv.com from
+
+mv.com you get your road map where do I
+
+get started and Alo trading this road
+
+map Discord and GitHub the road map
+
+shows you exactly how to automate your
+
+trading step by step down here at the AI
+
+agents you have the GitHub okay the
+
+GitHub takes you here dude once you get
+
+to the GitHub you hit star in order to
+
+keep all the code or bookmarket and to
+
+actually get the code click Fork Fork it
+
+dude Fork it you get all the
+
+code okay you can see one minute ago I
+
+added to the EnV
+
+example deep seek key here AI Services
+
+anthropic open Ai and deep seek now but
+
+it doesn't really do anything yet so
+
+we'll just we'll just mess around with
+
+it for today and um maybe add
+
+it here in our um next little run of
+
+this funding agent but the funding agent
+
+is something I want to [ __ ] with today
+
+dude so I want to pull up my
+
+uh hyper liquid stuff
+
+because I might already
+
+have I don't think I do though VI and
+
+terminal open and visual studio code
+
+embarrassing huh it's quite
+
+embarrassing so this is what I was
+
+looking for this before actually that's
+
+why I'm already on it you can see
+
+funding rate get funding rate
+
+data bro funding
+
+rate nah see I got to make a call old
+
+maybe ah same one same
+
+Z Okay so let's go over to the
+
+uh hyper
+
+liquid documentation
+
+here oh look who the [ __ ] pops up here
+
+look aty doy dude look aty doy who put
+
+everybody on the hyper
+
+liquid I don't
+
+know not me not me not me not me I love
+
+you look at the doy do look at the doy
+
+he's everywhere he's he's
+
+everywhere web socket we're going to go
+
+ahead here and say python
+
+SDK API examples hyper liquid examples
+
+let's go to examples basic
+
+[Music]
+
+agent basic Market order basic Market
+
+order schedule set referral spot to
+
+staking sub account tpsl transfer Vault
+
+withdrawal websocket cancel open orders
+
+Json multisig recording uh basic Builder
+
+multisig leverage adjustment Market
+
+order basic order C ID cancel set refer
+
+basic spot order spot to
+
+per um none of these are them so what do
+
+we do what do we do well you know what
+
+let's bring back that other folder here
+
+get the old school vs code up in here
+
+and let's just look through some of
+
+these nice funks
+
+because I feel
+
+like symbol info would have them
+
+yeah symbol info might have
+
+it okay
+
+um but that's not even a call either so
+
+let's just look through all these get
+
+open interest here
+
+get
+
+liquidations so these aren't actual
+
+calls here let's go to the top though
+
+because ask bid um might have
+
+it get spot and ho ass spot
+
+symbol oh that boy
+
+funny get all spot symbols
+
+here get size and pics decimals
+
+nah limit order nah adjust leverage
+
+size account value here update
+
+leverage get open high low close volume
+
+data Chopper that boy out of
+
+here
+
+coin data DF data DF calculate vwap with
+
+symbol Supply demand zoms get spot
+
+position get
+
+position I need to get the hyper liquid
+
+um pretty much
+
+the the funding rate for what I'm trying
+
+to build here
+
+so fetch candle snapshot maybe so we'll
+
+look at that in a second
+
+here I've made hundreds of thousands of
+
+dollars with this trading bot framework
+
+and I'm not only going to let you steal
+
+it I'm going to help you m master in the
+
+next 15 days in the algo trade Camp if
+
+you are a crypto Trader who is ambitious
+
+committed and persistent and you're
+
+typically good at what you do but your
+
+trading results are just not where you
+
+want them to be well here's a quick
+
+question for you how would it feel if
+
+you could have a trading bot that traded
+
+for you for the rest of your life with
+
+or without you logging into the computer
+
+each day you see I'm just a regular dude
+
+but for the last few years I've been
+
+using trading Bots to manage my
+
+admittedly low s fig personal portfolio
+
+While others struggle with controlling
+
+their emotions staring at the charts all
+
+day when you meet me at the algo trade
+
+Camp I'm going to give you my exact
+
+blueprint look we've all seen the
+
+countless ads the cliches the kids in
+
+the rented Lambos telling you how to
+
+trade this isn't that this is a proven
+
+trading bot system backed by real data
+
+and thousands of hours of research into
+
+automated trading systems I put this
+
+system to the test using it to build a
+
+swarm of trading Bots to manage my own
+
+personal portfolio while I can't give
+
+you a plug-and playay set in forget and
+
+make a billion dollars overnight bot I
+
+put my money where my mouth is and I use
+
+this exact framework to build all of my
+
+trading bot but look you've seen trading
+
+bots in the wild you've heard of
+
+successful algo Traders and you hear of
+
+quants that have become wildly
+
+successful and make crazy money so you
+
+know it's possible to automate you're
+
+trading and you're watching this video
+
+right now so I know you're super smart
+
+because searching for a better more
+
+efficient way to trade that's just
+
+something smart people do and because
+
+you're smart you also know there's a
+
+little something extra you know there's
+
+a little piece of magic Miss mixed into
+
+all of now I know what it feels like
+
+dude not just to not make money trading
+
+but to lose money due to emotions or
+
+just my poor human judgment everything
+
+else I could just work harder at and I
+
+would get better but for trading for
+
+some reason I could never get over the
+
+emotions the times where I'd be up all
+
+night staring at the charts just hoping
+
+it would go my way just to fall asleep
+
+to a liquidation email when you know
+
+you're ambitious and you're extremely
+
+persistent but you just can't figure out
+
+the game of trading and to feel like
+
+dude I'm I'm never going to stop trading
+
+but I keep losing look I get that it's
+
+normal for manual Traders hand Traders
+
+lose money remember 95% lose I want to
+
+take you from that feeling of losing due
+
+to emotions to being a dominant force in
+
+the crypto
+
+Market I want to help you automate your
+
+trading for the rest of your life so you
+
+can build any trading bot that you could
+
+ever imagine I will help you automate
+
+your trading only if you are willing to
+
+step up challenge yourself and take this
+
+Challenge and I will help you automate
+
+your trading in the next 15 days in the
+
+algo trade Camp here's the big secret
+
+you've been waiting for as an automated
+
+Trader from home home there's really
+
+only three things you need to do to be
+
+extremely successful number one you have
+
+to build great trading ideas build a
+
+list of great trading ideas you then
+
+test those ideas to see if they worked
+
+in the past and if they worked in the
+
+past then build a bot with tiny size to
+
+make sure they still work in the live
+
+market if you can do all three of those
+
+things it's pretty hard not to make
+
+money in fact I've never seen anyone who
+
+has great trading ideas who tested them
+
+constantly and deployed them with tiny
+
+size not have success with algo trading
+
+I just haven't seen it dude and here's
+
+another Fact one good trading bot can
+
+wipe out all bad financial decisions you
+
+made in your entire life and I know this
+
+because it happened to me when you
+
+combine these three different elements
+
+success isn't only possible it's
+
+repeatable this is my RBI framework
+
+comes down to researching R back testing
+
+B and then implementing into Bots I and
+
+when you make the right decision and you
+
+decide to meet me in the algo trade Camp
+
+I'll show you exactly how to automate
+
+your trading strategy and if you don't
+
+have one we have hundreds we've
+
+researched from phds to get you started
+
+on your journey right now and I want to
+
+help you automate your trading right now
+
+not a year from now no I want to help
+
+you right now if you don't don't know
+
+how to code don't worry I didn't know
+
+how to code either I'll teach you step
+
+by step in the next 15 days listen I had
+
+one bot that did me hundreds of
+
+thousands of dollars and I don't have a
+
+big team or an unfair Advantage I'm
+
+standing here in a bedroom with a
+
+whiteboard behind me I don't have
+
+employees investors or any long-term
+
+obligations I'm Free as a bird I don't
+
+have a Lambo or some fancy New York City
+
+office or Miami office I'm a simple guy
+
+with a simple life all I do is code with
+
+AI Live on YouTube Just Me you my
+
+computer and my whiteboard quick story I
+
+like to leave out because it's a little
+
+bit embarrassing but when I first got
+
+interested in automating my trading I
+
+knew I had to learn to code because it
+
+would just be way too expensive to hire
+
+a developer to constantly update my bots
+
+anyways I locked in for 2 to 4 hours a
+
+day until I successfully built my first
+
+bot and then I put 10K in and over the
+
+next 30 days I watch that 10K go to zero
+
+no wonder I was a losing hand Trader I
+
+was trading a strategy that didn't work
+
+a strategy a bot couldn't even figure
+
+out and I was trading as a human that
+
+day though I developed my RBI framework
+
+to ensure I only run profitable Bots my
+
+RBI framework is simple research
+
+strategies R then back test those
+
+strategies B and see if they work in the
+
+past if they work in the past then
+
+Implement them with small size not 10K I
+
+hey I'm moev and that day I developed a
+
+passion for trading Bots and showing my
+
+RBI secret I uncovered duh you have to
+
+test your Bots before you run them with
+
+$10,000 if you can constantly research
+
+new trading ideas then constantly back
+
+test those ideas to see if they work in
+
+the past and then take those that worked
+
+in the past and Implement them into a
+
+bot with small size if you can do that
+
+you can't help but become a profitable
+
+algo Trader I'm just an independent
+
+Trader for my bedroom who figured out a
+
+better way to approach the market and I
+
+believe codee's a great equalizer if you
+
+know how to code you can build cash flow
+
+for generations for the rest of your
+
+life so the way I looked at automating
+
+my trading was I could learn all this in
+
+worst case scenario I know how to code
+
+and I could get a job for like 100k Plus
+
+at a tech company but best case scenario
+
+was I could have automated trading Bots
+
+for the rest of my life now that's a
+
+solid risk reward if you ask me look I
+
+know there's a lot of scam out there I
+
+want you to look me up Google me search
+
+moep you can see everything I am saying
+
+is true I have videos of every single
+
+bot I've ever built all for free on
+
+YouTube including that one that made me
+
+hundreds of thousands of dollars but
+
+just because it worked for me does not
+
+mean it's going to work for you the
+
+number one rule of automating trading is
+
+to never run someone else's bot just
+
+like I got wrecked for $10,000 on my
+
+first bot how would you possibly know if
+
+you downloaded the bot off the internet
+
+what it does or when somebody runs it or
+
+when they are hedging no one will ever
+
+give you a profitable trading bot that's
+
+the number one way to spot a scam so if
+
+you're on the internet YouTube whatever
+
+and it says a plug and play make one eth
+
+a day or 20% a day you know that it's a
+
+scam you're about to lose all your money
+
+you see I'm not the type of guy to Hype
+
+something up I just try to transparently
+
+build Bots that I think will make me
+
+money seriously if you're skeptical at
+
+all I have over 1,200 hours of free
+
+YouTube tutorials all on YouTube you can
+
+literally go get to know me I've even
+
+hosted interviews with the top quants in
+
+the world like Christina she she traded
+
+$7.1 billion per day that's billion with
+
+a b and Dr Ernest Chan one of the
+
+greatest algorithmic traders of all time
+
+after Jim Simons himself rest in peace
+
+I've even had the pleasure of
+
+interviewing some unnamed Renaissance
+
+employees and we talked about the
+
+strategies Jim Simon and his company
+
+Renaissance used to use so I just
+
+rebuilt them and I'm telling you this
+
+not to brag but I'm telling you this
+
+because I want you to take it seriously
+
+because it could change your life like
+
+it's changed mine think about it who's
+
+the best Trader of all time yeah Jim
+
+Simons the founder of Renaissance what
+
+did Jim Simons do to trade better than
+
+everybody else yeah he built trading
+
+Bots that traded fully automatically
+
+even today who's making all the money on
+
+Wall Street yeah the trading bot firms
+
+Google it two Sigma Jane Street a QR D
+
+sha Renaissance Jim Simons died with a
+
+net worth of 31 billion all from
+
+automated trading because Jim was smart
+
+enough to realize there's patterns in
+
+the market that robots could trade that
+
+humans could never so he essentially
+
+executed his own RBI framework for years
+
+on end he once said in a business like
+
+this you just have to keep making things
+
+better and better and better essentially
+
+always researching new strategies then
+
+back testing those strategies see if
+
+they worked in the past and then testing
+
+those in the live market Jim simply
+
+executed his system of test and
+
+deploying for years until he was hyper
+
+profitable look Jim didn't just become a
+
+multi-billionaire he changed Bloodlines
+
+and created generational wealth for
+
+employees investors and of course
+
+himself not only that he returned over a
+
+100 billion in profits and he was able
+
+to give away $4 billion to Charities how
+
+cool is that imagine if you could just
+
+have a fraction of that impact the sad
+
+truth is most people don't actually want
+
+to make money with trading they just
+
+want to gamble but if you're committed
+
+to automating your trading and building
+
+out a provable edge then it's an
+
+absolute travesty for you not to embrace
+
+these principles so your trading can
+
+finally be as good as you know it should
+
+be without human intervention now on
+
+this page you'll see exactly what's
+
+covered in the 15-day algo trade Camp if
+
+you think this stuff will help you
+
+automate your trading then grab your
+
+spot now and at the risk of sounding
+
+bold and I genuinely mean this
+
+I think my stuff is the best not because
+
+of how much money I've made from my bots
+
+but because there are plenty of people
+
+out there who have made a lot more money
+
+than I have but more importantly I don't
+
+think many people share any of this
+
+stuff and I believe I explain everything
+
+in the most simple manner so you can
+
+actually automate your trading as a
+
+regular person I don't care how rich the
+
+gurus are they make trading way too
+
+complicated and no one shows you how to
+
+automate it my goal is to make
+
+automating your trading simple so you
+
+can do it so my advice is to grab a
+
+general admission or a VIP seat to the
+
+algo trade camp and I highly recommend
+
+you grab a VIP ticket because they get
+
+lifetime access to the boot camp and
+
+they get access to our Inner Circle
+
+calls which are every Friday on Zoom
+
+with replays available so you definitely
+
+don't want to miss that opportunity I
+
+highly recommend the VIP option here's
+
+the deal you can join the masses and you
+
+can invest in cheap solutions or you can
+
+invest in something that actually works
+
+so if you're interested in automating
+
+your trading then grab your spot at the
+
+boot camp below and trust me you'll want
+
+to get the VIP experience that's where
+
+we really roll up our sleeves and make
+
+the magic happen so Step Up start the
+
+Alo trade camp and to ensure you have
+
+absolutely zero risk I've implemented a
+
+90day cosmic guarant guarantee so you
+
+don't even have to say yes right now
+
+just say maybe sign up you can watch all
+
+of the boot camp explore all of the back
+
+tests the Bots connect with all of the
+
+hundreds of algorithmic traders in there
+
+and if it's not for you you have 90 full
+
+days in our 90day Cosmic 100% money back
+
+guarantee to just test it out so jump in
+
+right now say hello in the members chat
+
+me and hundreds of other automated
+
+Traders are waiting to step on the gas
+
+with
+
+you I've made hundreds of thousands of
+
+dollars with this trading bot framework
+
+and I'm not only going to let you steal
+
+it I'm going to help you master it in
+
+the next 15 days in the algo trade Camp
+
+if you are a crypto Trader who is
+
+ambitious committed and persistent and
+
+you're typically good at what you do but
+
+your trading results are just not where
+
+you want them to be well here's a quick
+
+question for you how would it feel if
+
+you could have a trading bot that traded
+
+for you for the rest of your life with
+
+or without you logging into the computer
+
+each day you see I'm just a regular dude
+
+but for the last few years I've been
+
+using trading Bots to manage my
+
+admittedly low s figure personal
+
+portfolio While others struggle with
+
+controlling their emotions staring at
+
+the charts all day when you meet me at
+
+the algo trade Camp I'm going to give
+
+you my exact blueprint look we've all
+
+seen the countless ads the cliches the
+
+kids in the rented Lambos telling you
+
+how how to trade this isn't that this is
+
+a proven trading bot system backed by
+
+real data and thousands of hours of
+
+research into automated trading systems
+
+I put this system to the test using it
+
+to build a swarm of trading Bots to
+
+manage my own personal portfolio while I
+
+can't give you a plug-and play set and
+
+forget and make a billion dollars
+
+overnight bot I put my money where my
+
+mouth is and I use this exact framework
+
+to build all of my trading box but look
+
+you've seen trading bots in the wild
+
+you've heard of successful algo Traders
+
+and you hear of quants that have become
+
+wildly successful and make crazy money
+
+so you know it's possible to automate
+
+your trading and you're watching this
+
+video right now so I know you're super
+
+smart because searching for a better
+
+more efficient way to trade that's just
+
+something smart people do and because
+
+you're smart you also know there's a
+
+little something extra you know there's
+
+a little piece of magic Miss mixed into
+
+all of now I know what it feels like
+
+dude not just to not make money trading
+
+but to lose money due to emotions or
+
+just my poor human judgment everything
+
+else I could just work harder at and I
+
+would get better but for trading for
+
+some reason I could never get over the
+
+emotions the times where I'd be up all
+
+night staring at the charts just hoping
+
+it would go my way just to fall asleep
+
+to a liquidation email when you know
+
+you're ambitious and you're extremely
+
+persistent but you just can't figure out
+
+the game of trading and to feel like
+
+dude I'm I'm never going to stop trading
+
+but I keep losing look I get that it's
+
+normal for manual Traders hand Traders
+
+lose money remember 95% lose I want to
+
+take you from that feeling of losing due
+
+to emotions to being a dominant force in
+
+the crypto
+
+Market I want to help you automate your
+
+trading for the rest of your life so you
+
+can build any trading bot that you could
+
+ever imagine I will help you automate
+
+your trading only if you are willing to
+
+step up challenge yourself and take this
+
+Challenge and I will help you automate
+
+your trading in the next 15 days in the
+
+algo trade Camp here's the big secret
+
+you've been waiting for as an automated
+
+Trader from home there's really only
+
+three things you need to do to be
+
+extremely successful number one you have
+
+to build great trading ideas build a
+
+list of great trading ideas you then
+
+test those ideas to see if they worked
+
+in the past and if they worked in the
+
+past then build a bot with tiny size to
+
+make sure they still work in the live
+
+market if you can do all three of those
+
+things it's pretty hard not to make
+
+money in fact I've never seen anyone who
+
+has great trading ideas who tested them
+
+constantly and deployed them with tiny
+
+size not have success with algo trading
+
+I just haven't seen it dude and here's
+
+another Fact one good trading bot can
+
+wipe out all bad financi ancial
+
+decisions you made in your entire life
+
+and I know this because it happened to
+
+me when you combine these three
+
+different elements success isn't only
+
+possible it's repeatable this is my RBI
+
+framework it comes down to researching R
+
+back testing B and then implementing
+
+into Bots I and when you make the right
+
+decision and you decide to meet me in
+
+the algo trade Camp I'll show you
+
+exactly how to automate your trading
+
+strategy and if you don't have one we
+
+have hundreds we've researched from phds
+
+to get you started on your journey right
+
+now and I want to help you automate your
+
+trading right now not a year from now no
+
+I want to help you right now if you
+
+don't know how to code don't worry I
+
+didn't know how to code either I'll
+
+teach you step by step in the next 15
+
+days listen I had one bot that did me
+
+hundreds of thousands of dollars and I
+
+don't have a big team or an unfair
+
+Advantage I'm standing here in a bedroom
+
+with a whiteboard behind me I don't have
+
+employees investors or any long-term
+
+obligations I'm Free as a bird I don't
+
+have a Lambo or some fancy New York City
+
+office or Miami office I'm a simple guy
+
+with a simple life all I do is code with
+
+AI Live on YouTube Just Me you my
+
+computer and my whiteboard quick story I
+
+like to leave out because it's a little
+
+bit embarrassing but when I first got
+
+interested in automating my trading I
+
+knew I had to learn to code because it
+
+would just be way too expensive to hire
+
+a developer to constantly update my my
+
+bots anyways I locked in for 2 to 4
+
+hours a day until I successfully built
+
+my first bot and then I put 10K in and
+
+over the next 30 days I watched that 10K
+
+go to zero no wonder I was a losing hand
+
+Trader I was trading a strategy that
+
+didn't work a strategy a bot couldn't
+
+even figure out and I was trading it as
+
+a human that day though I developed my
+
+RBI framework to ensure I only run
+
+profitable Bots my RBI framework is
+
+simple research strategies R then back
+
+test those strategies B and see if they
+
+work in the past if they work in the
+
+past then Implement them with small size
+
+not 10K I hey I'm Mev and that day I
+
+developed a passion for trading Bots and
+
+showing my RBI secret I uncovered duh
+
+you have to test your Bots before you
+
+run them with
+
+$10,000 if you can constantly research
+
+new trading ideas then constantly back
+
+test those ideas to see if they work in
+
+the past and then take those that worked
+
+in the past and Implement them into a
+
+bot with small size if you can do that
+
+you can't help but become a profitable
+
+algo Trader I'm just an independent
+
+Trader from my bedroom who figured out a
+
+better way to approach the market and I
+
+believe codee's a great equalizer if you
+
+know how to code you can build cash flow
+
+for generations for the rest of your
+
+life so the way I looked at automate my
+
+trading was I could learn all this and
+
+worst case scenario I know how to code
+
+and I could get a job job for like 100k
+
+Plus at a tech company but best case
+
+scenario was I could have automated
+
+trading Bots for the rest of my life now
+
+that's a solid risk reward if you ask me
+
+look I know there's a lot of scammers
+
+out there I want you to look me up
+
+Google me search moep you can see
+
+everything I am saying is true I have
+
+videos of every single bot I've ever
+
+built all for free on YouTube including
+
+that one that made me hundreds of
+
+thousands of dollars but just because it
+
+worked for me does not mean it's going
+
+to to work for you the hey did that make
+
+a whole video through how long did that
+
+take I have no idea I'm sorry if it
+
+didn't go all the way through and you're
+
+interested in that my bad but check out
+
+the website below you can check it out
+
+if you'd like um but much love to you
+
+sorry I just had to lock back in bro
+
+just had to lock I have to stay locked
+
+dude I got to stay locked so much love
+
+to you thanks for thanks for waiting for
+
+me I don't know if that was 5 minutes or
+
+15 minutes either way we back boy let me
+
+know if you know in the chat was that
+
+was that did you see the video one time
+
+or one and a half
+
+times concept of time around here is
+
+really really bad it's
+
+poor okay so how are we going to go
+
+ahead and get these candles shot data
+
+maybe no close all positions no close
+
+all positions Market no calculate
+
+range should we quote orders calculate
+
+Binger bands calculate linear
+
+regression a lot of good stuff on the
+
+screen BR bruh order book data order
+
+book data
+
+[Music]
+
+no open order Deluxe
+
+here damn dude how do I get the open
+
+interest we need that basic withdrawal
+
+cancel orders
+
+config let's go back here test get
+
+ignore
+
+security API here
+
+AO moev 777 fcoin has high funding at
+
+55. 84% annual AI suggests buy with 55%
+
+confidence analysis negative funding
+
+rate in an uptrending
+
+Market I feel like it's exchange that P1
+
+maybe I just need to get the
+
+data slippage
+
+price post action I need to get the open
+
+interest no I don't need the open
+
+interest I need the
+
+uh I need the uh funding rate
+
+the FY right the FY right
+
+okay
+
+so I can close this for now this is live
+
+these are live
+
+here I'm going to set alarm here for how
+
+long has it been it's been an hour and a
+
+half took me 40 minutes to get it set up
+
+so what about another 45 to get 25% done
+
+so another so another 45 45 45 I have 2
+
+hours 20
+
+minutes
+
+timer go
+
+say all right so we got that set up um
+
+she should let me know when this is done
+
+is just so I don't [ __ ] it up again
+
+three days in a row could you could you
+
+imagine if I did that three days in a
+
+row I would be so so hot dude I'll be so
+
+so
+
+hot all right let's just start doing
+
+some calls
+
+here this start with symbol info because
+
+that makes the most sense so let's close
+
+this close this close this let's go to
+
+hyper liquid uh nice funks hyper liquid
+
+here and this all this code is in the uh
+
+the
+
+stuff get current market info for all
+
+coins on hyper
+
+liquid please update this code so we can
+
+test this G data and all the information
+
+that we get from the the data uh I'm
+
+specifically looking for the funding
+
+rate so yeah just make this a name if
+
+name equals main type file so I can run
+
+it from here and test all the
+
+information that we get now and then
+
+from there we can see if we get the um
+
+funding rate in there and then uh we can
+
+try some other things
+
+too but make sure that this what how
+
+however we set this up I think if name
+
+equals main we'll set it up in a way
+
+that we can it won't affect anything
+
+that we have running right now and it
+
+will only affect it if we're running it
+
+from here
+
+okay so you can see here that I'll add a
+
+main okay let's say accept
+
+I don't see
+
+it n
+
+dude not the API dog
+
+I wanted you to do it in this file not
+
+the other one not the api. py
+
+I'm ready man
+
+if you want a pair of shoes and they at
+
+the store they're really at the store
+
+you just don't have it yet it ain't like
+
+that [ __ ] don't exist it's just really
+
+at the store that's how I looked at my
+
+whole life if I want it if I believe I
+
+can have it then that's my
+
+reality it looks like we get a air here
+
+looking like we get a little erir
+
+here e
+
+add more Prince if
+
+needed yeah she don't work
+
+today 710 don't watch the clock do what
+
+it does keep going Sam levenson let's
+
+keep going baby let's keep going let's
+
+keep going let's keep going going let's
+
+keep
+
+[Music]
+
+going all we can do dude that's all we
+
+can do is keep it moving keep it pushing
+
+dude
+
+I mean this doesn't really look like it
+
+though here's the
+
+response doesn't really look like we
+
+have funding data there that's why I
+
+said uh
+
+[Music]
+
+sh it
+
+back price okay current
+
+symbols ah I see the issue now the
+
+Market info response to the dictionary
+
+with symbols Keys we need to modify your
+
+code to handle this format
+
+correctly AO moev 777 fcoin has high
+
+funding at
+
+54.4% annual AI suggests sell with 80%
+
+confidence analysis negative BTC Trend
+
+and high fcoin funding rate
+
+all right so we need to approach this a
+
+different
+
+way let's look at their API
+
+again it say hyper liquid hyper liquid
+
+get funding rate it's always a good
+
+way that's always good just Google it
+
+dude
+
+funding technical
+
+details numerical example
+
+let's see what they're doing here
+
+scripts here
+
+how you get funny right here
+
+these dogs be eating everything bro bro
+
+they be eating
+
+everything so funny so funny okay so I
+
+don't think this is going to be the one
+
+but oh here we
+
+go there we go there we go this is what
+
+we need
+
+below is how to get the funding rate
+
+please make a function here in this file
+
+to get funding
+
+rate and then let's go ahead and test it
+
+in the main file thing
+
+hey hey hey we can do anything dog
+
+heyyy
+
+hey hey hey hey what up boy remember
+
+that hey hey hey all right so now let's
+
+update
+
+it this is wonderful now let's update it
+
+to make it so that it only grabs the
+
+funding rate for the symbol that we pass
+
+in and then we can pass in for example
+
+uh fart coin
+
+hey oh man remind me with my
+
+pops oh man man man
+
+1.010 concentrate all your thoughts upon
+
+the work at hand the sun's rays do not
+
+burn what talking Alexander grah Bell
+
+because it's for fart coin dude it's
+
+fart coin it's fart
+
+coin is this
+
+fact laughing to the bank like
+
+ah all right let's see if this is facts
+
+B hyper liquid
+
+this fax be
+
+fart
+
+pers okay the funding right here is
+
+217% yeah dude so I don't know what you
+
+want bro 245
+
+okay let's go look at the other one
+
+here
+
+um this one is for ethereum what is
+
+ethereum ethereum what is that
+
+no say cabon no
+
+say never heard of that
+
+before yes BTC what's up well let's see
+
+was this right 10.3 cents percent says
+
+8.2 on there
+
+dude but it looks like we're getting it
+
+right we're just our decimals are
+
+off that's it
+
+um yeah
+
+so let's go ahead and get one more in
+
+here real quick and my dog is eating
+
+everything right now so she's probably
+
+just hungry she's probably just hungry
+
+and your boy is just not feeding her
+
+because he's over here
+
+coding
+
+and he should be taking care of his
+
+[ __ ]
+
+dog you can see that our funding rate
+
+there's something wrong with it it seems
+
+like a decimal problem but I'm not quite
+
+sure you can see I took screenshots of
+
+the actual funding rate annualized and
+
+hourly here on the um hyper liquid they
+
+show the hourly and then the annualized
+
+so you see the three screenshots and
+
+then you also see our printouts and
+
+they're just different but they look
+
+like they are somewhat similar at the
+
+same time just like maybe our p uh
+
+decimal places that are off but you tell
+
+me dude
+
+let's get you some food
+
+girl e
+
+AO moev
+
+777 fcoin has high funding at
+
+46.4% annual AI suggests nothing with
+
+50% confidence analysis fcoin has a high
+
+funding rate of
+
+46.4% indicating a potential
+
+overheat e
+
+what she
+
+say can somebody tell me what this
+
+ethereum token
+
+is is that like some sort of meme coin
+
+or
+
+something
+
+ethereum it's right here it's start the
+
+symbol is
+
+eth is that like similar to fart
+
+coin I just don't know looking at your
+
+screenshots and comparing them to our
+
+output I see the issue let me break down
+
+what's happening from your screenshots
+
+first coin chose annualized 216 hourly
+
+this
+
+okay the issue is hyper liquid API is
+
+funny rate and a different scale than we
+
+expected that's it sick
+
+dude okay let's see how it looks now
+
+dude um BTC says it is a 62% and now
+
+it's perfect dude so 60 83 207 perfect
+
+perfect
+
+perfect and then funding agent
+
+[Music]
+
+so annualize is
+
+this let's make a 1.010 concentration is
+
+the key to success in any Pursuit be it
+
+coding or any other task keep your focus
+
+and energy directed towards your coding
+
+tasks let's just call this a funding ARB
+
+agent
+
+now in this file what I want you to
+
+build out
+
+is something similar to our funding
+
+agent but what I want you to do in this
+
+one is to get all of the symbols on
+
+hyper liquid and then Loop through each
+
+of symbols and figure out what the
+
+funding rate is for each one of the
+
+symbols if the funding rate is higher
+
+than the yearly funding rate that we put
+
+at a constant at the top of the code
+
+this constant will be the yearly funding
+
+and if it's higher than that then the
+
+voice agent will go ahead
+
+and
+
+um will have a prompt at the top as well
+
+just like the funding agent and we'll
+
+send in the The Prompt and then
+
+The Voice agent will spit back say
+
+anything that that response says so just
+
+look at our our funding agent and then
+
+build what I just said above so you can
+
+have a
+
+template but long story short you're
+
+going to Loop through all tokens on
+
+hyper liquid using our nice funks HL
+
+that is also tagged that we just built
+
+and we're going to Loop through all the
+
+tokens to see if any hit our funding
+
+rate that we need
+
+so the funding rate for now will be 100%
+
+yearly and
+
+essentially anytime you find one that
+
+does that then we send it to the llm
+
+with the prompt and then we speak out
+
+what the response
+
+is I love this game
+
+dude put
+
+they don't even put the work in
+
+for
+
+having fun my sock now okay so I'll
+
+create that okay I've created the
+
+funding agent the funding Arbitrage
+
+agent that scans all the tokens on hyper
+
+liquid for finding
+
+opportunities uses a 100% yearly funding
+
+rate threshold configurable
+
+nice analyzes opportunities with AI when
+
+high funding is detected makes voice
+
+announcements perfect perfect private
+
+let's say accept here let's see what the
+
+prompt looks like and let's see with
+
+this says okay this agent scans all
+
+tokens on hyper liquid for funding rate
+
+opportunities when it finds rates above
+
+our threshold it analyzes the
+
+opportunity uses the
+
+AI okay you are mundas professional
+
+funding rate analysis you analyze
+
+funding rate opportunities on hyper
+
+liquid the um
+
+the goal is to
+
+find the
+
+best funding rate
+
+Arbitrage
+
+possible and honestly we need to go
+
+ahead
+
+and we want to instruct the AI that
+
+we're looking for funding rate arbitr
+
+and now that I think about it I actually
+
+need to make a list of tokens to do this
+
+for because we'll only be able to do
+
+this funding rate Arbitrage on uh
+
+specific
+
+tokens well let me think about
+
+[Music]
+
+this yeah yeah
+
+yeah so let's put a list of tokens that
+
+the top that will'll do this
+
+for you having fun girl sounds like you
+
+having fun I'm just I'm just happy you
+
+having fun bro yeah keep having fun keep
+
+having fun girl you keep me having fun
+
+you have fun I have fun we yeah have fun
+
+girl yeah you excited aren't you I'm
+
+excited for you
+
+bro yeah she a little Gremlin i m my
+
+little gremlin
+
+that's my Gremlin dude that's my little
+
+Gremlin I
+
+got Yo 777 dude Mev Snips I like it bro
+
+he's snipping this stuff snpp it bro AO
+
+Moon Dev 777 fcoin has high funding at
+
+39.99 annual AI suggest sell with 80%
+
+confidence analysis High funding rate in
+
+a downtrend
+
+enela what's up bro bro he said he gonna
+
+buy this stuff buy it bro buy it while
+
+it's on sale
+
+dude all right so I'm gonna say BTC okay
+
+we got to just pretty much say all the
+
+tokens that are on ethereum sorry not
+
+ethereum but I guess ethereum too just
+
+wherever we can get spot tokens
+
+whichever tokens we can get on spot
+
+should be a lot of them so a yes
+
+A so let's just go ahead and make this
+
+list
+
+D making the list checking it
+
+twice
+
+okay bar coin
+
+yes Doge
+
+yes um
+
+AI
+
+ai6
+
+Z
+
+yes AI
+
+xbt
+
+yes Al go AP a r
+
+r start with the volume
+
+on high volume on
+
+Trump um
+
+what else soie I guess I mean sui and
+
+do melenia melenia I don't know how to
+
+say that lady's name I'm sorry say her
+
+name dude melenia
+
+Melanie K Bonk
+
+[Music]
+
+pangu
+
+popcat
+
+with zero bro
+
+[ __ ] it' be better to put the ones that
+
+we can't have access to huh
+
+griffan
+
+per building a funding rate Arbitrage
+
+agent Pendle inj goat chill
+
+guy and I really just want to be doing
+
+this with uh Solana tokens
+
+so that's what I'm really looking
+
+for
+
+mudang I just follow the volume I don't
+
+know about you but me I just follow the
+
+volume that's it pretty
+
+easy pretty easy approach to the markets
+
+follow the volume Big Dog Follow the
+
+volume where the volume
+
+at all right that's a good starting
+
+place um I'm just going to delete this
+
+op delete
+
+madic honestly I'm going delete eth and
+
+BTC as well I'm just going to do this
+
+with Solana tokis
+
+okay so those are pretty much all of the
+
+I mean get those out of here I mean I
+
+keep those I keep those now because I'm
+
+bu I'm building this we've got Solana
+
+integration and Hyper liquid integration
+
+so just want to have the things that we
+
+actually have access to here
+
+okay so this should be good dude let's
+
+go ahead and and see what she
+
+does let's see I think this is a good
+
+amount of coins
+
+here and then yearly funding threshold
+
+check intervals AI
+
+model max tokis I want to have Max tokis
+
+be like 25 20 something's small so you
+
+can see you're professional uh funding
+
+rate Arbitrage analysis
+
+analyst your goal is to identify
+
+profitable funding rate Arbitrage on
+
+hyper
+
+liquid yes
+
+[Music]
+
+dude they don't even put the work in
+
+dude so why they acting like they're
+
+working I don't know I don't
+
+know I don't
+
+know us we be stepping on the gas boy
+
+every
+
+day every day okay let's run this see
+
+what
+
+happens so source. config
+
+look at myv example don't show myv
+
+though so you can see how you can get
+
+the anthropic API key cousin also you
+
+can look at the funding agent the other
+
+one shows you how to do it too
+
+dude e
+
+there we
+
+go
+
+1773 invalid API
+
+response looks like we got a little bit
+
+of bug
+
+here Trump
+
+300% it's exactly what I wanted
+
+dud
+
+yes
+
+4.10 stay focused go after your dream
+
+and keep moving toward also make sure
+
+that it shows the yearly funding rate
+
+for all of them so right now it says
+
+fetching funding rate just show the
+
+funding rate as
+
+well all continue and revert my [ __ ]
+
+always always always always hey shorty
+
+you having fun you having a good life
+
+girl you having a good life girl I hope
+
+you're having a good life I hope you're
+
+having a good life shorty you sound like
+
+you having fun and if you having fun I'm
+
+having fun I love you so so much I will
+
+never leave you I will always be by your
+
+side no matter what I love you so so
+
+much I love you too
+
+dude I love you too
+
+bro get a dog if you don't have one it
+
+will change your life you want to leave
+
+with love bro make sure that you got you
+
+got love someone loving you dude make
+
+sure you got someone loving you and then
+
+you going to leave would
+
+love so so nice dude I love this dog so
+
+much I didn't even know I didn't even
+
+know dude I didn't even know I don't
+
+even know
+
+dude I didn't even know I was a dog guy
+
+like
+
+that see how we do this in the other
+
+fall
+
+[Music]
+
+funy all right that evolutionary a that
+
+we set up is 50% done
+
+now can see here so got to make sure to
+
+keep a keen ey last going on that AO
+
+moev 777 fcoin has high funding at
+
+34.7% annual AI suggests nothing with
+
+50% confidence analysis fcoin has a high
+
+34.7% funding rate indicating potential
+
+for a reversal
+
+[Music]
+
+almost
+
+there almost there just got to keep
+
+working through these
+
+barers what's up buer
+
+my dog what up
+
+Soso 777 dude crazy weekend indeed dude
+
+crazy weekend crazy crazy times what a
+
+time to be
+
+alive what a time to be
+
+alive who's tagging me at 7 a.m. dude
+
+at everyone
+
+bro people really be trying to tag at
+
+everyone uh if you get uh for now for
+
+now the API is just for Quant
+
+Elite you can get access to that after
+
+joining the boot camp
+
+htps alot trade camp.com
+
+[Music]
+
+[Music]
+
+oh boys is getting licky licked
+
+here licky licky lickies all
+
+[Music]
+
+day okay so almost almost
+
+licky dickity licky dickity
+
+[Music]
+
+dude lick dickity d
+
+Nicky dickity Duda welcome to the game
+
+welcome to another day of Licky dickity
+
+dudah every day we play licky dickity
+
+dudah here you put your dickity dickity
+
+on the line and then we lickity
+
+licky pause big
+
+[Music]
+
+pause big big pause there bro
+
+liquidations analyze an opportunity
+
+okay yund Dev 777 High funding rate
+
+opportunity detected fcoin has a 14.83%
+
+annualized funding rate AI analysis
+
+suggests buy reason the funding rate is
+
+high and stable indicating a profitable
+
+Arbitrage opportunity confidence
+
+85% so I want to update these responses
+
+here I want to update these responses in
+
+order to give
+
+us not buy or sell options but Arbitrage
+
+or don't Arbitrage options as this is a
+
+little bit different than buying and
+
+sell you would um if it says Arbitrage
+
+that means that we would need to
+
+to put on the Arbitrage and if not then
+
+we win it
+
+yo 777 fam I see you out
+
+there know it's it's what's called
+
+machine
+
+learning so you
+
+find things that are predictive you
+
+might guess oh such and such should be
+
+predictive might be predictive and you
+
+test it out in the computer and maybe it
+
+isn't maybe it isn't you test it out on
+
+longterm historical data
+
+and uh price data and other things and
+
+then you add to the system this if it if
+
+it works and if it doesn't you you throw
+
+it out so there aren't elaborate
+
+equations at least not
+
+for we need it to say if the punding
+
+funding rate is super positive above the
+
+threshold but positive then we'll have
+
+the AI agent say short on hyper liquid
+
+and buy Spot
+
+now if the funding rate is above our
+
+threshold but super negative so right
+
+now it's our threshold is 100 but if it
+
+was like uhga 100 or smaller like
+
+50 then it would
+
+say short I mean sorry it would say long
+
+on hyper liquid and now we can't do it
+
+that way actually this will only work
+
+this will only work if the funding rate
+
+is super high so yeah essentially we
+
+wanted to say funding rate is above X
+
+threshold short on hyper liquid and buy
+
+[Music]
+
+Spot what a
+
+prompt what a prompt bro confuse
+
+them just confuse them
+
+and we want to focus only on positive
+
+funny rates above a threshold where we
+
+can 7.10 your focus determines your
+
+reality stay dedicated to never lose
+
+sight of your
+
+target so we can short on hyper liquid
+
+and buy Spot somewhere else let me
+
+update the agent
+
+[Music]
+
+damn [ __ ] what did you doing where you
+
+even get that paper towel from that's we
+
+haven't had that [ __ ] in GE bro
+
+we don't even use that brand anymore
+
+where you find out
+
+at where you even find that that shorty
+
+you crazy girl you a crazy ass
+
+girl
+
+threshold looks like we
+
+got a bit of an eror here but we just
+
+had it working so I think you can fix it
+
+quite easily
+
+[Music]
+
+all yes I see the air we're trying to
+
+get used threshold in the prompt but not
+
+passing into the call nice
+
+dude so what's going on with these
+
+markets
+
+here well you can just look at trading
+
+View and see everybody get liquidated
+
+it's one thing you can do holy smokes
+
+big bar down
+
+but damn we were at
+
+$109,000
+
+Jesus they even realize
+
+that all right all right
+
+[Music]
+
+holy smokes this is going to liquidate
+
+everybody that levered up right here
+
+it's going to come all the way back down
+
+here I I actually don't like doing that
+
+because that's just like enticing people
+
+to hand trade I don't like making
+
+predictions here dude no way no way dude
+
+I just know all the only prediction I
+
+can make here is I know everybody that
+
+uses leverage will get liquidated
+
+eventually AEV 777 fcoin has high
+
+funding at 21.12% annual AI suggests
+
+nothing with 50% confidence analysis
+
+fcoin has a high funding rate of
+
+21.1% indicating a strong bullish yund
+
+Dev
+
+777 High funding Arbitrage opportunity
+
+detected fcoin has a 14889 annualized
+
+funding rate suggested Arbitrage short
+
+on hyper liquid and buy Spot elsewhere
+
+AI analysis the high annualized funding
+
+rate of 14 89% presents a profitable
+
+Arbitrage opportunity confidence 90%
+
+Mund dev's funding Arbitrage agent
+
+making that funding money
+
+MH it's
+
+funny it's pretty funny
+
+dude pretty pretty pretty pretty funny
+
+Dev 777 High funding Arbitrage
+
+opportunity detected Trump has a 23.6 5%
+
+annualized funding rate suggested
+
+Arbitrage short on hyper liquid and byy
+
+spot elsewhere AI analysis the high
+
+annualized funding rate of 23.6 5%
+
+presents a profitable opportunity
+
+confidence 90% funding Arbitrage agent
+
+making that funding money I like this
+
+dude
+
+it looks like we removed the override
+
+for the model suggestion settings kind
+
+of like we have in the the funding other
+
+funding agent please add that back
+
+because I might want to change the
+
+tokens amount or things like that uh
+
+we'll use the config ones normally but
+
+there should be override kind of like in
+
+this other one
+
+so here we've got this uh funding agent
+
+here let's add back this override
+
+possibility we might not use it
+
+but
+
+e Yoon Dev
+
+777 High funding Arbitrage opportunity
+
+detected Trump has a 194. 38% annualized
+
+funding rate suggested Arbitrage short
+
+on hyper liquid and buy Spot elsewhere
+
+AI so some of these funding rates just
+
+get absolutely insane so funding
+
+Arbitrage AI agent is interesting to me
+
+interesting interesting interesting I
+
+don't know though dude I don't know
+
+anything
+
+it's just interesting what up Dan 777
+
+you got a Discord bro I got a Discord go
+
+to moon.com bro
+
+bro chat gbt is brutal nice I use
+
+cloud I'm A Cloud guy myself so I'm glad
+
+you figure that out mv.com has
+
+everything you need you go to moon.com
+
+grab your road map Discord everything be
+
+big
+
+leg he said go round and round with ch
+
+gbt yeah sounds about right Bruh Bruh
+
+that sounds about right
+
+sounds about right bro CH GB who we're
+
+Cloud boys around here we're Claude
+
+Kings we're the kings of Claude and
+
+we're at 59% here so I got to keep an
+
+eye on that dude got to keep an eye on
+
+that let's say accept here
+
+yes let's run it back I don't know about
+
+thousand deck but that's a big
+
+one that's a big one
+
+we just had it
+
+bro we just had it come on shorty you
+
+got this you got
+
+this you got this if you want a pair of
+
+shoes and they at the store they're
+
+really at the store you just don't have
+
+it yet it ain't like that [ __ ] don't
+
+exist it's just really at the store
+
+that's how I looked at my whole life if
+
+I want it if I believe I can have it
+
+then that's my reality
+
+two points0 10 success usually comes to
+
+those who are too busy to be looking for
+
+it Henry David Thor what are you doing
+
+with metat trater though
+
+dude you lost me at medat trator Big
+
+Dog what is
+
+that he said met trator
+
+bro we don't do that around here big dog
+
+we ain't medit trator guys no
+
+way you lost me at that mind Rift you
+
+better Rift your way on over here to
+
+crypto quick before you get lick
+
+licked don't get Le don't get
+
+Le relax B come on come to the better
+
+side come to the crypto side just
+
+starting out it's okay dude if you're
+
+just starting out come to crypto though
+
+don't do metat trator stuff dude there's
+
+a bunch of scammers and stuff over there
+
+I guess there's scammers and stuff here
+
+on in crypto side too but I just like
+
+crypto better so I'm just biased I'm
+
+just giving you a hard time step on the
+
+gas step on the gas however you like to
+
+but I I like crypto better but I
+
+actually haven't traded 4x4 so I'm
+
+really just talking
+
+[ __ ] I'm just talking [ __ ] because I
+
+have to talk for 4 hours a day
+
+and some of the time I could just talk
+
+[ __ ] you know because like you try
+
+talking for four hours a day every
+
+single day or four years
+
+straight literally been yapping to
+
+myself for four years now four years now
+
+yapping to
+
+myself oh my God it's so funny bro he
+
+says he's joining the camp soon nice
+
+dude I love it I would love to see you
+
+in
+
+there but if you don't make it it's okay
+
+bro
+
+I know you'll step on the gas you'll
+
+find a way with or without me I'm
+
+excited for you I'm
+
+excited we almost got it
+
+they see me
+
+rolling they
+
+[Music]
+
+hating almost
+
+Bing
+
+Bong gotta hit the big
+
+bong while I'm playing pingpong bing
+
+bong bing bong hit bing bong
+
+[Music]
+
+how much do I have to pay for the API
+
+key it's 297 a
+
+month it's 297 a
+
+month it's $ 297 a
+
+month it's
+
+$297 a month
+
+up let's just drop the whole confidence
+
+level thing if that's holding us up we
+
+don't even need the confidence level
+
+it's a it's yes or no I put the the
+
+threshold in
+
+there e
+
+there we
+
+go Yoon Dev 777 High funding Arbitrage
+
+opportunity detected fcoin has a 1741 t%
+
+annualized funding rate suggested
+
+Arbitrage short on hyper liquid and bpot
+
+elsewhere AI analysis High funding rate
+
+of
+
+17418 yearly with good liquidity makes
+
+Arbitrage profitable confidence 100%
+
+Moon dev's funding Arbitrage agent
+
+making that funding
+
+money so
+
+funny so so funny bro
+
+bro Yoon Dev 777 High funding Arbitrage
+
+opportunity detected Trump has a
+
+18129 annualized funding rate suggested
+
+Arbitrage short on hyper liquid and buy
+
+Spot elsewhere AI analysis High funding
+
+rate of
+
+181.000 moon dev's funding Arbitrage
+
+agent making that funding
+
+money all right sick dude I feel like
+
+that's great
+
+let's go to the REM me
+
+here what's the date
+
+today oh he took a couple days off huh
+
+[ __ ] that boy ain't even working no
+
+more built
+
+built defunding rate
+
+Arbitrage trading agent to
+
+announce when there is a funding rate
+
+Arbitrage between hyper liquid tokens
+
+and spot Solana
+
+tokens later we can update this
+
+to uh place the
+
+trades and then I'm going to say new
+
+terminal here get get ad get add do get
+
+commit slm and let's say a funding rate
+
+Arbitrage
+
+agent added actually not yet not
+
+yet so we're going to say
+
+here
+
+funding funding
+
+rate are the trage
+
+agent and then here we say back tick
+
+funding
+
+rate funding
+
+R uh tracks the funding rate on hyper
+
+liquid to
+
+find funding rate
+
+Arbitrage
+
+opportunities between HL and
+
+Solana get ad get commit M funding
+
+rate
+
+Arbitrage
+
+agent
+
+added okay so and then we'll say
+
+get get push okay so all the code is up
+
+there now
+
+dude go ahead and check it out so if you
+
+go to mv.com you get the road map the
+
+Discord and G GitHub click that here's
+
+the road map it shows you step by step
+
+how to automate your
+
+trading Discord frequently ask questions
+
+to answer all your questions you have
+
+I've heard them I've heard them all and
+
+the AI agents for trading is the GitHub
+
+here that'll take you here and all you
+
+got to do is you hit the star button on
+
+here in order to book Market still to be
+
+happy about you're up to0 job's not
+
+finished job
+
+finished I don't think so just click
+
+Star right here to bookm Market and fork
+
+in order to copy all the code before I
+
+crash
+
+out you see I just added the funding
+
+rate Arbitrage agent here uh says says
+
+that so that's pretty cool read the read
+
+me dude read the read me and you can
+
+understand everything I'm building
+
+everything's in the source file folder
+
+you can see funny rate Arbitrage agent
+
+added so we added that here today and it
+
+should be right here funding ARB agent
+
+here just the one that I'm running right
+
+now so that's pretty far dude um every
+
+day we ship we ship ship ship ship ship
+
+while I Yap we Yap and ship that's all
+
+we do dude so all we do right here dude
+
+is Yapp and ship so grateful that you're
+
+here much love to
+
+you I believe CO's a great equalizer so
+
+I try to share
+
+everything not just some things but
+
+everything
+
+and it is all shared here so just make
+
+sure you lock in every day all
+
+right I've made hundreds of thousands of
+
+dollars with this trading bot framework
+
+and I'm not only going to let you steal
+
+it I'm going to help you master it in
+
+the next 15 days in the algo trade Camp
+
+if you are a crypto Trader who is
+
+ambitious committed and persistent and
+
+you're typically good at what you do but
+
+your trading results are just not where
+
+you want them to be well here's a quick
+
+question for you how would it feel if
+
+you could have a trading bot that traded
+
+for you for the rest of your life with
+
+or without you logging into the computer
+
+each day you see I'm just a regular dude
+
+but for the last few years I've been
+
+using trading Bots to manage my
+
+admittedly low seven figure personal
+
+portfolio While others struggle with
+
+controlling their emotions staring at
+
+the charts all day when you meet me at
+
+the algo trade Camp I'm going to give
+
+you my exact blueprint look we've all
+
+seen the countless ads the cliches the
+
+kids in the rented lamb telling you how
+
+to trade this isn't that this is a
+
+proven trading bot system backed by real
+
+data and thousands of hours of research
+
+into automated trading systems I put
+
+this system to the test using it to
+
+build a swarm of trading Bots to manage
+
+my own personal portfolio while I can't
+
+give you a plug-and play set and forget
+
+and make a billion dollars overnight bot
+
+I put my money where my mouth is and I
+
+use this exact framework to build all of
+
+my trading bot but look you've seen
+
+trading bots in the wild you've heard of
+
+successful algo Traders and you hear of
+
+quants that have become wildly
+
+successful and make crazy money so you
+
+know it's possible to automate your
+
+trading and you're watching this video
+
+right now so I know you're super smart
+
+because searching for a better more
+
+efficient way to trade that's just
+
+something smart people do and because
+
+you're smart you also know there's a
+
+little something extra you know there's
+
+a little piece of magic Miss mixed into
+
+all of now I know what it feels like
+
+dude not just to not make money trading
+
+but to lose money due to emotions or
+
+just my poor human judgment everything
+
+else I could just work harder at and I
+
+would get better but for trading for
+
+some reason I could never get over the
+
+emotions the times where I'd be up all
+
+night staring at the charts just hoping
+
+it would go my way just to fall asleep
+
+to a liquidation email when you know
+
+you're ambitious and you're extremely
+
+persistent but you just can't figure out
+
+the game of trading and to feel like
+
+dude I'm I'm never going to stop trading
+
+but I keep losing look I get that it's
+
+normal for manual Traders hand Traders
+
+lose money remember 95% lose I want to
+
+take you from that feeling of losing due
+
+to emotions to being a dominant force in
+
+the crypto
+
+Market I want to help you automate your
+
+trading for the rest of your life so you
+
+can build any trading bot that you could
+
+ever imagine I will help you automate
+
+your trading only only if you are
+
+willing to step up challenge yourself
+
+and take this Challenge and I will help
+
+you automate your trading in the next 15
+
+days in the algo trade Camp here's the
+
+big secret you've been waiting for as an
+
+automated Trader from home there's
+
+really only three things you need to do
+
+to be extremely successful number one
+
+you have to build great trading ideas
+
+build a list of great trading ideas you
+
+then test those ideas to see if they
+
+worked in the past
+
+and if they worked in the past then
+
+build a bot with tiny size to make sure
+
+they still work in the live market if
+
+you can do all three of those things
+
+it's pretty hard not to make money in
+
+fact I've never seen anyone who has
+
+great trading ideas who tested them
+
+constantly and deployed them with tiny
+
+size not have success with algo trading
+
+I just haven't seen it dude and here's
+
+another Fact one good trading bot can
+
+wipe out all bad financial decisions you
+
+made in your entire life and I know this
+
+because it happened to me when you
+
+combine these three different elements
+
+success isn't only possible it's
+
+repeatable this is my RBI framework it
+
+comes down to researching R back testing
+
+B and then implementing into Bots I and
+
+when you make the right decision and you
+
+decide to meet me in the algo trade Camp
+
+I'll show you exactly how to automate
+
+your trading strategy and if you don't
+
+have one we have hundreds we've
+
+researched from phds to get you started
+
+on your journey right now and I want to
+
+help you automate your trading right now
+
+not a year from now no I want to help
+
+you right now if you don't know how to
+
+code don't worry I didn't know how to
+
+code either I'll teach you step by step
+
+in the next 15 days listen I had one bot
+
+that did me hundreds of thousands of
+
+dollars and I don't have a big team or
+
+an unfair Advantage I'm standing here in
+
+a bedroom with a whiteboard behind
+
+behind me I don't have employees
+
+investors or any long-term obligations
+
+I'm Free as a bird I don't have a Lambo
+
+or some fancy New York City office or
+
+Miami office I'm a simple guy with a
+
+simple life all I do is code with AI
+
+Live on YouTube Just Me you my computer
+
+and my whiteboard quick story I like to
+
+leave out because it's a little bit
+
+embarrassing but when I first got
+
+interested in automating my trading I
+
+knew I had to learn to code because it
+
+would just be way too expensive to hire
+
+a developer to cont constantly update my
+
+bots anyways I locked in for 2 to 4
+
+hours a day until I successfully built
+
+my first bot and then I put 10K in and
+
+over the next 30 days I watched that 10K
+
+go to zero no wonder I was a losing hand
+
+Trader I was trading a strategy that
+
+didn't work a strategy a bot couldn't
+
+even figure out and I was trading it as
+
+a human that day though I developed my
+
+RBI framework to ensure I only run
+
+profitable Bots my RBI framework is
+
+simple res search strategies R then back
+
+test those strategies B and see if they
+
+work in the past if they work in the
+
+past then Implement them with small size
+
+not 10K I hey I'm Mev and that day I
+
+developed a passion for trading Bots and
+
+showing my RBI secret I uncovered duh
+
+you have to test your Bots before you
+
+run them with
+
+$10,000 if you can constantly research
+
+new trading ideas then constantly back
+
+test those ideas to see if they work in
+
+the past and then take those that worked
+
+in the past and Implement them into a
+
+bot with small size if you can do that
+
+you can't help but become a profitable
+
+algo Trader I'm just an independent
+
+Trader from my bedroom who figured out a
+
+better way to approach the market and I
+
+believe code's a great equalizer if you
+
+know how to code you can build cash flow
+
+for generations for the rest of your
+
+life so the way I looked at automating
+
+my trading was I could learn all this in
+
+worst case scenario I know how to code
+
+and I could get a job for like 100k Plus
+
+at a tech company but best case scenario
+
+was I could have automated trading mods
+
+for the rest of my life now that's a
+
+solid risk reward if you ask me look I
+
+know there's a lot of scammers out there
+
+I want you to look me up Google me
+
+search Moon you can see everything I am
+
+saying is true I have videos of every
+
+single bot I've ever built all for free
+
+on YouTube including that one that made
+
+me hundreds of thousands of dollars but
+
+just because it worked for me does not
+
+mean it's going to work for you the
+
+number one rule of automating trading is
+
+to never run someone else's bot just
+
+like I got wrecked for $10,000 on my
+
+first bot how would you possibly know if
+
+you downloaded a bot off the internet
+
+what it does or when somebody runs it or
+
+when they are hedging no one will ever
+
+give you a profitable trading bot that's
+
+the number one way to spot a scam so if
+
+you're on the internet YouTube whatever
+
+and it says a plug and play make one eth
+
+a day or 20% a day you know that it's a
+
+scam you're about to lose all your money
+
+you see I'm not the type of guy to Hype
+
+something up I just try to transparently
+
+build Bots that I think will make me
+
+money seriously if you're skeptical at
+
+all I have over 1,200 hours of free
+
+YouTube tutorials all on YouTube you can
+
+literally go get to know me I've even
+
+hosted interviews with the top quants in
+
+the world like Christina shei she traded
+
+7.1 billion dollar per day that's
+
+billion with a b and Dr Ernest Chan one
+
+of the the greatest algorithmic traders
+
+of all time after Jim Simons himself
+
+rest in peace I've even had the pleasure
+
+of interviewing some unnamed Renaissance
+
+employees and we talked about the
+
+strategies Jim Simons and his company
+
+Renaissance used to use I just rebuilt
+
+them and I'm telling you this not to
+
+brag but I'm telling you this because I
+
+want you to take it seriously because it
+
+could change your life like it's changed
+
+mine think about it who's the best
+
+Trader of all time yeah Jim Simon the
+
+founder of Renaissance what did Jim
+
+Simons do to trade better than everybody
+
+else yeah he built trading Bots that
+
+traded fully automatically even today
+
+who's making all the money on Wall
+
+Street yeah the trading bot firms Google
+
+it two Sigma Jan Street aqr D sha
+
+Renaissance Jim Simons died with a net
+
+worth of 31 billion all from automated
+
+trading because Jim was smart enough to
+
+realize there's patterns in the market
+
+that robots could trade that humans
+
+could never so he essentially executed
+
+his own RBI framework for years on end
+
+he once said in a business like this you
+
+you just have to keep making things
+
+better and better and better essentially
+
+always researching new strategies then
+
+back testing those strategies see if
+
+they worked in the past and then testing
+
+those in the live market Jim simply
+
+executed his system of testing and
+
+deploying for years until he was hyper
+
+profitable look Jim didn't just become a
+
+multi-billionaire he changed Bloodlines
+
+and created generational wealth for
+
+employees investors and of course
+
+himself not only that he returned over
+
+aund billion in profits and he was able
+
+to give away $4 billion to Charities how
+
+cool is that imagine if you could just
+
+have a fraction of that impact the sad
+
+truth is most people don't actually want
+
+to make money with trading they just
+
+want to gamble but if you're committed
+
+to automating your trading and building
+
+out a provable edge then it's an
+
+absolute travesty for you not to embrace
+
+these principles so your trading can
+
+finally be as good as you know it should
+
+be without human intervention now on
+
+this page you'll see exactly what's
+
+covered in the 15-day algo trade Camp if
+
+you think this stuff will help you
+
+automate your trading then grab your
+
+spot now and at the risk of sounding
+
+bold and I genuinely mean this I think
+
+my stuff is the best not because of how
+
+much money I've made from my bots but
+
+because there are plenty of people out
+
+there who have made a lot more money
+
+than I have but more importantly I don't
+
+think many people share any of this
+
+stuff and I believe I explained
+
+everything in the most simple manner so
+
+you can actually automate your trading
+
+as a regular person I don't care how
+
+rich the gurus are they make trading way
+
+too complicated and no one shows you how
+
+to automate it my goal is to make
+
+automating your trading simple so you
+
+can do it so my advice is to grab a
+
+general admission or a VIP seat to the
+
+algo trade camp and I highly recommend
+
+you grab a VIP ticket because they get
+
+lifetime access to the boot camp and
+
+they get access to our Inner Circle
+
+calls which are every Friday on Zoom
+
+with replays available so you definitely
+
+don't want to miss that opportunity I
+
+highly recommend the VIP option here's
+
+the deal you can join the masses and you
+
+can invest in cheap solutions or you can
+
+invest in something that actually works
+
+so if you're interested in automating
+
+your trading then grab your spot at the
+
+boot camp below and trust me you'll want
+
+to get the VIP experience that's where
+
+we really roll up our sleeves and make
+
+the magic happen so Step Up start the
+
+algo trade camp and to ensure you have
+
+absolutely zero risk I've implemented a
+
+90day cosmic guarantee so you don't even
+
+have to say yes right now just say maybe
+
+sign up you can watch all of the boot
+
+camp explore all of the back tests the
+
+bot connect with all of the hundreds of
+
+algorithmic traders in there and if it's
+
+not for you you have 90 full days in our
+
+90day Cosmic 100% money back guarantee
+
+to just test it out so jump in right now
+
+say hello in the members chat me and
+
+hundreds of other automated Traders are
+
+waiting to step on the gas with
+
+you I've made hundreds of thousands of
+
+dollars with this trading bot framework
+
+and I'm not only going to let you steal
+
+it I'm going to help you master in the
+
+next 15 days in the algo trade Camp if
+
+you are a crypto Trader who is ambitious
+
+committed and persistent and you're
+
+typically good at what you do but your
+
+trading results are just not where you
+
+want them to be well here's a quick
+
+question for you how would it feel if
+
+you could have a trading bot that traded
+
+for you for the rest of your life with
+
+or without you logging into the computer
+
+each day you see I'm just a regular dude
+
+but for the last few years I've been
+
+using trading Bots to manage my
+
+admittedly low s fig personal portfolio
+
+While others struggle with controlling
+
+their emotions staring at the charts all
+
+day when you meet me at the algo trade
+
+Camp I going to give you my exact
+
+blueprint look we've all seen the
+
+countless ads the cliches the kids in
+
+the rented Lambos telling you how to
+
+trade this isn't that this is a proven
+
+trading bot system backed by real data
+
+and thousands of hours of research into
+
+automated trading systems I put this
+
+system to the test using it to build a
+
+swarm of trading Bots to manage my own
+
+personal portfolio while I can't give
+
+you a plug-and playay set and forget and
+
+make a billion dollars overnight bot I
+
+put my money where my mouth is and I use
+
+this exact framework to build all of my
+
+trading Bots but look you've seen
+
+trading bots in the wild you've heard of
+
+successful algo Traders and you hear of
+
+quants that have become wildly
+
+successful and make crazy money so you
+
+know it's possible to automate your
+
+trading and you're watching this video
+
+right now so I know you're super smart
+
+because searching for a better more
+
+efficient way to trade that's just
+
+something smart people do and because
+
+you're smart you also know there's a
+
+little something extra you know there's
+
+a little piece of magic mixed into all
+
+of now I know what it feels like dude
+
+not just to not make money trading but
+
+to lose money due to emotions or just my
+
+poor human judgment everything else I
+
+could just work harder at and I would
+
+get better but for trading for some
+
+reason I could never get over the
+
+emotions the time where I'd be up all
+
+night staring at the charts just hoping
+
+it would go my way just to fall asleep
+
+to a liquidation email when you know
+
+you're ambitious and you're extremely
+
+persistent but you just can't figure out
+
+the game of trading and to feel like
+
+dude I'm I'm never going to stop trading
+
+but I keep losing look I get that it's
+
+normal for manual Traders hand Traders
+
+lose money remember 95% lose I want to
+
+take you from that feeling of losing due
+
+to emotions to being a dominant force in
+
+the crypto Market
+
+I want to help you automate your trading
+
+for the rest of your life so you can
+
+build any trading bot that you could
+
+ever imagine I will help you automate
+
+your trading only if you are willing to
+
+step up challenge yourself and take this
+
+Challenge and I will help you automate
+
+your trading in the next 15 days in the
+
+algo trade Camp here's the big secret
+
+you've been waiting for as an automated
+
+Trader from home there's really only
+
+three things you need to do to be
+
+extremely successful number one you have
+
+to build great trading ideas build a
+
+list of great trading ideas you then
+
+test those ideas to see if they worked
+
+in the past and if they worked in the
+
+past then build a bot with tiny size to
+
+make sure they still work in the live
+
+market if you can do all three of those
+
+things it's pretty hard not to make
+
+money in fact I've never seen anyone who
+
+has great trading ideas who tests them
+
+constantly and deployed them with tiny
+
+size not have success with algo trading
+
+I just haven't seen it dude and here's
+
+another Fact one good trading bot can
+
+wipe out all bad financial decisions you
+
+made in your entire life and I know this
+
+because it happened to me when you
+
+combine these three different elements
+
+success isn't only possible it's
+
+repeatable this is my RBI framework it
+
+comes down to researching R back testing
+
+B and then implementing into Bots I and
+
+when you make the right decision and you
+
+decide to meet me in the algo trade Camp
+
+I'll show you exactly how to automate
+
+your trading strategy and if you don't
+
+have one we have hundreds we've
+
+researched from phds to get you started
+
+on your journey right now and I want to
+
+help you automate your trading right now
+
+not a year from now no I want to help
+
+you right now if you don't know how to
+
+code don't worry I didn't know how to
+
+code either I'll teach you step by step
+
+in the next 15 days listen I had one bot
+
+that did me hundreds of thousands of
+
+dollars and I don't have a big team or
+
+an unfair Advantage I'm standing here in
+
+a bedroom with a whiteboard behind me I
+
+don't have employees investors or any
+
+longterm obligations I'm Free as a bird
+
+I don't have a Lambo or some fancy New
+
+York City office or Miami office I'm a
+
+simple guy with a simple life all I do
+
+is code with AI Live on YouTube Just Me
+
+you my computer my whiteboard quick
+
+story I like to leave out because it's a
+
+little bit embarrassing but when I first
+
+got interested in automating my trading
+
+I knew I had to learn to code because it
+
+would just be way too expensive to hire
+
+a developer to constantly update my bots
+
+anyways I locked in for 2 to 4 hours a
+
+day until I successfully built my first
+
+bot and then I put 10K in and over the
+
+next 30 days I watched that 10K go to
+
+zero no wonder I was a losing hand
+
+Trader I was trading a strategy that
+
+didn't work a strategy a bot couldn't
+
+even figure out and I was trading it as
+
+a human that day though I developed my
+
+RBI framework to ensure I only run
+
+profitable Bots my RBI framework is
+
+simple research strategies are then back
+
+test those strategies B and see if they
+
+work in the past if they work in the
+
+past then Implement them with small size
+
+not 10K I hey I'm moev and that day I
+
+developed a passion for trading Bots and
+
+showing my RBI secret I uncovered duh
+
+you have to test your Bots before you
+
+run them with
+
+$10,000 if you can constantly research
+
+new trading ideas then constantly back
+
+test those ideas to see if they work in
+
+the past and then take those that worked
+
+in the past and Implement them into a
+
+bot with small size if you can do that
+
+you can't help but become a profitable
+
+algo Trader I'm just an independent
+
+Trader from my bedroom who figured out a
+
+better way to approach the market and I
+
+believe Co is a great equalizer if you
+
+know how to code you can build cash flow
+
+for generations for the rest of your
+
+life so the way I looked at automated my
+
+trading was I could learn all this and
+
+worst case scenario I know how to code
+
+and I could get a job for like 100k Plus
+
+at a tech company but best case scenario
+
+was I could have automated trading mods
+
+for the rest of my life now that's a
+
+solid risk reward if you ask me look I
+
+know there's a lot of scammers out there
+
+I want you to look me up Google me
+
+search Moe you can everything I am
+
+saying is true I have videos of every
+
+single bot I've ever built all for free
+
+on YouTube including that one that made
+
+me hundreds of thousands of dollars but
+
+just because it worked for me does not
+
+mean it's going to work for you the
+
+number one rule of automating trading is
+
+to never run someone else's bot just
+
+like I got wrecked for $10,000 on my
+
+first bot how would you possibly know if
+
+you downloaded a bot off the internet
+
+what it does or when somebody runs it or
+
+when they are hedging no one will ever
+
+give you a profitable trading bot that's
+
+the number one way to spot a scam so if
+
+you're on the internet YouTube whatever
+
+and it says a plug and play make one eth
+
+a day or 20% a day you know that it's a
+
+scam you're about to lose all your money
+
+you see I'm not the type of guy to Hype
+
+something up I just Tred to
+
+transparently build Bots that I think
+
+will make me money seriously if you're
+
+skeptical at all I have over 1,200 hours
+
+of free YouTube tutorials all on YouTube
+
+you can literally go get to know me I've
+
+even hosted interviews with the top
+
+quants in the world like Christina shei
+
+she traded $7.1 billion per day that's
+
+billion with a b and Dr Ernest Chan one
+
+of the greatest algorithmic traders of
+
+all time after Jim Simons himself rest
+
+in peace I've even had the pleasure of
+
+interviewing some unnamed Renaissance
+
+employees and we talked about the
+
+strategies Jim Simons and his company
+
+Renaissance used to use so I just
+
+rebuilt them and I'm telling you this
+
+not to brag but I'm telling you this
+
+because I want you to take it seriously
+
+because it could change your life like
+
+it's changed mine think about it who's
+
+the best Trader of all time yeah Jim
+
+Simons the founder of Renaissance what
+
+did Jim Simons do to trade better than
+
+everybody else yeah he built trading
+
+Bots that traded fully automatically
+
+even today who's making all the money on
+
+Wall Street yeah the trading bot firms
+
+Google it two Sigma Jane Street aqr D
+
+Shaw Renaissance Jim Simons died with a
+
+net worth of 30 1 billion all from
+
+automated trading because Jim was smart
+
+enough to realize there's patterns in
+
+the market that robots could trade that
+
+humans could never so he essentially
+
+executed his own RBI framework for years
+
+on end he once said in a business like
+
+this you just have to keep making things
+
+better and better and better essentially
+
+always researching new strategies then
+
+back testing those strategies see if
+
+they worked in the past and then testing
+
+those in the live market Jim simply
+
+executed his system of testing and
+
+deploying for years until he was hyper
+
+profitable look Jim didn't just become a
+
+multi-billionaire he changed Bloodlines
+
+and created generational wealth for
+
+employees investors and of course
+
+himself not only that he returned over
+
+a100 billion in profits and he was able
+
+to give away 4 billion dollar to
+
+Charities how cool is that imagine if
+
+you could just have a fraction of that
+
+impact the sad truth is most people
+
+don't actually want to make money with
+
+trading they just want to gamble but if
+
+you're committed to automating your
+
+trading and building out a provable Edge
+
+then it's an absolute travesty for you
+
+not to embrace these principles so your
+
+trading can finally be as good as you
+
+know it should be without human
+
+intervention now on this page you'll see
+
+exactly what's covered in the 15 day
+
+algo trade Camp if you think this stuff
+
+will help you automate your trading then
+
+grab your spot now and at the risk of
+
+sounding bold and I genuinely mean this
+
+I think my stuff is the best not because
+
+of how much money I've made from my bots
+
+but because there are plenty of people
+
+out there who have made a lot more money
+
+than I have but more importantly I don't
+
+think many people share any of this
+
+stuff and I believe I explain everything
+
+the most simple manner so you can
+
+actually automate your trading as a
+
+regular person I don't care how rich the
+
+gurus are they make trading way too
+
+complicated and no one shows you how to
+
+automate it my goal is to make
+
+automating your trading simple so you
+
+can do it so my advice is to grab a
+
+general admission or a VIP seat to the
+
+algo trade camp and I highly recommend
+
+you grab a VIP ticket because they get
+
+lifetime access to the boot camp and
+
+they get access to our Inner Circle
+
+calls which are every Friday on Zoom
+
+with replays available so you definitely
+
+don't want to miss that opportunity I
+
+highly recommend the VIP option here's
+
+the deal you can join the masses and you
+
+can invest in cheap solutions or you can
+
+invest in something that actually works
+
+so if you're interested in automating
+
+your trading then grab your spot at the
+
+boot camp below and trust me you'll want
+
+to get the VIP experience that's where
+
+we really roll up our sleeves and make
+
+the magic happen so Step Up start the
+
+Alo trade camp and to ensure you have
+
+absolutely zero risk I've implemented a
+
+90day cosmic guarantee so you don't even
+
+have to say yes right now just say say
+
+maybe sign up you can watch all of the
+
+boot camp explore all of the back tests
+
+the Bots connect with all of the
+
+hundreds of algorithmic traders in there
+
+and if it's not for you you have 90 full
+
+days in our 90day Cosmic 100% money back
+
+guarantee to just test it out so jump in
+
+right now say hello in the members chat
+
+me and hundreds of other automated
+
+Traders are waiting to step on the gas
+
+with you
+
+I've made hundreds of thousands of
+
+dollars with this trading bot framework
+
+and I'm not only going to let you steal
+
+it I'm going to help you master in the
+
+next 15 days in the algo trade Camp if
+
+you are a crypto Trader who is ambitious
+
+committed and persistent and you're
+
+typically good at what you do but your
+
+trading results are just not where you
+
+want them to be well here's a quick
+
+question for you how would it feel if
+
+you could have a trading bot that traded
+
+for you for the rest of your life with
+
+or without logging into the computer
+
+each day you see I'm just a regular dude
+
+but for the last few years I've been
+
+using trading Bots to manage my
+
+admittedly low s figureure personal
+
+portfolio While others struggle with
+
+controlling their emotions staring at
+
+the charts all day when you meet me at
+
+the algo trade Camp I'm going to give
+
+you my exact blueprint look we've all
+
+seen the countless ads the cliches the
+
+kids in the rented Lambos telling you
+
+how to trade this isn't that this is a
+
+proven trading bot system backed by real
+
+data and thousands of hours of research
+
+into automated trading systems I put
+
+this system to the test using it to
+
+build a swarm of trading Bots to manage
+
+my own personal portfolio while I can't
+
+give you a plug-and play set and forget
+
+and make a billion dollars overnight bot
+
+I put my money where my mouth is and I
+
+use this exact framework to build all of
+
+my trading Bots but look you've seen
+
+trading bots in the wild you've heard of
+
+successful algo Traders and you hear of
+
+quants that have become wildly
+
+successful and make crazy money so you
+
+know it's possible to automate your
+
+trading and you're watching this video
+
+right now so I know you're super smart
+
+because searching for a better more
+
+efficient way to trade that's just
+
+something smart people do and because
+
+you're smart you also know there's a
+
+little something extra you know there's
+
+a little piece of magic mixed into all
+
+of now I know what it feels like dude
+
+not just to not make money Trading but
+
+to lose money due to emotions or just my
+
+poor human judgment everything else I
+
+could just work harder at and I would
+
+get better but for trading for some
+
+reason I could never get over the
+
+emotions the times where I'd be up all
+
+night staring at the charts just hoping
+
+it would go my way just to fall asleep
+
+to a liquidation email when you know
+
+you're ambitious and you're extremely
+
+persistent but you just can't figure out
+
+the game of trading and to feel like
+
+dude I'm I'm never going to stop trading
+
+but I keep losing look I get that it's
+
+normal for manual Traders hand Traders
+
+lose money remember 95% lose I want to
+
+take you from that feeling of losing due
+
+to emotions to being a dominant force in
+
+the crypto
+
+Market I want to help you automate your
+
+trading for the rest of your life so you
+
+can build any trading bot that you could
+
+ever imagine I will help you automate
+
+your trading only if you are willing to
+
+step up challenge yourself and take this
+
+Challenge and I will help you automate
+
+your trading in the next 15 days in the
+
+algo trade Camp here's the big secret
+
+you've been waiting for as an automated
+
+Trader from home there's really only
+
+three things you need to do to be
+
+extremely successful number one you have
+
+to build great trading ideas build a
+
+list of great trading ideas you then
+
+test those ideas to see if they worked
+
+in the past and if they worked in the
+
+past then build a bot with tiny size to
+
+make sure they still work in the live
+
+market if you can do all three of those
+
+things it's pretty hard not to make
+
+money in fact I've never seen anyone who
+
+has great trading ideas who tested them
+
+constantly and deployed them with tiny
+
+size not have success with algo trading
+
+I just haven't seen it dude and here's
+
+another Fact one good trading bot can
+
+wipe out all bad financial decisions you
+
+made in your entire life and I know this
+
+because it happened to me when you
+
+combine these three different elements
+
+success isn't only possible it's
+
+repeatable this is my RBI framework it
+
+comes down to researching R back testing
+
+B and then implementing into Bots I and
+
+when you make the right decision and you
+
+decide to meet me in the algo trade Camp
+
+I'll show you exactly how to automate
+
+your trading strategy and if you don't
+
+have one we have hundreds we've
+
+researched from phds to get you started
+
+on your journey right now and I want to
+
+help you automate your trading right now
+
+not a year from now no I want to help
+
+you right now if you don't know how to
+
+code don't worry I didn't know how to
+
+code either I'll teach you step by step
+
+in the next 15 days listen I had one bot
+
+that did me hundreds of thousands of
+
+dollars and I don't have a big team or
+
+an unfair Advantage I'm standing here in
+
+a bedroom with a whiteboard behind me I
+
+don't have employees investors or any
+
+long-term obligations I'm free is a bird
+
+I don't have a Lambo or some fancy New
+
+York City office or Miami office I'm a
+
+simple guy with a simple life all I do
+
+is code with AI Live on YouTube Just Me
+
+you my computer and my whiteboard quick
+
+story I like to leave out because it's a
+
+little bit embarrassing but when I first
+
+got interested in automating my trading
+
+I knew I had to learn to code because it
+
+would just be way too expensive to hire
+
+a developer to constantly update my bots
+
+anyways I locked in for 2 to 4 hours a
+
+day until I successfully built my first
+
+bot and then I put 10K in and over the
+
+next 30 days I watched that 10K go to
+
+zero no wonder I was a losing hand
+
+Trader I was trading a strategy that
+
+didn't work a strategy a bot couldn't
+
+even figure out and I was trading it as
+
+a human that day though I developed my
+
+RBI framework to ensure I only run
+
+profitable Bots my RBI framework is
+
+simple research strategies R then back
+
+test those strategies B and see if they
+
+work in the past if they work in the
+
+past then Implement them with small size
+
+not 10K I hey I'm moev and that day I
+
+developed a passion for trading Bots and
+
+showing my RBI secret I uncovered duh
+
+you have to test your Bots before you
+
+run them with
+
+$10,000 if you can constantly research
+
+new trading ideas then constantly back
+
+test those ideas to see if they work in
+
+the past and then take those that worked
+
+in the past and Implement them into a
+
+bot with small size if you can do that
+
+you can't help but become a profitable
+
+algo Trader I'm just an independent
+
+Trader from my bedroom who figured out a
+
+better way to approach the market and I
+
+believe codee's a great equalizer if you
+
+know how to code you can build cash flow
+
+for generations for the rest of your
+
+life so the way I looked at automated
+
+mind trading was I could learn all this
+
+in worst case scenario I know how to
+
+code and I could get a job for like 100k
+
+Plus at a tech company but best case
+
+scenario was I could have automated
+
+trading Bots for the rest of my life now
+
+that's a solid risk reward if you ask me
+
+look I know there's a lot of scammers
+
+out there I want you to look me up
+
+Google me search moep you can see
+
+everything I am saying is true I have
+
+videos of every single bot I've ever
+
+built all for free on YouTube including
+
+that one that made me hundreds of
+
+thousands of dollars but just because it
+
+works for me does not mean it's going to
+
+work for you the number one rule of
+
+automating trading is to never run
+
+someone else's bot just like I got
+
+wrecked for $10,000 on my first bot how
+
+would you possibly know if you
+
+downloaded a bot off the internet what
+
+it does or when somebody runs it or when
+
+they are hedging no one will ever give
+
+you a profitable trading bot that's the
+
+number one way to spot a scam so if
+
+you're on the internet YouTube whatever
+
+and it says a plug and play make one eth
+
+a day or 20% a day you know that a scam
+
+you're about to lose all your money you
+
+see I'm not the type of guy to Hype
+
+something up I just tried to
+
+transparently build Bots that I think
+
+will make me money seriously if you're
+
+skeptical at all I have over 1,2 hours
+
+of free YouTube tutorials all on YouTube
+
+you can literally go get to know me I've
+
+even hosted interviews with the top
+
+quants in the world like Christina shei
+
+she traded $7.1 billion per day that's
+
+billion with a b and Dr Ernest Chan one
+
+of the greatest algorithmic traders of
+
+all time after Jim Simons himself right
+
+rest in peace I've even had the pleasure
+
+of interviewing some unnamed Renaissance
+
+employees and we talked about the
+
+strategies Jim Simons and his company
+
+Renaissance used to use so I just
+
+rebuilt them and I'm telling you this
+
+not to brag but I'm telling you this
+
+because I want you to take it seriously
+
+because it could change your life like
+
+it's changed mine think about it who's
+
+the best Trader of all time yeah Jim
+
+Simons the founder of Renaissance what
+
+did Jim Simons do to trade better than
+
+everybody else yeah he built trading
+
+Bots that traded fully automatically
+
+even today who's making all the money on
+
+Wall Street yeah the trading bot firms
+
+Google it two Sigma Jan Street aqr D
+
+Shaw Renaissance Jim Simons died with a
+
+net worth of 31 billion all from
+
+automated trading because Jim was smart
+
+enough to realized there's patterns in
+
+the market that robots could trade that
+
+humans could never so he essentially
+
+executed his own RBI framework for years
+
+on end he once said in a business like
+
+this you just have to keep making things
+
+better and better and better essentially
+
+always researching new strategies
+
+then back testing those strategies to
+
+see if they worked in the past and then
+
+testing those in the live market Jim
+
+simply executed his system of testing
+
+and deploying for years until he was
+
+hyper profitable look Jim didn't just
+
+become a multi-billionaire he changed
+
+Bloodlines and created generational
+
+wealth for employees investors and of
+
+course himself not only that he returned
+
+over a100 billion in profits and he was
+
+able to give away $4 billion to charity
+
+how cool is that imagine if you could
+
+just have a fraction of that impact the
+
+sad truth is most people don't actually
+
+want to make money with trading they
+
+just want to gamble but if you're
+
+committed to automating your trading and
+
+building out a provable edge then it's
+
+an absolute travesty for you not to
+
+embrace these principles so your trading
+
+can finally be as good as you know it
+
+should be without human intervention now
+
+on this page you'll see exactly what's
+
+covered in the 15-day algo trade camp if
+
+you think this stuff will help you
+
+automate your trading then grab your
+
+spot now and at the risk of sounding
+
+bold and I genuinely mean this I think
+
+my stuff is the best not because of how
+
+much money I've made from my bots but
+
+because there are plenty of people out
+
+there who have made a lot more money
+
+than I have but more importantly I don't
+
+think many people share any of this
+
+stuff and I believe I explain everything
+
+in the most simple manner so you can
+
+actually automate your trading as a
+
+regular person I don't care how rich the
+
+gurus are they make trading way too
+
+complicated and no one shows you how to
+
+automate it my goal is to make
+
+automating your trading simple so you
+
+can do it so my advice is to grab a
+
+general admission or a VIP seat to the
+
+algo trade camp and I highly recommend
+
+you grab a VIP ticket because they get
+
+lifetime access to the boot camp and
+
+they get access to our Inner Circle
+
+calls which are every Friday on Zoom
+
+with replays available so you definitely
+
+don't want to miss that opportunity I
+
+highly recommend the VIP option here's
+
+the deal you can join the masses and you
+
+can invest in cheap solutions or you can
+
+invest in something that actually works
+
+so if you're interested in automating
+
+your trading then grab your spot at the
+
+boot camp below and trust me you'll want
+
+to get the VIP experience that's where
+
+we really roll up our sleeves and make
+
+the magic happen so Step Up start the
+
+ago trade camp and to ensure you have
+
+absolutely zero risk I've implemented a
+
+90day cosmic guarantee so you don't even
+
+have to say yes right now just say maybe
+
+sign up you can watch all of De boot
+
+camp explore all of the back tests the
+
+Bots connect with all of the hundreds of
+
+algorithmic traders in there and if it's
+
+not for you you have 90 full days in our
+
+90day Cosmic 100 100% money back
+
+guarantee to just test it out so jump in
+
+right now say hello in the members chat
+
+me and hundreds of other automated
+
+Traders are waiting to step on the gas
+
+with
+
+you I've made hundreds of thousands of
+
+dollars with this trading bot framework
+
+and I'm not only going to let you steal
+
+it I'm going to help you master it in
+
+the next 15 days in the algo trade Camp
+
+if you are a crypto Trader who is
+
+ambitious committed and persistent and
+
+you're typically good at what you do but
+
+your trading results are just not where
+
+you want them to be well here's a quick
+
+question for you how would it feel if
+
+you could have a trading bot that traded
+
+for you for the rest of your life with
+
+or without you logging into the computer
+
+each day you see I'm just a regular dude
+
+but for the last few years I've been
+
+using trading Bots to manage my
+
+admittedly low s fig personal portfolio
+
+While others struggle with controlling
+
+their emotions staring at the charts all
+
+day when you meet me at the algo
+
+hey real talk though me I can't wait I
+
+can't wait till this little thing comes
+
+in I got this little thing for my dog to
+
+St yapping so much real talk real talk
+
+it's not a shot caller though it's not a
+
+shot caller don't worry I'm not I'm not
+
+doing that yet not yet not yet no no I
+
+can't do that that I don't want to hurt
+
+her I don't want to hurt her but it
+
+sends out a sound sends out a sound and
+
+it's like yo shut your ass up I love you
+
+you so so much but I need you to be a
+
+little quieter stop having so much fun
+
+have fun without yapping so much it's
+
+like me like I'm the only yapper around
+
+here
+
+okay
+
+okay okay dude
+
+okay so I got to fix this as well
+
+because it looks like day 30 is opening
+
+it up and I I get hit up so about this
+
+so so much dude so I'm just going to fix
+
+it I'm just going to fix it see let's
+
+see here month two
+
+unlocked okay so how many days is this
+
+okay that's one two 3 4 five 6 7 8 9 10
+
+11 I knew I was going to make it I just
+
+ain't know
+
+how but I knew this world is what you
+
+make it you create your own environment
+
+it all starts with a vision what you can
+
+imagine you can
+
+create
+
+24 27
+
+oh it's because my [ __ ] math is off
+
+bro Jesus hey we're at 88% by the way
+
+and I'm going to take any questions you
+
+have right now so if you got questions
+
+about anything this is Question Time Q&A
+
+time I know I don't mess with the chat
+
+like that during the day but oh it's
+
+because my [ __ ] math is off bro all
+
+right I got to do my my thing Trump coin
+
+crashing again LMO 777 what llm you
+
+advise to use no Financial advice I got
+
+something free at the channel
+
+mo.com uh mo.com has got all the
+
+freebies all the freebies BR bruh glad
+
+you're here for the
+
+freebies he want that free sample he
+
+wants that Costco Sample I got you dude
+
+you can have the Costco Sample today
+
+only today only Costco say for
+
+you all right there we go how's that if
+
+you got any questions or anything let me
+
+know let me know let me know let me
+
+know all right let me fix my math before
+
+or anything here so one day one day
+
+after two days after three four 5 6 7 8
+
+9 10 11 12 13
+
+14
+
+50 17 18
+
+19 21 10 days yeah 24
+
+27 that's why
+
+dude jeez 5 days 2427 I need to make
+
+this six
+
+days there we go that's my bad
+
+bro and then we'll make this five days
+
+here okay now let's count it back up 11
+
+13 14 15
+
+17 18 19 20 21 22 23 24 25 26 27 28 29
+
+30 31 32 okay I like that 32 32
+
+days because then it should be open up
+
+for sure yeah I like that I like that
+
+I'm going to make it 33 days just in
+
+case
+
+just in case
+
+because it's clearly been something that
+
+has I've been effed up on you can see
+
+Grayson asked he said hey I've reached
+
+day 30 according to the emails I'm
+
+getting from
+
+Mund will I be able to access month two
+
+videos and then I said yeah in the next
+
+couple days sorry I think the emails
+
+trigger a bit early and they do they do
+
+dude so
+
+what llm agents you
+
+use uh I've been using Hau
+
+Hau nice dude looks good
+
+from Hong Kong what up
+
+bro waking up at 4:00 a.m. MAV is
+
+already
+
+live oh my goodness that's a good
+
+one my current habit I'm working on
+
+avoiding screen time nice
+
+still yo I thought this was a pretty
+
+cool little setup here homeboy got the
+
+uh four screens with the computer with
+
+the color of the computer this just
+
+looks clean bro it's clean setup dude is
+
+that is that the little sucess usually
+
+comes to those who are too busy to be
+
+looking for it hey you hey you're done
+
+I'm cutting you off for the day buddy
+
+cutting you off for the day okay so I
+
+think I fixed the problem here with the
+
+the access yo 777 Freeman how are you
+
+how are you how are you he's free all
+
+right we
+
+got let's say zoom out a little bit here
+
+got Freeman 777 I want to see these
+
+licks come
+
+through and we have 90% here on the on
+
+this and you already see everything
+
+about the boot camp so so if you got any
+
+questions or anything we do have that
+
+the discount here if you're watching
+
+this live but if you're not watching it
+
+live then you
+
+know kind of kind of don't you kind of
+
+don't get this discount I mean maybe if
+
+you're super lucky but probably
+
+not probably not dude probably
+
+not you got any questions about it let
+
+me know let me know let me know let me
+
+know let's get this over here
+
+okay see what else I got on my list of
+
+things I'm I'm waiting here literally
+
+just waiting for this to be done 91%
+
+complete here so I want to get this
+
+second one up because I've been messing
+
+up lately laying them run all day I
+
+built the funding
+
+Arbitrage AI agent today so that was
+
+far that was super far super duper far
+
+you could see here you can get access to
+
+all the code here mv.com
+
+777 dude much love to you much love so
+
+the idea behind today was the funding
+
+the funding rate Arbitrage
+
+agent because these funding rates have
+
+been going crazy
+
+dude
+
+so actually want to talk about that a
+
+little bit yeah I'm just going to dive
+
+in and just ask more questions if y'all
+
+ain't got no [ __ ] questions for
+
+me I got questions for the AI
+
+you
+
+know oh my God if y'all ain't got
+
+questions for me I got questions for AI
+
+all
+
+day so my one concern concern here with
+
+this funding rate Arbitrage agent in the
+
+future we're going to implement the
+
+trading right now it's just voice but my
+
+concern is as
+
+follows there tends to be a good amount
+
+of slippage on
+
+Solana how would we execute this funy
+
+rate Arbitrage to still be
+
+profitable and what number at what rate
+
+at what rate of funding rate will it
+
+have to be profitable because we get
+
+paid on the
+
+hourly so the funding rate you know I
+
+know we print out the
+
+yearly but we get paid on the hourly
+
+every hour on hyper liquid so to capture
+
+that funy rate Arbitrage we would just
+
+have to be in there in the last minute
+
+or two of the trade and then spot but My
+
+worry is the slippage in the
+
+fees slippage of fees I think the fee on
+
+Jupiter is
+
+.1% and
+
+the slippage could be another
+
+0.5% how high would the yearly APR of
+
+the funding rate Arbitrage have to be in
+
+order
+
+to capture that
+
+value I'm actually going to ask
+
+01 because why not you know I got it
+
+above is my
+
+code any giveaway
+
+no no no no I do the giveaways inside
+
+the Discord now
+
+the giveaways are for members only now
+
+we do $600 a
+
+week so they're actually contests not
+
+giveaways anymore so I just wanted to
+
+Route the money to people who are
+
+actually steing on the guys not just
+
+some people you know on the internet I
+
+don't know that well I know these dudes
+
+kind of at
+
+least so yeah I tried to giveaways for a
+
+while here honestly and they were fun
+
+they were fun like a lot of people came
+
+to the the the streams but I don't
+
+really want that many people here so I'm
+
+not going to like do giveaways to the
+
+public because if you find me that means
+
+you're really working on this and if
+
+you're really working on this then
+
+you're going to add value to my life but
+
+I'm not going to put in my titles yo
+
+$300 giveaway to attract everybody in
+
+the world over here dude you see me
+
+steing on the
+
+gby so I just be steing on the gas
+
+that's it I just be St make a choice
+
+like you just decide decide what it's
+
+going to be who you're going to be how
+
+you're going to do it just decide I
+
+stepped on from that point my bad the
+
+universe is going to get out your way
+
+it's like it's water it wants to it
+
+wants to move and go around stuff you
+
+know I'll be stepping all the gas and be
+
+stepping on my dog too
+
+oh man what a beautiful world
+
+huh excuse
+
+me it's a little Sneezy this morning I
+
+guess how y'all doing
+
+though I'm asking good questions over
+
+here if you got good question you can
+
+ask to any giveaway was the only
+
+question I got
+
+need Moon Daddy to fun you sorry bro bro
+
+no more no
+
+more I can't do
+
+it I want to give it away to the people
+
+that are up in the Discord getting the
+
+Stars so essentially what I did here
+
+dude is I made this contest
+
+here I made this contest channel here
+
+and it's super sick super super
+
+sick essentially two members win 300
+
+usdc each week whoever gets the most
+
+gold stars that's it if you get the
+
+whoever gets the most gold stars wins so
+
+we just get people put in their all into
+
+their post dude this [ __ ]
+
+far what region do you guys use your VPN
+
+I chose Canada but still can't sign up
+
+for
+
+FX uh below is a rough way to think
+
+about when a funding rate snipe is worth
+
+it given you pay a onetime cost slippage
+
+plus fees to put on the trade and then
+
+collect the hourly
+
+funding identify your onetime
+
+cost slippage you mentioned 05 is
+
+possible on Solana swaps swap fee ex
+
+swap exchange fees maybe 0.1 on Jupiter
+
+plus however hyper liquid charges on
+
+opening and closing your short let's
+
+assume a total round trip cost of
+
+6 you pay 6 once to open and eventually
+
+close your
+
+hedge yes okay
+
+26 if you open the trade for just one
+
+hour you still pay 6 and if you open it
+
+for seven
+
+days you ideally still pay about6
+
+assuming you don't get hit with extra
+
+close out slippage
+
+oh that is my timer
+
+[Music]
+
+e
+
+[Music]
+
+all right so let's keep understanding
+
+this pay that 6% once to open and
+
+eventually close your hedge short on
+
+hyper Liquid Plus spot on Solana
+
+if you open the trade for just 1 hour
+
+you still pay 6 if you open it for 7
+
+days you ideally still pay 6 total
+
+assuming you don't get hit with extra
+
+close out slippage or repeatedly
+
+rebalancing understand the hourly
+
+funding versus annualized
+
+funding hyper liquid pays you the
+
+funding hourly if the annualized funding
+
+is R annual then the approximate hourly
+
+funding is
+
+for example if the annualized rate is
+
+100% then the hourly rate is about
+
+that figure out how long you need to
+
+hold to break
+
+even you want your total funding
+
+earn minus your cost to be be above zero
+
+if you hold the position for T hours the
+
+total funding you collect is roughly
+
+that your cost is say 6 equals
+
+06 in decimals so your break even
+
+condition is solving for T So ttimes R
+
+annual divided 8760 because that's how
+
+many okay if R annual equals
+
+1.0 100% then T equals
+
+06 time
+
+8700 = 52 hours 2.2 days that means at a
+
+100% annual funding rate you'd need to
+
+hold for two days just to recoup
+
+6% if R annual equals
+
+0.5 that time to break even roughly
+
+doubles to0
+
+44% if it's 200 it halves to 0.1 or
+
+1.1% sniping the last minute versus
+
+laying it ride often exchanges pay
+
+funding to whoever holds the position on
+
+the hour you can try to jump in 5
+
+minutes before the funding snapshot
+
+collect the hour's entire funding then
+
+close right after but you pay the same 6
+
+each time you do that jump in and
+
+out you may only be able to do that once
+
+or twice before other participants do
+
+the same causing spread RS Mark price
+
+changes or exchange rules to limit that
+
+tactic some exchanges PR rate funding if
+
+you haven't held the position for the
+
+full hour or imposed limitations to
+
+prevent sniping oh interesting hence if
+
+you only hold for 1 hour and pay 6 to
+
+get in and out youd need at least 6 from
+
+a single hour's funding to break even
+
+which annualized to a ridiculous High
+
+rate of
+
+5,256
+
+annual hot damn
+
+dude that's
+
+[Music]
+
+wild so sniping can work only if the
+
+funding rate is extremely high or you
+
+expect it to do it multiple times bottom
+
+line to offset 6% of slippage plus fees
+
+in a short holding period you generally
+
+need a very high annualized funding rate
+
+as the table shows 100% annual must hold
+
+for 2 days 200% one day 50% annual about
+
+4
+
+days and that's just to break even on
+
+your cost never mind the profit margin
+
+you actually want in practice you will
+
+rarely find anything multi-day for 200
+
+plus when you do see a spike EG 300%
+
+annual for a short time it usually
+
+doesn't last long enough to rely on
+
+multi-day
+
+of the funding rate of the same rate so
+
+you'd want to watch for times of
+
+sustained High rates in extremely
+
+bullish market conditions and way
+
+whether you're comfortable locking up
+
+capital for a few days or more to make
+
+it worthwhile hence for your agent logic
+
+it's sensible to require something like
+
+100 to 200% annual if you plan to hold
+
+for a day or two or if you want to jump
+
+in for a few hours at a time you need an
+
+even higher threshold this is why in
+
+real world funding rate Arbitrage you
+
+usually watch for truly extreme spikes
+
+whoa 300% plus scenario stay in the
+
+position for multiple hours or days when
+
+the rate is consecutive or consistently
+
+high so that your one off cost gets
+
+amortized over funding many funding
+
+payments keep an eye on changes in the
+
+funding rate had a great quote that said
+
+rest at the end not in the
+
+middle and that's something I always
+
+live by you know not going to rest I'm
+
+going to keep on pushing now there a lot
+
+of answers that I don't have even
+
+questions that I don't don't have but
+
+I'm just going to keep going just going
+
+to keep going and I'll figure these
+
+things out as we go right and you just
+
+continue to build that way so that I try
+
+to live by that all the time rest at the
+
+end rest at the
+
+end tldr the6 round trip cost you need
+
+enough hours of high funding to out earn
+
+that 6 100% annual means two plus days
+
+just to break even and so on if you want
+
+to snipe for 1 hour You' basically need
+
+an insane rates thousands of percent
+
+annual to cover the 6 in the single hour
+
+in practice look for sustained truly
+
+High
+
+ones please build me a script with all
+
+of these variables configurable that
+
+will essentially be a calculator for me
+
+to understand what rat and how
+
+many periods hourly periods they'll need
+
+and so on and so on I just make it
+
+highly customizable script in
+
+Python okay while she does that you can
+
+see here my G is
+
+done so let's back out of this one here
+
+and see if it's done for the third one
+
+yet not quite so we got to wait a couple
+
+more minutes here and it's probably done
+
+for the first one because we did do 3
+
+two one one two three
+
+yes okay we're Gucci there we're Gucci
+
+there we're Gucci there get him out of
+
+here oh Big Lick Big Lick on the
+
+BTC yikes dude what a big
+
+boy so we got 97% here so we'll keep an
+
+eye on that and when that is
+
+done we will change
+
+it below is a self contained python
+
+script that you can modify and run in
+
+order to calculate various funding rate
+
+Arbitrage
+
+scenarios the goal is to help you answer
+
+how many hours must I hold a position to
+
+break even given slippage and
+
+fees what annualized funding rate do I
+
+need what is my net profit if I hold yes
+
+perfect perfect perfect okay let's go
+
+ahead and copy this code here and let's
+
+just go to our scripts folder here
+
+agents
+
+scripts I need ARM
+
+calculator okay let's run it from here
+
+dude uh uh okay okay what is going on
+
+it's not done typing yet maybe that's
+
+the thing yeah it's still going dude
+
+it's still coding okay or it was at
+
+least okay they it then now okay let's
+
+go ahead here and see see what we can
+
+get
+
+busy let's see what's going on here so
+
+slippage fees okay slipage the fees the
+
+funding annual funding rate 1 equals
+
+100% that's in incredibly
+
+confusing dude say 1.5 so hold hours 42
+
+okay desired
+
+profit
+
+2% calculates various metrics for
+
+funding Carri fre trade or
+
+Arbitrage funding total cost sum of
+
+slippage plus
+
+fees total of hourly
+
+funding okay net result equals funding
+
+Minus cost okay let's go ahead and check
+
+this out I think this is going to be
+
+clean B so slippage plus fees so
+
+interesting to see how they set this up
+
+too they just put it up here in this oh
+
+but then you run it down here yeah sry
+
+slippage yeah okay okay so this is the
+
+customizable part so let's say 1
+
+Point let's say 1.2 and whatever let's
+
+just run it let's just run it nice dude
+
+easy easy money for the AI so you can
+
+see funding Arbitrage calculator
+
+here slippage is a decimal okay that's
+
+05% Fe is .1% total onetime cost is the
+
+decimal
+
+annual funding is a decimal 120% hourly
+
+is this okay hold duration is that
+
+desired profit is that key calculations
+
+here net result decimal so total funding
+
+earned 65% net result is 05 after
+
+cost hours to break even is
+
+43.8 annual rate for break even is 48
+
+Hours annual rate annual rate for broke
+
+break even in 48 hours is
+
+1.09 okay so that's what what we' need
+
+hours to achieve desired profit 58 hours
+
+so if I want desired profit here to
+
+be something
+
+different I just changed it down
+
+here 02 that's
+
+.2% what if I want 1%
+
+profit and let's say the funding rate is
+
+more normal like
+
+0.5 I mean that's still high
+
+but hold duration desired profit
+
+1% hours to break even 104 five
+
+hours uh 280
+
+hours have this
+
+uh right now it shows hours to achieve
+
+desired profits but have that also print
+
+out the days to achieve desired profits
+
+so just divide it
+
+all right let's go ahead and run it days
+
+is 11.6 days so the funding rate would
+
+have to be over 50% for 11.6 days a long
+
+time dude but what if the funding rate
+
+is like
+
+three um let's put it that
+
+here days of Break Even 73 days
+
+17.52 hours
+
+and what if it was like
+
+five 10.51 hours so really looking for
+
+extreme funding rates
+
+though because it's it's got to be a
+
+couple hours so like 10 right here
+
+so that be a
+
+thousand wait 2 two days 5.26
+
+hours It's Tricky It's Tricky dude it's
+
+got to be over a th for 5.2 2 six hours
+
+to break
+
+even so really
+
+it's yeah not really going to work out
+
+too
+
+well unless it's over
+
+like 2,000
+
+maybe 2 hours 63 minutes so 3 hours you
+
+know 2.63 hours however many hours that
+
+is e
+
+all right well interesting
+
+interly I'm glad we have the math behind
+
+this
+
+hours to achieve desired profit of 1%
+
+would be 7 hours over 2,000% but how
+
+often is it so let's go ahead and change
+
+the funding ARB agent it's been real
+
+don't get involved if you ain't going to
+
+die for it take this I bought some Hol
+
+tips for your
+
+homeboy to be a much bigger number well
+
+I don't need to change it but this is
+
+far glad we figured this out let's go
+
+ahead and
+
+say get add then push this saying with
+
+the commit message saying um add oh this
+
+doesn't even work actually this doesn't
+
+even work oh it
+
+does get add push Commit This with the
+
+message commit message say added uh
+
+funding funding Arbitrage
+
+calculator to figure out what the funny
+
+rates need to be to profitly
+
+ARB AR
+
+so funding C yes and I can share
+
+everything on this I believe it's just a
+
+calculator
+
+okay commit added funding Arbitrage
+
+calculator to figure
+
+out I'm just going to go ahead and uh do
+
+this myself
+
+okay and then I'm going to say get
+
+push all right so so I think this
+
+funding rate calculator should be up
+
+there dude
+
+oh what is she talking
+
+about oh she was just talking she we
+
+already got her we already used what she
+
+we already got we got we got everything
+
+that we already got everything we
+
+already got everything that we asked for
+
+from her so let's go ahead and check
+
+this out
+
+here B AI agents for trading
+
+here okay so you can see that we added
+
+funding Arbitrage calculator so we know
+
+we need to hit the funding
+
+rate that's pretty sick though I'm glad
+
+to have that calculator I am very happy
+
+about that what is this
+
+dude January 16th 17th 15th let's get
+
+that out of
+
+here what is that
+
+D live agents
+
+here I don't need this cutesy stuff here
+
+dude get it up out of here get it ghost
+
+bye Quickstar guide okay so we're about
+
+20 days in here dude and I feel like
+
+we're moving we're moving at a good
+
+speed I took a couple days off you
+
+didn't
+
+notice you probably did because you're
+
+like where's moon de why isn't he coding
+
+this Sunday this
+
+Saturday cuz I was on my white
+
+board I'm either I'm either coding or
+
+I'm
+
+whiteboarding or or I'm walking and
+
+reading or listening walk listen I read
+
+all day I've been reading the Bible if
+
+you couldn't
+
+tell I just never read it and if
+
+everybody everybody lives by by the
+
+Bible dude not everybody but you see a
+
+whole world live by the Bible so it's
+
+like okay I'm just gonna read the book
+
+I'm just gonna read it or listen to it
+
+at least so I just been listening to it
+
+and like yeah I
+
+mean just try to input good stuff into
+
+my ears dude all
+
+day all day or interesting things
+
+or there's some good there's some good
+
+like uh podcast I'm always asking about
+
+your guys' podcast for a reason dude if
+
+you're in the if you're if you're in my
+
+family bro you're adding value to
+
+everybody's life dude so it's dope that
+
+we have I asked that question about your
+
+books and your podcast because I want to
+
+know what yall are listening to what you
+
+where you get your information from dude
+
+I'm trying to learn too I need more I
+
+need more so I mean I got so much time
+
+be I got my whole life I own all my
+
+hours so if I'm not coding I'm thinking
+
+about what's the next
+
+move essentially either thinking it
+
+putting it out there on my whiteboard or
+
+just getting the input is like okay well
+
+let me just listen to what these people
+
+people are talking about these books
+
+because books dude books are like
+
+everybody's best ideas so it's like okay
+
+let's input books input books let me get
+
+some books more more more book input
+
+please tell me more books to read give
+
+me more books dude get add do oh that's
+
+my timer get commit I need to go do that
+
+right now before I burn a house down
+
+um this is where you get
+
+started and then and
+
+um oh I didn't save
+
+it my
+
+bad that's way better just say start
+
+here
+
+dude just say start here
+
+dude
+
+e e
+
+so that code should be here now we look
+
+at the uh
+
+we just updated this not even cold bro
+
+it's not even cold dude just updated the
+
+REM right there but you can see ship
+
+features we ship something today it's
+
+120 I think we gota we gotta watch this
+
+happy MLK Junior Day dude
+
+I know we can't watches
+
+but
+
+oh I
+
+got I want to ask you this is the most
+
+important and crucial period of your
+
+lives
+
+for what you do now and what you decide
+
+now at
+
+this number one in your life's blueprint
+
+should be a deep belief in your own
+
+dignity your own worth and your own
+
+somebody don't allow anybody to
+
+make deal de made when I set out at the
+
+beginning of the summer and said this is
+
+the training plan I'm doing I sign that
+
+contract with myself I'm doing it you
+
+know throughout the that process you'll
+
+start talking to yourself like man I got
+
+to I think I need to maybe if we
+
+nope no this is
+
+non-negotiable always feel that you
+
+count always somebody
+
+in your life's blueprint should be a
+
+deep belief in your own dignity your own
+
+worth and your own
+
+somebodiness don't allow anybody to make
+
+you feel that you are
+
+nobody always feel that you count always
+
+feel that you have worth and always feel
+
+that your life has
+
+ultimate significance now that means
+
+that you should not be ashamed of your
+
+color you know it's very unfortunate
+
+that in so many instances our society
+
+has placed a stigma on the negro's
+
+color you know there are some Negroes
+
+who are ashamed of themselves don't be
+
+ashamed
+

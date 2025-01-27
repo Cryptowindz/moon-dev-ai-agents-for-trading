@@ -1,0 +1,114 @@
+ai agents for solana trading - access code at mv.com. github has 10+ agents for strategies, risk, sentiment, and more. build your own trading bot with this powerful toolkit.
+
+running costly ai models to generate trading strategies. important to monitor costs and resource usage. stay focused, keep iterating, and learn from mistakes.
+
+issues with api and server stability. need to add monitoring, rate limiting, and handle large data sets to prevent crashes. iterating and improving the system is key.
+
+discipline is key to success, but it's not always easy. embracing the struggle can lead to a "harvest of righteousness and peace."
+
+overcoming challenges through discipline may be painful in the moment, but it's an investment in our long-term growth and well-being.
+
+don't be discouraged by the difficulty of discipline - the rewards of perseverance and self-improvement are immeasurable. keep pushing forward.
+
+opportunities can be seen as chances for improvement, not just hardships
+
+grandfather was a crusader - concentrate your thoughts on the task at hand to achieve focus
+
+coding crusader doesn't know what crusader is, just focusing on the work
+
+it looks like this one back to claw though
+
+H Deep seek to save 80% so that's pretty fire if it's 80% cheaper but is it as good is the question that's the question dude is it as good
+
+so I kind of want to build out this funding or but so the one thing I need to figure out here is in hyper liquid how to get the funding rate so I got the funding agent here and what I want to do here is update her uh let's go ahead and say please push all and commit all and the commit message will be added deep seek AI into the that's all
+
+though oh God oh God that's all I did that's all I did dude I could
+
+if you can constantly research new trading ideas, back-test them, and implement successful ones into bots, you're on your way to becoming a profitable algo trader. it's all about the process of continuous improvement.
+
+the ability to code is a great equalizer - it allows you to build automated trading systems that can generate cash flow for generations. it's a powerful skill to have, even as a side hustle.
+
+jim simons and renaissance technologies proved that automated trading can generate massive wealth. their systematic approach to finding and exploiting market patterns is something we can all learn from and apply.
+
+trading bots can be a game-changer if done right. research, backtesting, and implementation are key to automating profitable strategies. even a single successful bot can make up for past financial mistakes.
+
+coding skills are a great equalizer - anyone can build automated trading systems and create sustainable cash flow. just start small, test thoroughly, and keep refining your approach.
+
+don't get discouraged by early failures. with the right framework, algo trading success is very much possible, even for solo traders working from their bedrooms. the key is disciplined testing and gradual implementation.
+
+funding agent scans hyper liquid for high funding rate opportunities
+
+analyzes with AI to identify potential arbitrage
+
+sends voice announcements when profitable funding rates detected
+
+new funding arbitrage agent built to find best funding rate opportunities
+
+loops through all tokens, checks if funding rate exceeds 100% yearly threshold
+
+prompts AI to analyze, then speaks the response
+
+AI funding rate analyst identifies profitable arbitrage opportunities on hyper liquid
+
+goal is to maximize returns by capitalizing on high funding rates across crypto markets
+
+the funding rate Arbitrage agent is looking for opportunities to profit from the difference between hyper liquid and spot token prices
+
+the agent analyzes funding rates and suggests Arbitrage trades when the funding rate is high and stable, indicating a profitable opportunity
+
+the agent's latest analysis found a 17418% annualized funding rate on fcoin, suggesting a profitable Arbitrage opportunity by shorting hyper liquid and buying spot elsewhere
+
+you can automate your trading with a proven system. i've used it to build a swarm of bots that manage my own portfolio. no more emotions, just consistent profits. let me show you how in the algo trade camp.
+
+researching great trading ideas, back-testing them, and implementing with small size is the key to successful algo trading. it's worked for me, and i know it can work for you too.
+
+stop losing money due to emotions and poor judgment. let me teach you my RBI framework - research, back-test, implement - to build profitable trading bots in just 15 days. join the algo trade camp and take control of your financial future.
+
+jim simons, the founder of renaissance, built trading bots that traded fully automatically. today, the top money makers on wall street are trading bot firms like two sigma, jane street, and aqr.
+
+simons' automated trading system allowed him to become a multi-billionaire and give away $4 billion to charities. the key is to research, back-test, and implement profitable trading strategies into bots.
+
+automating your trading can be life-changing. learn the RBI framework - research strategies, back-test them, and implement the winners. step up and join the algo trade camp to master automated trading in 15 days.
+
+i'm just a regular dude who figured out a better way to approach the market. i've automated my trading and it's changed my life. i've got over 1,200 hours of free tutorials on youtube - check them out to see how i did it.
+
+automating your trading can be life-changing. i rebuilt the strategies used by trading giants like jim simons and renaissance. with the right approach, you can build cash flow for generations. grab a spot in my 15-day algo trade camp to learn how.
+
+i'm not here to hype anything up - just to transparently share what's worked for me. i've made hundreds of thousands with my bot framework, and i'm going to show
+
+i just rebuilt the trading strategies of the greatest trader of all time, jim simons, and built bots that can automate your trading for life
+
+forget about gamble trading, i'll show you how to build a provable edge with my RBI framework - research, backtest, implement. this can change your life
+
+don't download random bots, build your own. i have over 120 hours of free tutorials to teach you step-by-step how to automate your trading the right way
+
+funding rate arbitrage can be tricky on solana due to slippage and fees. need high annual rates, ~100%, to recoup 6% round-trip costs in just 2 days. timing the last minute of the hourly payout is key to maximize profits.
+
+building an AI agent to automate this strategy. still working out the details to ensure it's profitable despite the challenges. open to feedback and ideas from the community.
+
+the funding rate space is rapidly evolving. lots of opportunities but also risks to navigate. taking a measured approach, leveraging technology, to try to capitalize on these market dynamics in a sustainable way.
+
+funding arbitrage can be tricky
+
+high rates needed to offset slippage and fees
+
+watch for sustained spikes over 300% annual
+
+calculating break-even and desired profit is key
+
+python script provides customizable calculator
+
+helps determine funding rate, hold duration, and profitability
+
+sniping opportunities exist but require extreme funding rates
+
+typically need 2000%+ annual to break even in a few hours
+
+long hold periods of 1-2 weeks often needed to be profitable
+
+books are the best ideas out there. time to input more books and get reading!
+
+coding and thinking about the next move - gotta keep that whiteboard updated and listen to what others are talking about.
+
+don't let anyone make you feel like you're nobody. always believe in your own worth and dignity. MLK Jr. had it right.
+

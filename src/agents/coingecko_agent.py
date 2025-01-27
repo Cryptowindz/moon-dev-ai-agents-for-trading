@@ -101,6 +101,15 @@ Memory Files:
 Author: Moon Dev 🌙
 """
 
+# Model override settings
+# Set to "0" to use config.py's AI_MODEL setting
+# Available models:
+# - "deepseek-chat" (DeepSeek's V3 model - fast & efficient)
+# - "deepseek-reasoner" (DeepSeek's R1 reasoning model)
+# - "0" (Use config.py's AI_MODEL setting)
+MODEL_OVERRIDE = "deepseek-chat"  # Set to "0" to disable override
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"  # Base URL for DeepSeek API
+
 # 🤖 Agent Prompts & Personalities
 AGENT_ONE_PROMPT = """
 You are Agent One - The Technical Analysis Expert 📊
@@ -159,9 +168,9 @@ Help Moon Dev keep track of the trading journey! 🎯
 """
 
 # 🤖 Agent Model Selection
-AGENT_ONE_MODEL = "claude-3-haiku-20240307"     # Change this to any model you want for Agent One
-AGENT_TWO_MODEL = "claude-3-sonnet-20240229"    # Change this to any model you want for Agent Two
-TOKEN_EXTRACTOR_MODEL = "claude-3-haiku-20240307"  # Fast model for token extraction
+AGENT_ONE_MODEL = MODEL_OVERRIDE if MODEL_OVERRIDE != "0" else "claude-3-haiku-20240307"
+AGENT_TWO_MODEL = MODEL_OVERRIDE if MODEL_OVERRIDE != "0" else "claude-3-sonnet-20240229"
+TOKEN_EXTRACTOR_MODEL = MODEL_OVERRIDE if MODEL_OVERRIDE != "0" else "claude-3-haiku-20240307"
 
 # 🎮 Game Configuration
 MINUTES_BETWEEN_ROUNDS = 30  # Time to wait between trading rounds (in minutes)
@@ -225,6 +234,7 @@ from dotenv import load_dotenv
 from termcolor import colored, cprint
 import anthropic
 from pathlib import Path
+import openai
 
 # Local imports
 from src.config import *
@@ -269,11 +279,25 @@ class AIAgent:
     def __init__(self, name: str, model: str = None):
         self.name = name
         self.model = model or AI_MODEL
-        self.client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_KEY"))
+        
+        # Initialize appropriate client based on model
+        if "deepseek" in self.model.lower():
+            deepseek_key = os.getenv("DEEPSEEK_KEY")
+            if deepseek_key:
+                self.client = openai.OpenAI(
+                    api_key=deepseek_key,
+                    base_url=DEEPSEEK_BASE_URL
+                )
+                print(f"🚀 {name} using DeepSeek model: {model}")
+            else:
+                raise ValueError("🚨 DEEPSEEK_KEY not found in environment variables!")
+        else:
+            self.client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_KEY"))
+            print(f"🤖 {name} using Claude model: {model}")
+            
         # Use a simpler memory file name
         self.memory_file = AGENT_MEMORY_DIR / f"{name.lower().replace(' ', '_')}.json"
         self.load_memory()
-        cprint(f"🤖 Agent {name} initialized with {model}!", "white", "on_green")
         
     def load_memory(self):
         """Load agent's memory from file"""
@@ -336,23 +360,33 @@ Remember to format your response like this:
 [Fun reference to Moon Dev's trading style]
 """
             
-            # Get AI response with correct message format
-            message = self.client.messages.create(
-                model=self.model,
-                max_tokens=max_tokens,
-                temperature=temperature,
-                system=prompt,  # Use the agent-specific prompt
-                messages=[{
-                    "role": "user",
-                    "content": market_context
-                }]
-            )
+            # Get AI response with correct client
+            if "deepseek" in self.model.lower():
+                response = self.client.chat.completions.create(
+                    model=self.model,
+                    messages=[
+                        {"role": "system", "content": prompt},
+                        {"role": "user", "content": market_context}
+                    ],
+                    max_tokens=max_tokens,
+                    temperature=temperature
+                )
+                response_text = response.choices[0].message.content
+            else:
+                message = self.client.messages.create(
+                    model=self.model,
+                    max_tokens=max_tokens,
+                    temperature=temperature,
+                    system=prompt,
+                    messages=[{
+                        "role": "user",
+                        "content": market_context
+                    }]
+                )
+                response_text = str(message.content)
             
             # Clean up the response
-            response = str(message.content)
-            
-            # Remove TextBlock and formatting artifacts
-            response = (response
+            response = (response_text
                 .replace("TextBlock(text='", "")
                 .replace("')", "")
                 .replace("\\n", "\n")
@@ -374,7 +408,6 @@ Remember to format your response like this:
             })
             self.save_memory()
             
-            # Print response with some style
             return response
             
         except Exception as e:

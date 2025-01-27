@@ -1,0 +1,144 @@
+deep seek is 99% cheaper than openai and just as good, making it the go-to for ai agents in trading. it's fast, efficient, and now the default for most of my agents, though claude and openai remain options.
+
+the focus agent uses deep seek to keep me on track, rating my focus out of 10. if i slack, it nudges me back. the rbi agent is a game-changer, automating backtest strategies by coding them after analyzing videos or papers.
+
+deep seek's biggest flaw? its context window is 25% smaller than openai's, meaning prompts have to be shorter. still, it's a powerhouse for cost-effective ai, especially in trading automation.
+
+grabbing liquidation data and open-high-low-close-volume data from the api. it takes a bit of time but it’s running. all the code is on github, just star and fork to get started with automated trading for free.
+
+deep seek is helping with the liquidation agent and risk agent updates. massive long liquidations detected, up 142%. ai suggests nothing with 50% confidence. still debugging some api response issues.
+
+the bird eye api response structure changed, causing issues with fetching wallet tokens. added more debug prints to diagnose the problem. optimizing to filter out dust tokens and only process meaningful balances.
+
+working on a bot and ran into an issue with the api call. they removed the usd value column, which is crucial for decision-making. now i have to figure out how to get the price for each token manually, which slows everything down. frustrating, but gotta keep pushing.
+
+birdeye changed their api calls and removed the usd value column. now i have to call the price for each token individually, which is going to slow down the bot. not ideal, but trying to find a workaround. stay tuned.
+
+they rugged me with this api change. no usd value means i have to manually fetch prices for each token, which is messy and slows the bot. trying to build a new call to fix it, but
+
+the separation between you and your competitors grows over time. by year five or six, no matter what they do, they can't catch up. that's why i'm here every day—putting in the work. you can't catch me, and i'll keep pushing no matter what.
+
+mlk said if you can't fly, run. if you can't run, walk. if you can't walk, crawl. but you better keep moving. control what you can control—yourself. every day, until we die. that's the mindset.
+
+building on apis can be risky—they can cut you off at any moment. but sometimes you have to for speed. just keep pushing, even when things don’t go
+
+working on integrating deep seek into the discord and updating the code to reflect that. it's a bit tricky but we're making progress. the goal is to have free ai access for everyone.
+
+just added deep seek to the discord and updated the agents to use it. still figuring out how to prove it's actually using deep seek and not falling back to gpt-4. lots of testing and tweaking involved.
+
+launching a new lambda instance to run billions of strategies. discipline is key—doing what you hate like you love it. all the code is on github, and the roadmap is live on mv.com. free ai in the discord for now!
+
+learn python, build a trading bot, and use ai with a free roadmap at mood.com. it’s got everything you need—github, discord, and a little surprise for you. underpromise, overdeliver, always.
+
+nobody’s giving you a profitable trading bot, but you can learn how to build one for free. check out the roadmap at mood.com for coding, strategies, and ai tips. do your own research and control your risk.
+
+automated trading is a grind, but mood.com’s free roadmap makes it easier. learn to code, build bots, and use ai. it’s all there—research, backtesting, and even a book list. grow with it as it grows.
+
+i’ve built a free roadmap for automated trading that includes research, backtesting, and strategy implementation. it’s designed to save you time and money by helping you avoid broken strategies. check it out at moev.com.
+
+if you’re tired of losing money trading by hand, start backtesting your strategies. i’ll show you how to code, backtest, and automate your trades step by step. it’s all free and growing every day.
+
+trading by hand is gambling. backtest your strategies to see if they work before risking your money. i’ll teach you how to code, backtest, and automate your trades for free. let’s step on the gas together.
+
+just freestyled an email and now debating what to call it. might be too early to send, but hey, worldwide audience means someone’s awake. scheduling it for later today. gotta respect time zones, fam.
+
+spent $7 setting up lambda today. wild. testing new ai in discord now. building something fresh, debugging as i go. gotta stay sharp and keep pushing through the chaos. every line of code brings me closer to mastery.
+
+debugging the rbi agent and tweaking the research prompts. trying to make it more autonomous and efficient. sometimes you gotta front-run the bugs and stay focused. it’s all about the grind and refining the process.
+
+the package agent is live and its job is to ensure the code uses the right indicator packages, not backtesting.lib. it’s all about precision and avoiding trashy stuff. let’s keep swimming.
+
+rbi agent disappeared for a hot second and panic ensued. turns out it was just hiding in plain sight. gotta rewind the game film and stay sharp. back to building greatness.
+
+first try success with ta lib! the debug agent cooked up some heat. time to add more agents for every bug and keep refining the process. stay focused, the code won’t write itself.
+
+working on backtesting strategies with AI agents. debugging and refining the process to ensure each idea gets its own unique strategy. progress is slow but steady, and we're learning as we go.
+
+the AI agents are handling research, backtesting, and debugging for multiple strategies. it's a grind, but discipline is key. doing what you hate like you love it is the secret to success.
+
+spent $22 so far on AI tools for strategy testing. making progress but still ironing out kinks in the code. every line written brings us closer to the goal. stay focused and keep pushing.
+
+learning to code in a second language is no joke. if you’re out here coding in english and it’s not your first language, you’re already ahead of the game. respect.
+
+shoutout to anyone learning spanish or any language while juggling coding. it’s hard, but you’re doing the work. keep going, you’re crushing it.
+
+automated trading bots can change the game if you’re willing to put in the work. it’s not about overnight success, but building systems that work for you over time.
+
+if you can research trading ideas, backtest them, and deploy bots with small size, you’re set for success in algo trading. it’s repeatable and proven. just follow the RBI framework: research, backtest, implement.
+
+one good trading bot can erase years of bad financial decisions. it happened to me. automate your strategy, test it, and run it with small size. that’s how you build a profitable edge.
+
+i started with $10k and lost it all on my first bot. that’s when i created the RBI framework. now, i only run bots that are proven to work. automate your trading, but never run someone else’s bot—it’s a scam.
+
+trading bots aren't magic, but they can help you avoid emotional mistakes. the key is building, testing, and deploying strategies with small sizes first. it's not about overnight success, it's about consistency.
+
+jim simons built generational wealth with automated trading. he didn't rely on emotions or luck—he researched, backtested, and implemented strategies. the same principles can work for you if you're willing to put in the effort.
+
+if you're serious about trading, stop gambling and start automating. learn to code, test your ideas, and deploy bots with small sizes. it's not easy, but it's a proven path to building a sustainable edge in the markets.
+
+trading bots don’t have to be complicated. i’ve built a simple framework to help regular people automate their trading. no gurus, no hype—just a proven system that works. join the algo trade camp and let’s make it happen.
+
+if you’re tired of losing money to emotions or poor judgment, it’s time to automate. my RBI framework—research, backtest, implement—has helped me and others succeed. no coding experience? no problem. i’ll teach you step by step.
+
+don’t fall for plug-and-play bot scams. real success comes from building and testing your own strategies. i’ve shared my entire journey for free on youtube. if you’re ready to take
+
+jim simons, the founder of renaissance, built trading bots that outperformed humans and amassed a $31 billion net worth. automated trading is the future, and it’s not just for wall street giants. anyone can learn to automate their trading with the right system.
+
+most traders lose money due to emotions and poor judgment. but with automated trading bots, you can remove human error and trade with precision. it’s about building, testing, and deploying strategies that work—no emotions, just results.
+
+if you’re tired of losing money and want to automate your trading, the algo trade camp can help. it’s a 15-day program where you’ll learn to build and deploy trading bots, even if you don
+
+the rbi framework is simple: research strategies, backtest them, and implement with small size. if it worked in the past, it might work again. this is how i built profitable trading bots from my bedroom.
+
+never run someone else's bot. it's the #1 way to spot a scam. if it promises easy money, it’s probably fake. build your own edge, test it, and automate it. that’s the real path to algo trading success.
+
+jim simons built generational wealth with automated trading. he researched, backtested, and deployed strategies for years. you don’t need to be a genius—just disciplined. automate your trading and let the bots do the work.
+
+success in algo trading comes down to three steps: research great trading ideas, backtest them, and implement with small size. if you do this consistently, it’s hard not to make money. one good bot can change everything.
+
+never run someone else’s bot. it’s the fastest way to lose money. build and test your own strategies. even if you don’t know how to code, you can learn. i started with zero coding knowledge and now run profitable bots from my bedroom.
+
+automated trading isn’t about gambling—it’s about building a provable edge. jim simons made billions with bots, and you can too. start small, test rigorously, and let the bots do the work. it
+
+trading bots changed my game. no more staring at charts or losing sleep over emotions. i built a system that works for me, and i’m sharing the exact blueprint in algo trade camp. no lambos, just real results.
+
+% of manual traders lose money. i went from losing to automating my trading with bots. it’s not about hype—it’s about research, backtesting, and implementing with small size. success is repeatable if you follow the framework.
+
+jim simons built generational wealth with automated trading. the key? research, backtest, implement. i’m not selling a magic bot—i’m teaching you how to build your own. if you’re ready to automate,
+
+if you're tired of losing money trading due to emotions, automating your strategy might be the answer. i’ve built bots that trade for me, and i’ll show you how to do the same in 15 days at the algo trade camp. vip tickets get lifetime access and weekly calls.
+
+automating trading doesn’t have to be complicated. my rbi framework—research, backtest, implement—helps you build bots that work. i’ve made hundreds of thousands with this system, and i’ll teach you step by step, even if you don’t know how to code.
+
+never run someone else’s bot—it’s a scam. i learned the hard way losing $10k on my first bot
+
+jim simons, the founder of renaissance, built trading bots that made him a billionaire. he proved automated trading works by finding patterns humans can't. his legacy shows how algo trading can create generational wealth.
+
+automating your trading isn't about luck—it's about building, testing, and deploying strategies. one good bot can change everything. the key is research, backtesting, and implementation. success is repeatable if you follow the process.
+
+if you're tired of losing money to emotions, algo trading could be the answer. i’ve built bots that manage my portfolio while i sleep. in the algo trade camp, i’ll show you how to automate your trading in 15 days. no coding experience needed.
+
+lost $10k in 30 days trading a flawed strategy. learned the hard way to test bots before risking big. now i use my rbi framework: research, backtest, implement small. it’s changed everything.
+
+automated trading isn’t about luck—it’s about patterns. jim simons built a $31b fortune with bots. the key? research, backtest, and deploy. if you’re serious about trading, automation is the way.
+
+trading bots can change your life, but never trust a plug-and-play bot. i’ve built hundreds of bots and share everything for free. if you’re ready to automate, start small, test rigorously, and avoid the scams.
+
+automating your trading starts with three steps: build great trading ideas, test them in the past, and deploy them with small size. if you can do this, success is repeatable. it’s called the rbi framework—research, backtest, implement.
+
+one good trading bot can wipe out all your bad financial decisions. i know because it happened to me. the key is testing strategies before risking big money. start small, refine, and scale. it’s how i turned $10k into hundreds of thousands.
+
+if you’re serious about algo trading, join the algo trade camp. i’ll teach you how to automate your strategy in 15 days, even if you don’t know how to code. no
+
+what if you could have a trading bot that worked for you 24/7? no emotions, no staring at charts, just consistent trading. i’ve been using bots for years to manage my portfolio, and it’s changed everything. let me show you how.
+
+% of manual traders lose money. but with algo trading, you can automate your strategy, test it, and deploy it with small size to build consistent profits. it’s not magic—it’s research, backtesting, and implementation.
+
+jim simons built a $31 billion fortune with automated trading. he found patterns in the market that humans couldn’t. you don’t need to be a genius to start—just learn to code, test
+
+if you're tired of staring at charts and letting emotions mess up your trading, the algo trade camp might be for you. it’s a 15-day program to help you automate your trading with proven bots and real data. vip tickets get lifetime access and weekly zoom calls.
+
+the algo trade camp offers a 90-day money-back guarantee, so you can test it risk-free. you’ll get access to backtests, bots, and a community of traders. if it’s not for you, no worries—just get a full refund. it’s all about making trading simple and automated.
+
+trading bots have helped me manage my portfolio without the stress of emotions. at the algo trade camp, i’ll share my exact
+

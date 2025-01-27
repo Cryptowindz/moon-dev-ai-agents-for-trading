@@ -80,6 +80,9 @@ Project updates will be posted in discord, join here: [moondev.com](http://moond
 - Chart Agent (`chartanalysis_agent.py`): looks at any crypto chart and then analyzes it with ai to make a buy/sell/nothing reccomendation.
 - funding rate arbitrage agent (`fundingarb_agent.py`): tracks the funding rate on hyper liquid to find funding rate arbitrage opportunities between hl and solana
 - rbi agent (`rbi_agent.py`): uses deepseek to research trading strategies based on the youtube video, pdf, or words you give it. then sends to his ai friend who codes out the backtest.
+- twitter agent (`tweet_agent.py`): takes in text and creates tweets using deepseek or other models
+- video agent (`video_agent.py`): takes in text to create videos by creating audio snippets using elevenlabs and combining with raw_video footage
+- new or top tokens (`new_or_top_agent.py`): an agent that looks at the new tokens and the top tokens from coin gecko api
 
 ## 🚀 Project Progress & Roadmap
 ### Phase 1: Foundation & Basic Trading ✅
@@ -103,6 +106,7 @@ Project updates will be posted in discord, join here: [moondev.com](http://moond
 
 ### Shipped Features 📦
 
+- [x] 1/27 - built a tweet agent and video agent 
 - [x] 1/23 - build an rbi agent that codes backtests based on trading strategy videos, pdfs or words
 - [x] 1/20 - built the funding rate arbitrage trading agent to annnounce when there is a funding rate arbitrage between hyperliquid tokens and spot solana tokens. later we can update this to place the trades
 - [x] 1/17 - built chuck the chart analysis agent that reads in any crypto chart and then analyzes it to get a buy/sell/nothing reccomendation.
@@ -143,6 +147,8 @@ Project updates will be posted in discord, join here: [moondev.com](http://moond
 - [x] 1/1 - first lines of code written
 
 ## 🚀 Quick Start Guide
+
+python 3.10.9 is what was used during dev
 
 1. ⭐ **Star the Repo**
    - Click the star button to save it to your GitHub favorites

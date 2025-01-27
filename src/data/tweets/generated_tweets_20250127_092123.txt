@@ -1,0 +1,116 @@
+the ai agents for solana trading provide a comprehensive toolkit for automating and optimizing trading strategies. the github repo contains 10+ agents covering various aspects of the trading process, from strategy development to risk management.
+
+getting started is easy - just visit mv.com to access the roadmap and github resources. fork the repo to have full access to the code and customize it to your needs. this is a powerful system that can help take your solana trading to the next level.
+
+the key to making the most of these ai agents is diligent monitoring and optimization. the high costs of running the lambda instances highlight the importance of efficiency and discipline in this process. with the right approach, these tools can unlock new levels of trading performance
+
+discipline is the key to success. do what you hate but do it with love, and you'll achieve greatness.
+
+giving up at the first sign of struggle is a surefire way to fail. with discipline and commitment, you can overcome any obstacle.
+
+discipline may not be pleasant, but it leads to a harvest of righteousness and peace. embrace the hard lessons - they'll make you stronger.
+
+opportunities for improvement rather than just hardships
+
+grandfather was a crusader. concentrate all your thoughts upon the work at hand. the sun's rays do not burn until brought to a focus.
+
+coding code crusader. no idea what crusader is, but let's keep coding!
+
+i built a trading bot that made me hundreds of thousands. now i'm sharing my exact blueprint to help others automate their trading in 15 days. no coding experience required - i'll teach you step-by-step.
+
+the key is to research profitable strategies, backtest them, then implement with small size. this RBI framework is the secret to successful algo trading.
+
+stop struggling with emotions and losing money. let's build a trading bot that works for you 24/7. join the algo trade camp and i'll show you how.
+
+trading bots can be a game-changer for your portfolio, but beware of scams. do your research, test strategies thoroughly, and build your own bots to ensure long-term success. automating your trading is possible, but requires commitment and a systematic approach.
+
+if you can master the art of building, testing, and deploying profitable trading bots, you could potentially create generational wealth. learn from the best, like jim simons, and focus on continuously improving your strategies. the key is to stay disciplined and transparent.
+
+don't fall for the hype and false promises. building a successful automated trading system takes time, effort, and a deep understanding of the markets. but if you're willing to
+
+automate your trading with bots and RBI framework - research, backtest, implement. one good bot can offset bad financial decisions. learn to code and build cash flow for life.
+
+no need for big team or fancy office - just you, your computer, and whiteboard. tested strategies + small size = profitable algo trading. let me show you how to automate your trading.
+
+lost 10k on bad strategy, then developed RBI framework. now profitable bots. coding is great equalizer - learn it and get 100k+ tech job or automate trading for life. no scams, just real results.
+
+funding agent scans hyper liquid for high funding opportunities
+
+analyzes with AI to identify best arbitrage plays
+
+makes voice announcements when significant opportunities detected
+
+funding rates can indicate market conditions
+
+high rates may signal potential overheating or volatility
+
+monitoring these can uncover interesting trading dynamics
+
+new funding arbitrage agent built to systematically scan tokens
+
+looks for rates above set threshold, uses AI to evaluate
+
+automates voice alerts for high-potential opportunities
+
+yund dev 777 high funding arbitrage opportunity detected fcoin has a 14.83% annualized funding rate ai suggests arbitrage - short on hyper liquid and buy spot elsewhere
+
+the high annualized funding rate of 14.89% presents a profitable arbitrage opportunity confidence 90% funding arbitrage agent making that funding money
+
+yund dev's funding arbitrage agent detecting high funding rates and exploiting the arbitrage opportunities automatically - gotta love that machine learning magic
+
+you can automate your trading with my proven RBI framework - research, backtest, implement. no more emotional trading, just consistent profits. let me show you how in the next 15 days at my algo trade camp.
+
+building profitable trading bots isn't easy, but with the right approach, it's very doable. my RBI framework ensures you only run bots with proven strategies. no more throwing money at random bots online.
+
+I'm just a regular guy who figured out a better way to trade. no fancy office, no employees - just me, my computer, and a passion for automating trading. let me share my blueprint with you at the algo trade camp.
+
+jim simons is the greatest trader of all time. he built trading bots that traded fully automatically, making him a $31 billion fortune. the secret to his success? he realized there are patterns in the market that robots can trade better than humans.
+
+the sad truth is most people don't want to make money with trading, they just want to gamble. but if you're committed to automating your trading and building a provable edge, you can achieve incredible results without human intervention.
+
+my goal is to make automating your trading simple, so you can do it. i've used this framework to build bots that have made me hundreds of thousands of dollars. if you're ambitious and persistent, i can help you auto
+
+i've been using trading bots to manage my personal portfolio for years. it's allowed me to take the emotion out of trading and build consistent profits. if you're ready to automate your trading, join my algo trade camp and i'll show you my exact blueprint.
+
+the key to successful automated trading is building great trading ideas, testing them thoroughly, and then deploying them in small size. it's a proven framework that's made me hundreds of thousands. learn it in my 15-day algo trade camp.
+
+the best traders on wall street use automated systems to dominate the markets. jim simons turned $100 million into $31 billion with his trading bots. i'll show you how to build your own
+
+trading bots can automate your strategy and make you profitable without emotions
+
+with the right research, backtesting, and implementation, anyone can become a successful algo trader
+
+jim simons built a $31 billion fortune through automated trading - you can too with the right framework
+
+funding rate arbitrage on solana can be profitable, but watch out for slippage and fees
+
+hourly funding rates matter more than annual - need to hold long enough to recoup upfront costs
+
+building AI agents to automate this process, but need to carefully model the economics to make it worthwhile
+
+funding rate arbitrage can be tricky
+
+high fees and slippage mean you need insane
+
+funding rates to break even, let alone profit
+
+look for sustained 300%+ annual funding
+
+to make it worthwhile, but those spikes
+
+are rare and short-lived
+
+the funding rate calculator can help you
+
+crunch the numbers and see what it takes
+
+to make this strategy viable. key is finding
+
+those extreme, persistent funding conditions
+
+input books and read more books to keep learning
+
+don't be ashamed of who you are - your life has ultimate significance
+
+always feel that you count and have worth, no matter what others say
+

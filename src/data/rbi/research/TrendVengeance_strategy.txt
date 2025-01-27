@@ -1,0 +1,32 @@
+STRATEGY_NAME: TrendVengeance
+
+STRATEGY_DETAILS:
+The TrendVengeance strategy is a robust trend-following approach designed to capitalize on strong, sustained market trends while minimizing losses during choppy or sideways markets. This strategy emphasizes the importance of trailing stops and letting winning trades run, rather than focusing on pinpoint entries. Below is a detailed breakdown of the strategy:
+
+### Key Strategy Components:
+1. **Trend Identification**: The strategy relies on identifying strong, healthy trends. These are typically driven by fundamental catalysts such as central bank policies or significant economic events.
+2. **Pullback Entries**: Instead of predicting market movements, the strategy focuses on entering trades during pullbacks within a strong trend.
+3. **Trailing Stops**: The core of the strategy involves using trailing stops to lock in profits as the trend continues, allowing for potentially unlimited rewards.
+4. **No Take Profits**: The strategy does not use predefined take-profit levels. Instead, it relies on trailing stops to exit trades when the trend reverses.
+
+### Entry Rules:
+1. **Identify a Strong Trend**: Use higher timeframes (e.g., daily charts) to identify a clear, strong trend. Look for markets that are trending "very beautifully" in one direction.
+2. **Wait for a Pullback**: Enter the trade during a pullback within the trend. This is where the price retraces slightly before continuing in the direction of the trend.
+3. **Set a Tight Stop-Loss**: Place a stop-loss just below the recent swing low (for a long trade) or above the recent swing high (for a short trade). This ensures that the risk is controlled.
+
+### Exit Rules:
+1. **Trailing Stop**: As the trade moves in your favor, trail the stop-loss to just below the most recent swing low (for a long trade) or above the most recent swing high (for a short trade).
+2. **Break of Support/Resistance**: Exit the trade if the price breaks a key level of support (for a long trade) or resistance (for a short trade). This indicates a potential trend reversal.
+3. **No Take Profit**: Do not set a take-profit level. Let the trade run as long as the trend continues, using the trailing stop to lock in profits.
+
+### Risk Management:
+1. **Risk per Trade**: Risk a small percentage of your account on each trade (e.g., 1-2%). This ensures that a series of losses does not significantly impact your account.
+2. **Accept Losses**: Understand that losses are a normal part of trading. The strategy has a low win rate (around 43%), but the occasional large winners more than compensate for the losses.
+3. **Psychological Preparedness**: Be mentally prepared for drawdowns and the frustration of being stopped out frequently. The key is to stay disciplined and stick to the strategy.
+
+### Required Indicators:
+1. **Price Action**: The strategy primarily relies on price action to identify trends and pullbacks. No specific indicators are required, but you may use moving averages or trendlines to help visualize the trend.
+2. **Support and Resistance Levels**: Identify key support and resistance levels to determine where to place stop-losses and when to trail them.
+
+### Summary:
+The TrendVengeance strategy is a disciplined, trend-following approach that focuses on riding strong trends and using trailing stops to maximize profits. It requires patience, discipline, and a strong understanding of market structure. While the strategy has a low win rate, the potential for large, trend-running trades makes it a powerful tool for those who can handle the psychological challenges of frequent losses.

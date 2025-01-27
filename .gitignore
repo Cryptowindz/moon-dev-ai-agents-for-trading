@@ -86,6 +86,8 @@ src/data/ai_analysis.csv
 src/frontend
 # add this to gitignor /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data
 
+/src/data/ai_analysis_buys.csv
+src/data/ai_analysis_buys.csv
 src/audio
 /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/agent_memory
 /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/sentiment

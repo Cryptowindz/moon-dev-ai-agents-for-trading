@@ -65,7 +65,7 @@ Rate Limits:
 4. Always do your own research (DYOR)
 5. The copybot follow list is Moon Dev's personal list and should not be used alone
 
-Need an API key? Visit: https://algotradecamp.com join the bootcamp and then quant elite once inside to get access to the api key.
+Need an API key? for a limited time, bootcamp members get free api keys for claude, openai, helius, birdeye & quant elite gets access to the moon dev api. join here: https://algotradecamp.com
 """
 
 import os
@@ -95,6 +95,8 @@ class MoonDevAPI:
         self.base_url = base_url
         self.headers = {'X-API-Key': self.api_key} if self.api_key else {}
         self.session = requests.Session()
+        self.max_retries = 3
+        self.chunk_size = 8192  # Smaller chunk size for more reliable downloads
         
         print("🌙 Moon Dev API: Ready to rock! 🚀")
         print(f"📂 Cache directory: {self.base_dir.absolute()}")
@@ -147,7 +149,54 @@ class MoonDevAPI:
 
     def get_oi_data(self):
         """Get detailed open interest data from API"""
-        return self._fetch_csv("oi.csv")
+        max_retries = 3
+        retry_delay = 2  # seconds
+        
+        for attempt in range(max_retries):
+            try:
+                print(f"🚀 Moon Dev API: Fetching oi.csv... (Attempt {attempt + 1}/{max_retries})")
+                
+                url = f'{self.base_url}/files/oi.csv'
+                
+                # Use stream=True and a larger chunk size
+                response = self.session.get(url, headers=self.headers, stream=True)
+                response.raise_for_status()
+                
+                # Save streamed content to a temporary file first
+                temp_file = self.base_dir / "temp_oi.csv"
+                with open(temp_file, 'wb') as f:
+                    # Use a larger chunk size for better performance
+                    for chunk in response.iter_content(chunk_size=8192*16):
+                        if chunk:
+                            f.write(chunk)
+                
+                # Once download is complete, read the file
+                df = pd.read_csv(temp_file)
+                print(f"✨ Successfully loaded {len(df)} rows from oi.csv")
+                
+                # Move temp file to final location
+                final_file = self.base_dir / "oi.csv"
+                temp_file.rename(final_file)
+                
+                return df
+                
+            except (requests.exceptions.ChunkedEncodingError, 
+                    requests.exceptions.ConnectionError,
+                    requests.exceptions.RequestException) as e:
+                print(f"⚠️ Attempt {attempt + 1} failed: {str(e)}")
+                if attempt < max_retries - 1:
+                    print(f"🔄 Retrying in {retry_delay} seconds...")
+                    time.sleep(retry_delay)
+                    retry_delay *= 2  # Exponential backoff
+                else:
+                    print(f"💥 Error fetching oi.csv after {max_retries} attempts: {str(e)}")
+                    print(f"📋 Stack trace:\n{traceback.format_exc()}")
+                    return None
+                    
+            except Exception as e:
+                print(f"💥 Unexpected error fetching oi.csv: {str(e)}")
+                print(f"📋 Stack trace:\n{traceback.format_exc()}")
+                return None
 
     def get_copybot_follow_list(self):
         """Get current copy trading follow list"""

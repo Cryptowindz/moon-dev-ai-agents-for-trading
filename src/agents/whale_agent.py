@@ -5,6 +5,15 @@ Built with love by Moon Dev 🚀
 Dez the Whale Agent tracks open interest changes across different timeframes and announces market moves if she sees anomalies 
 """
 
+# Model override settings
+# Set to "0" to use config.py's AI_MODEL setting
+# Available models:
+# - "deepseek-chat" (DeepSeek's V3 model - fast & efficient)
+# - "deepseek-reasoner" (DeepSeek's R1 reasoning model)
+# - "0" (Use config.py's AI_MODEL setting)
+MODEL_OVERRIDE = "deepseek-chat"  # Set to "0" to disable override
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"  # Base URL for DeepSeek API
+
 import os
 import pandas as pd
 import time
@@ -70,7 +79,7 @@ class WhaleAgent(BaseAgent):
         super().__init__('whale')  # Initialize base agent with type
         
         # Set AI parameters - use config values unless overridden
-        self.ai_model = AI_MODEL if AI_MODEL else config.AI_MODEL
+        self.ai_model = MODEL_OVERRIDE if MODEL_OVERRIDE != "0" else config.AI_MODEL
         self.ai_temperature = AI_TEMPERATURE if AI_TEMPERATURE > 0 else config.AI_TEMPERATURE
         self.ai_max_tokens = AI_MAX_TOKENS if AI_MAX_TOKENS > 0 else config.AI_MAX_TOKENS
         
@@ -97,8 +106,25 @@ class WhaleAgent(BaseAgent):
             
         openai.api_key = openai_key
         self.client = anthropic.Anthropic(api_key=anthropic_key)
+
+        # Initialize DeepSeek client if needed
+        if "deepseek" in self.ai_model.lower():
+            deepseek_key = os.getenv("DEEPSEEK_KEY")
+            if deepseek_key:
+                self.deepseek_client = openai.OpenAI(
+                    api_key=deepseek_key,
+                    base_url=DEEPSEEK_BASE_URL
+                )
+                print("🚀 Moon Dev's Whale Agent using DeepSeek override!")
+            else:
+                self.deepseek_client = None
+                print("⚠️ DEEPSEEK_KEY not found - DeepSeek model will not be available")
+        else:
+            self.deepseek_client = None
+            print(f"🎯 Moon Dev's Whale Agent using Claude model: {self.ai_model}!")
         
-        self.api = MoonDevAPI()
+        # Initialize Moon Dev API with correct base URL
+        self.api = MoonDevAPI(base_url="http://api.moondev.com:8000")
         
         # Create data directories if they don't exist
         self.audio_dir = PROJECT_ROOT / "src" / "audio"
@@ -115,37 +141,59 @@ class WhaleAgent(BaseAgent):
     def load_history(self):
         """Load or initialize historical OI data with change tracking"""
         try:
+            print("🔄 Starting history load...")
             if self.history_file.exists():
+                print("📂 Found existing history file")
                 df = pd.read_csv(self.history_file)
                 
                 # Check if we have the new column format
                 required_columns = ['timestamp', 'btc_oi', 'eth_oi', 'total_oi', 'btc_change_pct', 'eth_change_pct', 'total_change_pct']
                 if all(col in df.columns for col in required_columns):
+                    print("✅ Column format is correct")
                     self.oi_history = df
                     self.oi_history['timestamp'] = pd.to_datetime(self.oi_history['timestamp'])
                     print(f"📈 Loaded {len(self.oi_history)} historical OI records")
                 else:
-                    print("📝 Detected old format, creating new history file")
+                    print("🔄 Detected old format, creating new history file")
+                    print(f"Current columns: {df.columns.tolist()}")
                     self.oi_history = pd.DataFrame(columns=required_columns)
-                    self.history_file.unlink()
+                    if self.history_file.exists():
+                        print("🗑️ Removing old history file")
+                        self.history_file.unlink()
             else:
+                print("📝 No history file found, creating new one")
                 self.oi_history = pd.DataFrame(columns=['timestamp', 'btc_oi', 'eth_oi', 'total_oi', 
                                                       'btc_change_pct', 'eth_change_pct', 'total_change_pct'])
-                print("📝 Created new OI history file")
                 
             # Clean up old data (keep only last 24 hours)
             if not self.oi_history.empty:
+                print(f"🧹 Cleaning old data. Current size: {len(self.oi_history)}")
                 cutoff_time = datetime.now() - timedelta(hours=24)
                 self.oi_history = self.oi_history[self.oi_history['timestamp'] > cutoff_time]
+                print(f"✨ New size after cleanup: {len(self.oi_history)}")
+                print("💾 Saving cleaned history to file...")
                 self.oi_history.to_csv(self.history_file, index=False)
+                print("✅ History save complete")
                 
+            print("🎉 History load complete!")
+            
         except Exception as e:
             print(f"❌ Error loading history: {str(e)}")
-            self.oi_history = pd.DataFrame(columns=['timestamp', 'btc_oi', 'eth_oi', 'total_oi'])
+            print(f"📋 Stack trace: {traceback.format_exc()}")
+            self.oi_history = pd.DataFrame(columns=['timestamp', 'btc_oi', 'eth_oi', 'total_oi', 
+                                                  'btc_change_pct', 'eth_change_pct', 'total_change_pct'])
+            print("⚠️ Created empty history due to error")
             
     def _save_oi_data(self, timestamp, btc_oi, eth_oi, total_oi):
         """Save new OI data point with change percentages"""
         try:
+            print("\n🔄 Starting to save new OI data point...")
+            print(f"📊 Input data:")
+            print(f"  Timestamp: {timestamp}")
+            print(f"  BTC OI: ${btc_oi:,.2f}")
+            print(f"  ETH OI: ${eth_oi:,.2f}")
+            print(f"  Total OI: ${total_oi:,.2f}")
+            
             # Calculate percentage changes if we have previous data
             btc_change_pct = eth_change_pct = total_change_pct = 0.0
             
@@ -163,8 +211,11 @@ class WhaleAgent(BaseAgent):
                 print(f"BTC Change: {btc_change_pct:.4f}%")
                 print(f"ETH Change: {eth_change_pct:.4f}%")
                 print(f"Total Change: {total_change_pct:.4f}%")
+            else:
+                print("\n⚠️ No previous data found, setting changes to 0")
             
             # Add new data point
+            print("\n📝 Creating new data row...")
             new_row = pd.DataFrame([{
                 'timestamp': timestamp,
                 'btc_oi': float(btc_oi),
@@ -175,24 +226,26 @@ class WhaleAgent(BaseAgent):
                 'total_change_pct': total_change_pct
             }])
             
-            print("\n📝 Adding new data point to history...")
+            print("\n📊 Adding new data point to history...")
             print(f"History size before: {len(self.oi_history)}")
             self.oi_history = pd.concat([self.oi_history, new_row], ignore_index=True)
             print(f"History size after: {len(self.oi_history)}")
             
             # Clean up old data
+            print("\n🧹 Cleaning up old data...")
             cutoff_time = datetime.now() - timedelta(hours=24)
             old_size = len(self.oi_history)
             self.oi_history = self.oi_history[self.oi_history['timestamp'] > cutoff_time]
             print(f"Removed {old_size - len(self.oi_history)} old records")
             
             # Save to file
+            print("\n💾 Saving to history file...")
             self.oi_history.to_csv(self.history_file, index=False)
-            print("💾 Saved to history file")
+            print("✅ Save complete!")
             
         except Exception as e:
-            print(f"❌ Error saving OI data: {str(e)}")
-            print(f"Stack trace: {traceback.format_exc()}")
+            print(f"\n❌ Error saving OI data: {str(e)}")
+            print(f"📋 Stack trace:\n{traceback.format_exc()}")
             
     def _format_number_for_speech(self, number):
         """Convert numbers to speech-friendly format"""
@@ -213,7 +266,25 @@ class WhaleAgent(BaseAgent):
                 return None
                 
             print(f"✨ Successfully fetched {len(df)} OI records")
-            return df
+            
+            # Process the latest data point for each symbol
+            if not df.empty:
+                # Get latest BTC and ETH data
+                btc_data = df[df['symbol'] == 'BTCUSDT'].iloc[-1]
+                eth_data = df[df['symbol'] == 'ETHUSDT'].iloc[-1]
+                
+                # Use the most recent timestamp between BTC and ETH
+                current_time = pd.to_datetime(max(btc_data['time'], eth_data['time']))
+                
+                # Calculate OI values (openInterest * price)
+                btc_oi = float(btc_data['openInterest']) * float(btc_data['price'])
+                eth_oi = float(eth_data['openInterest']) * float(eth_data['price'])
+                total_oi = btc_oi + eth_oi
+                
+                # Save the data point
+                self._save_oi_data(current_time, btc_oi, eth_oi, total_oi)
+                
+            return self.oi_history
             
         except Exception as e:
             print(f"❌ Error getting OI data: {str(e)}")
@@ -242,21 +313,43 @@ class WhaleAgent(BaseAgent):
         
         print("\n📊 Calculating OI Changes:")
         
-        # Get current BTC value
+        # Get current BTC value from latest history entry
+        if self.oi_history.empty:
+            print("❌ No history data available")
+            return None
+            
         current_btc = float(self.oi_history.iloc[-1]['btc_oi'])
+        current_time = self.oi_history.iloc[-1]['timestamp']
         print(f"Current BTC OI: ${current_btc:,.2f}")
+        print(f"Current Time: {current_time}")
         
         # Use our local CHECK_INTERVAL_MINUTES constant
         interval = CHECK_INTERVAL_MINUTES
         
+        # Use the current timestamp from history instead of datetime.now()
+        target_time = current_time - timedelta(minutes=interval)
+        
+        print(f"\n🔍 Looking for data {interval}m ago from {target_time}")
+        print("\n📅 Full Historical Data:")
+        print("=" * 80)
+        print("Timestamp | BTC OI | ETH OI | Total OI | BTC Change% | ETH Change% | Total Change%")
+        print("-" * 80)
+        for idx, row in self.oi_history.iterrows():
+            print(f"{row['timestamp']} | ${row['btc_oi']:,.2f} | ${row['eth_oi']:,.2f} | ${row['total_oi']:,.2f} | {row['btc_change_pct']:,.4f}% | {row['eth_change_pct']:,.4f}% | {row['total_change_pct']:,.4f}%")
+        print("=" * 80)
+        
         # Get historical data from X minutes ago
         historical_data = self.oi_history[
-            self.oi_history['timestamp'] <= (datetime.now() - timedelta(minutes=interval))
+            self.oi_history['timestamp'] <= target_time
         ]
+        
+        print(f"\n📊 Found {len(historical_data)} historical records")
         
         if not historical_data.empty:
             historical_btc = float(historical_data.iloc[-1]['btc_oi'])
+            historical_time = historical_data.iloc[-1]['timestamp']
             print(f"Historical BTC OI ({interval}m ago): ${historical_btc:,.2f}")
+            print(f"Historical Time: {historical_time}")
             
             # Calculate percentage change
             btc_pct_change = ((current_btc - historical_btc) / historical_btc) * 100
@@ -270,50 +363,91 @@ class WhaleAgent(BaseAgent):
             }
         else:
             print(f"⚠️ No historical data found from {interval}m ago")
+            print("💡 This might be because:")
+            print(f"1. All timestamps are after {target_time}")
+            print(f"2. We need to wait {interval}m to build enough history")
+            print(f"3. Current time in history: {current_time}")
         
         return changes
         
     def _analyze_opportunity(self, changes, market_data):
         """Get AI analysis of the whale movement"""
         try:
+            # Get proper OHLCV data from Hyperliquid
+            print("\n📊 Getting market data from Hyperliquid...")
+            df = hl.get_data(
+                symbol='BTC',  # Use BTC not BTCUSDT for Hyperliquid
+                timeframe='15m',
+                bars=100,
+                add_indicators=True  # This will add SMA, RSI, MACD, etc.
+            )
+            
+            if df is not None and not df.empty:
+                print("\n📈 Latest Market Data:")
+                print("=" * 80)
+                print(df.tail().to_string())
+                print("=" * 80)
+                market_data_str = df.tail().to_string()
+            else:
+                print("⚠️ No market data available from Hyperliquid")
+                market_data_str = "No market data available"
+            
             # Prepare the context
             context = WHALE_ANALYSIS_PROMPT.format(
                 pct_change=f"{changes['btc']:.2f}",
                 interval=changes['interval'],
                 current_oi=self._format_number_for_speech(changes['current_btc']),
                 previous_oi=self._format_number_for_speech(changes['start_btc']),
-                market_data=market_data.tail(5).to_string() if market_data is not None else "No market data available"
+                market_data=market_data_str
             )
             
-            print(f"\n🤖 Analyzing whale movement with AI...")
-            
-            # Get AI analysis using instance settings
-            message = self.client.messages.create(
-                model=self.ai_model,
-                max_tokens=self.ai_max_tokens,
-                temperature=self.ai_temperature,
-                messages=[{
-                    "role": "user",
-                    "content": context
-                }]
-            )
+            # Use either DeepSeek or Claude based on model setting
+            if "deepseek" in self.ai_model.lower():
+                if not self.deepseek_client:
+                    raise ValueError("🚨 DeepSeek client not initialized - check DEEPSEEK_KEY")
+                    
+                print(f"\n🤖 Analyzing whale movement with DeepSeek model: {self.ai_model}...")
+                # Make DeepSeek API call
+                response = self.deepseek_client.chat.completions.create(
+                    model=self.ai_model,  # Use the actual model from override
+                    messages=[
+                        {"role": "system", "content": WHALE_ANALYSIS_PROMPT},
+                        {"role": "user", "content": context}
+                    ],
+                    max_tokens=self.ai_max_tokens,
+                    temperature=self.ai_temperature,
+                    stream=False
+                )
+                response_text = response.choices[0].message.content.strip()
+            else:
+                print(f"\n🤖 Analyzing whale movement with Claude model: {self.ai_model}...")
+                # Get AI analysis using Claude
+                message = self.client.messages.create(
+                    model=self.ai_model,
+                    max_tokens=self.ai_max_tokens,
+                    temperature=self.ai_temperature,
+                    messages=[{
+                        "role": "user",
+                        "content": context
+                    }]
+                )
+                # Handle both string and list responses
+                if isinstance(message.content, list):
+                    response_text = message.content[0].text if message.content else ""
+                else:
+                    response_text = message.content
             
             # Handle response
-            if not message or not message.content:
+            if not response_text:
                 print("❌ No response from AI")
                 return None
                 
-            # Handle TextBlock response
-            response = message.content
-            if isinstance(response, list):
-                if len(response) > 0 and hasattr(response[0], 'text'):
-                    response = response[0].text
-                else:
-                    print("❌ Invalid response format from AI")
-                    return None
-            
-            # Parse response
-            lines = [line.strip() for line in response.split('\n') if line.strip()]
+            # Parse response - handle both string and list formats
+            if isinstance(response_text, list):
+                lines = [line.strip() for line in response_text if line.strip()]
+            else:
+                lines = [line.strip() for line in response_text.split('\n') if line.strip()]
+                
             if not lines:
                 print("❌ Empty response from AI")
                 return None
@@ -409,11 +543,14 @@ class WhaleAgent(BaseAgent):
                     if announcement:
                         self._announce(announcement, is_whale)
             else:
-                print("📝 Building historical data...")
+                print("📝 Building historical data... Need at least 2 data points")
+                print(f"Current data points: {len(self.oi_history)}")
                 
         except Exception as e:
             print(f"❌ Error in monitoring cycle: {str(e)}")
             print(f"Stack trace: {traceback.format_exc()}")
+            print("🔧 Moon Dev suggests checking the logs and trying again!")
+            time.sleep(60)  # Sleep for 1 minute on error
             
     def _announce(self, message, is_whale=False):
         """Announce a message, only use voice for whale alerts"""

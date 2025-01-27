@@ -1,41 +1,104 @@
 """
 🌙 Moon Dev's Listing Arbitrage Agent 🔍
 
-This agent analyzes tokens from CoinGecko that are not yet listed on major exchanges 
-(Binance and Coinbase), looking for potential opportunities. The system works in the 
-following steps:
+=================================
+📚 OVERVIEW & DOCUMENTATION
+=================================
 
-1. Token Discovery:
-   - Reads discovered tokens from src/data/discovered_tokens.csv
-   - These tokens are pre-filtered to be Solana tokens not on major exchanges
-   - Initial filtering by market cap (<$10M) and volume (>$100k)
+This agent is designed to find potential "gem" tokens before they get listed on major exchanges.
+It's specifically built to analyze Solana tokens that meet these criteria:
+- Not yet listed on Binance or Coinbase
+- Market cap under $10M
+- 24h volume over $100k
+
+Key Features:
+------------
+1. Dual AI Analysis System:
+   - Technical Analysis Agent (Default: Claude Haiku)
+     • Analyzes price charts and patterns
+     • Studies volume trends
+     • Identifies support/resistance levels
+     • Evaluates OHLCV patterns
+   
+   - Fundamental Analysis Agent (Default: Claude Sonnet)
+     • Evaluates project quality
+     • Assesses team and development
+     • Analyzes market positioning
+     • Reviews technical analysis findings
 
 2. Data Collection:
-   - Fetches 14 days of OHLCV (Open, High, Low, Close) data
-   - Uses 4-hour intervals for detailed price action analysis
-   - Calculates key statistics like volatility and price changes
+   - Fetches 14 days of historical data
+   - Uses 4-hour candle intervals
+   - Calculates key metrics:
+     • Volatility
+     • Price trends
+     • Volume patterns
+     • Support/resistance levels
 
-3. AI Analysis:
-   - Two AI agents analyze each token in parallel:
-     a) Agent One (Claude Haiku): Technical analysis, OHLCV patterns
-     b) Agent Two (Claude Sonnet): Fundamental analysis, project evaluation
-   - Each agent provides BUY/SELL/DO NOTHING recommendations
+3. AI Model Flexibility:
+   - Supports multiple AI models:
+     • Claude models (default)
+     • DeepSeek Chat
+     • DeepSeek Reasoner
+   - Easy model switching via MODEL_OVERRIDE setting
 
-4. Results & Storage:
-   - Full analysis saved to src/data/ai_analysis.csv
-   - Filtered buy recommendations saved to src/data/ai_analysis_buys.csv
-   - Agents maintain memory of analyzed tokens to avoid duplication
+4. Performance Optimization:
+   - Parallel processing (50 processes)
+   - 24-hour analysis cycles
+   - Smart token skipping:
+     • Recently analyzed tokens
+     • Stablecoins
+     • Wrapped tokens
 
-5. Optimization:
-   - Runs every 24 hours to manage API costs
-   - Uses parallel processing (50 processes) for efficiency
-   - Skips tokens analyzed within the last 24 hours
-   - Ignores stablecoins and wrapped tokens
+5. Results & Storage:
+   - Main results: src/data/ai_analysis.csv
+   - Buy signals: src/data/ai_analysis_buys.csv
+   - Agent memory: src/data/agent_memory/
 
-The system is designed to help identify promising tokens before they reach major 
-exchanges, potentially finding opportunities for significant returns.
+Usage:
+------
+1. Ensure required API keys in .env:
+   - ANTHROPIC_KEY (for Claude)
+   - DEEPSEEK_KEY (for DeepSeek)
+   - COINGECKO_API_KEY
+
+2. Configure model preference:
+   MODEL_OVERRIDE = "0"           # Use Claude (default)
+   MODEL_OVERRIDE = "deepseek-chat"    # Use DeepSeek Chat
+   MODEL_OVERRIDE = "deepseek-reasoner" # Use DeepSeek Reasoner
+
+3. Run the agent:
+   python src/agents/listingarb_agent.py
+
+Output Files:
+------------
+1. ai_analysis.csv:
+   - Full analysis of all tokens
+   - Includes both agent recommendations
+   - Price and volume data
+   - Timestamps of analysis
+
+2. ai_analysis_buys.csv:
+   - Filtered list of "BUY" recommendations
+   - Only tokens under $10M market cap
+   - Sorted by timestamp (newest first)
+
+Memory System:
+-------------
+- Stores last 100 analyses per agent
+- Tracks promising tokens
+- Maintains conversation history
+- Auto-cleans old records
+
+Performance Notes:
+----------------
+- Analyzes ~1000 tokens per run
+- Takes 2-3 hours for full analysis
+- Uses rate limiting for API calls
+- Parallel processing reduces runtime
 
 Created by Moon Dev 🌙
+For updates: https://github.com/moon-dev-ai-agents-for-trading
 """
 
 import os
@@ -51,9 +114,34 @@ from dotenv import load_dotenv
 import requests
 import numpy as np
 import concurrent.futures
+import openai
+import src.config as config
 
 # Load environment variables
 load_dotenv()
+
+# Model override settings
+# Set to "0" to use config.py's AI_MODEL setting
+# Available models:
+# - "deepseek-chat" (DeepSeek's V3 model - fast & efficient)
+# - "deepseek-reasoner" (DeepSeek's R1 reasoning model)
+# - "0" (Use config.py's AI_MODEL setting)
+MODEL_OVERRIDE = "deepseek-chat"  # Set to "0" to disable override
+
+# DeepSeek API settings
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"  # Base URL for DeepSeek API
+
+# 🤖 Agent Model Selection
+AI_MODEL = MODEL_OVERRIDE if MODEL_OVERRIDE != "0" else config.AI_MODEL
+
+# 📁 File Paths
+DISCOVERED_TOKENS_FILE = Path("src/data/discovered_tokens.csv")  # Input from token discovery script
+AI_ANALYSIS_FILE = Path("src/data/ai_analysis.csv")  # AI analysis results
+
+# 🤖 CoinGecko API Settings
+COINGECKO_API_KEY = os.getenv("COINGECKO_API_KEY")
+COINGECKO_BASE_URL = "https://pro-api.coingecko.com/api/v3"
+TEMP_DATA_DIR = Path("src/data/temp_data")
 
 # ⚙️ Configuration
 HOURS_BETWEEN_RUNS = 24        # Run AI analysis every 24 hours to manage API costs
@@ -75,19 +163,6 @@ DO_NOT_ANALYZE = [
     'wrapped-bitcoin',  # WBTC
     'wrapped-solana',  # WSOL
 ]
-
-# 🤖 Agent Model Selection
-AGENT_ONE_MODEL = "claude-3-haiku-20240307"     # Technical Analysis Agent
-AGENT_TWO_MODEL = "claude-3-sonnet-20240229"    # Fundamental Analysis Agent
-
-# 📁 File Paths
-DISCOVERED_TOKENS_FILE = Path("src/data/discovered_tokens.csv")  # Input from token discovery script
-AI_ANALYSIS_FILE = Path("src/data/ai_analysis.csv")  # AI analysis results
-
-# 🤖 CoinGecko API Settings
-COINGECKO_API_KEY = os.getenv("COINGECKO_API_KEY")
-COINGECKO_BASE_URL = "https://pro-api.coingecko.com/api/v3"
-TEMP_DATA_DIR = Path("src/data/temp_data")
 
 # 🤖 Agent Prompts
 AGENT_ONE_PROMPT = """
@@ -140,7 +215,22 @@ class AIAgent:
     def __init__(self, name: str, model: str):
         self.name = name
         self.model = model
-        self.client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_KEY"))
+        
+        # Initialize appropriate client based on model
+        if "deepseek" in self.model.lower():
+            deepseek_key = os.getenv("DEEPSEEK_KEY")
+            if deepseek_key:
+                self.client = openai.OpenAI(
+                    api_key=deepseek_key,
+                    base_url=DEEPSEEK_BASE_URL
+                )
+                print(f"🚀 {name} using DeepSeek model: {model}")
+            else:
+                raise ValueError("🚨 DEEPSEEK_KEY not found in environment variables!")
+        else:
+            self.client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_KEY"))
+            print(f"🤖 {name} using Claude model: {model}")
+            
         self.memory_file = Path(f"src/data/agent_memory/{name.lower().replace(' ', '_')}.json")
         self.memory = {
             'analyzed_tokens': [],
@@ -148,7 +238,6 @@ class AIAgent:
             'conversations': []
         }
         self.load_memory()
-        cprint(f"🤖 {name} initialized with {model}!", "white", "on_green")
         
     def load_memory(self):
         """Load agent memory"""
@@ -233,16 +322,27 @@ Focus on:
 
 Remember to reference specific data points from the OHLCV table in your analysis!"""
             
-            # Get AI response with increased context
-            response = self.client.messages.create(
-                model=self.model,
-                max_tokens=300,  # Increased for more detailed analysis
-                temperature=0.7,
-                system=system_prompt,
-                messages=[{"role": "user", "content": user_prompt}]
-            )
-            
-            analysis = response.content[0].text
+            # Get AI response with correct client
+            if "deepseek" in self.model.lower():
+                response = self.client.chat.completions.create(
+                    model=self.model,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt}
+                    ],
+                    max_tokens=300,
+                    temperature=0.7
+                )
+                analysis = response.choices[0].message.content
+            else:
+                response = self.client.messages.create(
+                    model=self.model,
+                    max_tokens=300,
+                    temperature=0.7,
+                    system=system_prompt,
+                    messages=[{"role": "user", "content": user_prompt}]
+                )
+                analysis = response.content[0].text
             
             # Update memory with OHLCV context
             if not isinstance(self.memory['analyzed_tokens'], list):
@@ -288,8 +388,8 @@ class ListingArbSystem:
     """AI Agent system for analyzing potential listing opportunities"""
     
     def __init__(self):
-        self.agent_one = AIAgent("Agent One", AGENT_ONE_MODEL)
-        self.agent_two = AIAgent("Agent Two", AGENT_TWO_MODEL)
+        self.agent_one = AIAgent("Agent One", AI_MODEL)
+        self.agent_two = AIAgent("Agent Two", AI_MODEL)
         self.analysis_log = self._load_analysis_log()
         cprint("🔍 Moon Dev's Listing Arb System Ready!", "white", "on_green", attrs=["bold"])
         
