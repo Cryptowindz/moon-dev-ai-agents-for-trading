@@ -83,11 +83,15 @@ src/data/sentiment
 src/data/focus_history.csv
 src/data/discovered_tokens.csv
 src/data/ai_analysis.csv
-src/frontend
+
 # add this to gitignor /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data
 
 /src/data/ai_analysis_buys.csv
 src/data/ai_analysis_buys.csv
+src/data/chat_agent/knowledge_base.txt
+
+src/data/videos/raw_vids/howtouseo3fortrading.mov
+
 src/audio
 /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/agent_memory
 /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/sentiment
@@ -95,3 +99,27 @@ src/audio
 /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/private_data
 /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/.replit
 /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/.replit
+
+/Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/videos/raw_clips
+
+# Project specific
+src/data/chat_agent/chat_history.csv
+src/data/chat_agent/config.json
+
+src/data/videos/raw_streams/EaMh2ILYJS4.mov
+*.env
+.env.*
+!.env_example
+.cursorrules
+
+# Moon Dev specific
+**/chat_history*.csv
+**/chat_*.json
+**/knowledge_base*.txt
+
+# Add prompt log to gitignore
+src/data/chat_agent/prompt_log.txt
+
+# Also add the directory in case it doesn't exist yet
+src/data/chat_agent/*.txt
+src/data/code_runner/screenshotssrc/frontend/

@@ -29,12 +29,39 @@ This agent automates the RBI process:
 Remember: Past performance doesn't guarantee future results!
 """
 
+# Model Configuration
+# Each agent can use a different model type and name
+RESEARCH_CONFIG = {
+    "type": "groq",
+    "name": "mixtral-8x7b-32768"  # Fast reasoning model for research
+}
+
+BACKTEST_CONFIG = {
+    "type": "openai",
+    "name": "o3-mini",             # More capable model for complex backtest creation
+    "reasoning_effort": "high"      # Maximum reasoning for O3 models
+}
+
+DEBUG_CONFIG = {
+    "type": "openai",
+    "name": "o3-mini",             # Technical debugging with reasoning capabilities
+    "reasoning_effort": "high"      # Maximum reasoning for O3 models
+}
+
+PACKAGE_CONFIG = {
+    "type": "groq",
+    "name": "mixtral-8x7b-32768"  # Fast model for package optimization
+}
+
 # DeepSeek Model Selection per Agent
-# Set to "0" to use config.py's AI_MODEL setting
-# Options for each: "deepseek-chat" (faster) or "deepseek-reasoner" (more analytical)
+# Options for each: 
+# - "deepseek-chat" (DeepSeek's V3 model - fast & efficient)
+# - "deepseek-reasoner" (DeepSeek's R1 reasoning model)
+# - "0" (Use config.py's AI_MODEL setting)
 RESEARCH_MODEL = "0"  # Analyzes strategies thoroughly
 BACKTEST_MODEL = "0"  # Creative in implementing strategies
 DEBUG_MODEL = "0"     # Careful code analysis
+PACKAGE_MODEL = "0"   # Optimizes package imports and dependencies
 
 # Agent Prompts
 
@@ -86,9 +113,8 @@ Include:
 2. Strategy class with indicators
 3. Entry/exit logic
 4. Risk management
-5. Parameter optimization
-6. your size should be 1,000,000
-7. If you need indicators use TA lib or pandas TA. Do not use backtesting.py's indicators. 
+5. your size should be 1,000,000
+6. If you need indicators use TA lib or pandas TA. Do not use backtesting.py's indicators. 
 
 IMPORTANT DATA HANDLING:
 1. Clean column names by removing spaces: data.columns = data.columns.str.strip().str.lower()
@@ -96,10 +122,7 @@ IMPORTANT DATA HANDLING:
 3. Ensure proper column mapping to match backtesting requirements:
    - Required columns: 'Open', 'High', 'Low', 'Close', 'Volume'
    - Use proper case (capital first letter)
-4. When optimizing parameters:
-   - Never try to optimize lists directly
-   - Break down list parameters (like Fibonacci levels) into individual parameters
-   - Use ranges for optimization (e.g., fib_level_1=range(30, 40, 2))
+
 
 INDICATOR CALCULATION RULES:
 1. ALWAYS use self.I() wrapper for ANY indicator calculations
@@ -113,24 +136,25 @@ INDICATOR CALCULATION RULES:
 BACKTEST EXECUTION ORDER:
 1. Run initial backtest with default parameters first
 2. Print full stats using print(stats) and print(stats._strategy)
-3. Show initial performance plot
-4. Then run optimization
-5. Show optimized results and final plot
+3. no optimization code needed, just print the final stats, make sure full stats are printed, not just part or some. stats = bt.run() print(stats) is an example of the last line of code. no need for plotting ever.
 
-CHART OUTPUT:
-1. Import os at the top of the file
-2. Save charts to the charts directory:
-   ```python
-   # Save plots to charts directory
-   chart_file = os.path.join("/Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/rbi/charts", f"{strategy_name}_chart.html")
-   bt.plot(filename=chart_file, open_browser=False)
-   ```
-3. Do this for both initial and optimized plots
+do not creeate charts to plot this, just print stats. no charts needed.
+
+CRITICAL POSITION SIZING RULE:
+When calculating position sizes in backtesting.py, the size parameter must be either:
+1. A fraction between 0 and 1 (for percentage of equity)
+2. A whole number (integer) of units
+
+The common error occurs when calculating position_size = risk_amount / risk, which results in floating-point numbers. Always use:
+position_size = int(round(position_size))
+
+Example fix:
+❌ self.buy(size=3546.0993)  # Will fail
+✅ self.buy(size=int(round(3546.0993)))  # Will work
 
 RISK MANAGEMENT:
 1. Always calculate position sizes based on risk percentage
 2. Use proper stop loss and take profit calculations
-3. Include risk-reward ratio in optimization parameters
 4. Print entry/exit signals with Moon Dev themed messages
 
 If you need indicators use TA lib or pandas TA. Do not use backtesting.py's indicators. 
@@ -147,6 +171,19 @@ Always add plenty of Moon Dev themed debug prints with emojis to make debugging 
 DEBUG_PROMPT = """
 You are Moon Dev's Debug AI 🌙
 Fix technical issues in the backtest code WITHOUT changing the strategy logic.
+
+CRITICAL BACKTESTING REQUIREMENTS:
+1. Position Sizing Rules:
+   - Must be either a fraction (0 < size < 1) for percentage of equity
+   - OR a positive whole number (round integer) for units
+   - Example: size=0.5 (50% of equity) or size=100 (100 units)
+   - NEVER use floating point numbers for unit-based sizing
+
+2. Common Fixes Needed:
+   - Round position sizes to whole numbers if using units
+   - Convert to fraction if using percentage of equity
+   - Ensure stop loss and take profit are price levels, not distances
+
 Focus on:
 1. Syntax errors (like incorrect string formatting)
 2. Import statements and dependencies
@@ -158,9 +195,9 @@ DO NOT change:
 1. Strategy logic
 2. Entry/exit conditions
 3. Risk management rules
-4. Parameter values
+4. Parameter values (unless fixing technical issues)
 
-Return the complete fixed code.
+Return the complete fixed code with Moon Dev themed debug prints! 🌙 ✨
 """
 
 PACKAGE_PROMPT = """
@@ -214,11 +251,14 @@ from io import BytesIO
 import PyPDF2
 from youtube_transcript_api import YouTubeTranscriptApi
 import openai
+from anthropic import Anthropic
 from pathlib import Path
 from termcolor import cprint
 import threading
 import itertools
 import sys
+from src.config import *  # Import config settings including AI_MODEL
+from src.models import model_factory
 
 # DeepSeek Configuration
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
@@ -248,7 +288,8 @@ def init_deepseek_client():
     try:
         deepseek_key = os.getenv("DEEPSEEK_KEY")
         if not deepseek_key:
-            raise ValueError("🚨 DEEPSEEK_KEY not found in environment variables!")
+            cprint("⚠️ DEEPSEEK_KEY not found - DeepSeek models will not be available", "yellow")
+            return None
             
         print("🔑 Initializing DeepSeek client...")
         print("🌟 Moon Dev's RBI Agent is connecting to DeepSeek...")
@@ -263,70 +304,11 @@ def init_deepseek_client():
         return client
     except Exception as e:
         print(f"❌ Error initializing DeepSeek client: {str(e)}")
-        print("💡 Check if your DEEPSEEK_KEY is valid and properly set")
-        return None
-
-def chat_with_deepseek(system_prompt, user_content, model):
-    """Chat with DeepSeek API or fallback to default model based on setting"""
-    print(f"\n🤖 Starting chat with model: {model}...")
-    print("🌟 Moon Dev's RBI Agent is thinking...")
-    
-    try:
-        # Use DeepSeek if specified, otherwise use default model from config
-        if "deepseek" in model.lower():
-            client = init_deepseek_client()
-            if not client:
-                print("❌ Failed to initialize DeepSeek client")
-                return None
-                
-            print("📤 Sending request to DeepSeek API...")
-            print(f"🎯 Model: {model}")
-            print("🔄 Please wait while Moon Dev's RBI Agent processes your request...")
-            
-            response = client.chat.completions.create(
-                model=model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_content}
-                ],
-                temperature=0.7
-            )
-            
-            if not response or not response.choices:
-                print("❌ Empty response from DeepSeek API")
-                return None
-                
-            print("📥 Received response from DeepSeek API!")
-            print(f"✨ Response length: {len(response.choices[0].message.content)} characters")
-            return response.choices[0].message.content.strip()
-            
-        else:
-            # Use existing model from config (preserve current functionality)
-            # This part should use your existing chat implementation
-            # We're just adding the DeepSeek option above
-            client = init_anthropic_client()  # Or whatever your current initialization is
-            if not client:
-                return None
-                
-            response = client.messages.create(
-                model=AI_MODEL,  # Use your config model
-                max_tokens=AI_MAX_TOKENS,
-                temperature=AI_TEMPERATURE,
-                system=system_prompt,
-                messages=[
-                    {"role": "user", "content": user_content}
-                ]
-            )
-            return response.content[0].text
-            
-    except Exception as e:
-        print(f"❌ Error in chat: {str(e)}")
-        print("💡 This could be due to API rate limits or invalid requests")
-        print(f"🔍 Error details: {str(e)}")
+        print("💡 Will fall back to Claude model from config.py")
         return None
 
 def init_anthropic_client():
-    """Initialize Anthropic client for default model"""
+    """Initialize Anthropic client for Claude models"""
     try:
         anthropic_key = os.getenv("ANTHROPIC_KEY")
         if not anthropic_key:
@@ -335,6 +317,77 @@ def init_anthropic_client():
         return Anthropic(api_key=anthropic_key)
     except Exception as e:
         print(f"❌ Error initializing Anthropic client: {str(e)}")
+        return None
+
+def chat_with_model(system_prompt, user_content, model_config):
+    """Chat with AI model using model factory"""
+    try:
+        # Initialize model using factory with specific config
+        model = model_factory.get_model(model_config["type"], model_config["name"])
+        if not model:
+            raise ValueError(f"🚨 Could not initialize {model_config['type']} {model_config['name']} model!")
+
+        cprint(f"🤖 Using {model_config['type']} model: {model_config['name']}", "cyan")
+        cprint("🌟 Moon Dev's RBI Agent is thinking...", "yellow")
+        
+        # Debug prints for prompt lengths
+        cprint(f"📝 System prompt length: {len(system_prompt)} chars", "cyan")
+        cprint(f"📝 User content length: {len(user_content)} chars", "cyan")
+
+        # For OpenAI O3 models, handle reasoning effort
+        if model_config["type"] == "openai" and model_config["name"].startswith('o3'):
+            # Get reasoning effort from config or default to medium
+            reasoning_effort = model_config.get("reasoning_effort", "medium")
+            juice_emoji = {"low": "🥤", "medium": "⚡️", "high": "🚀"}
+            
+            cprint(f"🧠 Using O3 model with {reasoning_effort.upper()} reasoning capabilities... {juice_emoji[reasoning_effort]}", "cyan")
+            cprint(f"🌙 Moon Dev's juice level: {reasoning_effort.upper()}! ✨", "yellow")
+            
+            # Combine system prompt and user content for O3
+            combined_prompt = f"{system_prompt}\n\n{user_content}"
+            response = model.generate_response(
+                system_prompt="",  # O3 doesn't use system prompts
+                user_content=combined_prompt,
+                reasoning_effort=reasoning_effort  # Use configured reasoning effort
+            )
+        else:
+            # For other models, use standard parameters
+            response = model.generate_response(
+                system_prompt=system_prompt,
+                user_content=user_content,
+                temperature=AI_TEMPERATURE,
+                max_tokens=AI_MAX_TOKENS
+            )
+
+        if not response:
+            cprint("❌ Model returned None response", "red")
+            return None
+            
+        if not hasattr(response, 'content'):
+            cprint(f"❌ Response missing content attribute. Response type: {type(response)}", "red")
+            cprint(f"Response attributes: {dir(response)}", "yellow")
+            return None
+
+        content = response.content
+        if not content or len(content.strip()) == 0:
+            cprint("❌ Model returned empty content", "red")
+            return None
+
+        cprint("📥 Received response from AI!", "green")
+        cprint(f"✨ Response length: {len(content)} characters", "cyan")
+        cprint(f"📄 Response preview: {content[:200]}...", "yellow")
+        return content
+
+    except Exception as e:
+        cprint(f"❌ Error in AI chat: {str(e)}", "red")
+        cprint(f"🔍 Error type: {type(e).__name__}", "yellow")
+        if hasattr(e, 'response'):
+            cprint(f"🔍 Response error: {getattr(e, 'response', 'No response details')}", "yellow")
+        if hasattr(e, '__dict__'):
+            cprint("🔍 Error attributes:", "yellow")
+            for attr in dir(e):
+                if not attr.startswith('_'):
+                    cprint(f"  ├─ {attr}: {getattr(e, attr)}", "yellow")
         return None
 
 def get_youtube_transcript(video_id):
@@ -409,11 +462,11 @@ def research_strategy(content):
     cprint("🤖 Time to discover some alpha!", "yellow")
     
     output = run_with_animation(
-        chat_with_deepseek,
+        chat_with_model,
         "Research Agent",
         RESEARCH_PROMPT, 
-        content, 
-        RESEARCH_MODEL
+        content,
+        RESEARCH_CONFIG  # Pass research-specific model config
     )
     
     if output:
@@ -440,11 +493,11 @@ def create_backtest(strategy, strategy_name="UnknownStrategy"):
     cprint("💰 Let's turn that strategy into profits!", "yellow")
     
     output = run_with_animation(
-        chat_with_deepseek,
+        chat_with_model,
         "Backtest Agent",
         BACKTEST_PROMPT,
         f"Create a backtest for this strategy:\n\n{strategy}",
-        BACKTEST_MODEL
+        BACKTEST_CONFIG  # Pass backtest-specific model config
     )
     
     if output:
@@ -465,11 +518,11 @@ def debug_backtest(backtest_code, strategy=None, strategy_name="UnknownStrategy"
         context += f"\n\nOriginal strategy for reference:\n{strategy}"
     
     output = run_with_animation(
-        chat_with_deepseek,
+        chat_with_model,
         "Debug Agent",
         DEBUG_PROMPT,
         context,
-        DEBUG_MODEL
+        DEBUG_CONFIG  # Pass debug-specific model config
     )
     
     if output:
@@ -477,7 +530,6 @@ def debug_backtest(backtest_code, strategy=None, strategy_name="UnknownStrategy"
         if code_match:
             output = code_match.group(1)
             
-        # Save to final directory with strategy name
         filepath = FINAL_BACKTEST_DIR / f"{strategy_name}_BTFinal.py"
         with open(filepath, 'w') as f:
             f.write(output)
@@ -491,11 +543,11 @@ def package_check(backtest_code, strategy_name="UnknownStrategy"):
     cprint("🔍 Checking for proper indicator imports!", "yellow")
     
     output = run_with_animation(
-        chat_with_deepseek,
+        chat_with_model,
         "Package Agent",
         PACKAGE_PROMPT,
         f"Check and fix indicator packages in this code:\n\n{backtest_code}",
-        DEBUG_MODEL
+        PACKAGE_CONFIG  # Pass package-specific model config
     )
     
     if output:
@@ -503,7 +555,6 @@ def package_check(backtest_code, strategy_name="UnknownStrategy"):
         if code_match:
             output = code_match.group(1)
             
-        # Save to package directory
         filepath = PACKAGE_DIR / f"{strategy_name}_PKG.py"
         with open(filepath, 'w') as f:
             f.write(output)
@@ -670,11 +721,12 @@ def main():
 
 if __name__ == "__main__":
     try:
-        # Show which models are being used
         cprint(f"\n🌟 Moon Dev's RBI Agent Starting Up!", "green")
-        cprint(f"🧪 Research Model: {RESEARCH_MODEL if 'deepseek' in RESEARCH_MODEL.lower() else AI_MODEL}", "cyan")
-        cprint(f"📊 Backtest Model: {BACKTEST_MODEL if 'deepseek' in BACKTEST_MODEL.lower() else AI_MODEL}", "cyan")
-        cprint(f"🔧 Debug Model: {DEBUG_MODEL if 'deepseek' in DEBUG_MODEL.lower() else AI_MODEL}", "cyan")
+        cprint("\n🤖 Model Configurations:", "cyan")
+        cprint(f"📚 Research: {RESEARCH_CONFIG['type']} - {RESEARCH_CONFIG['name']}", "cyan")
+        cprint(f"📊 Backtest: {BACKTEST_CONFIG['type']} - {BACKTEST_CONFIG['name']}", "cyan")
+        cprint(f"🔧 Debug: {DEBUG_CONFIG['type']} - {DEBUG_CONFIG['name']}", "cyan")
+        cprint(f"📦 Package: {PACKAGE_CONFIG['type']} - {PACKAGE_CONFIG['name']}", "cyan")
         main()
     except KeyboardInterrupt:
         cprint("\n👋 Moon Dev's RBI Agent shutting down gracefully...", "yellow")

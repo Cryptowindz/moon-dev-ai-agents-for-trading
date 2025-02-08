@@ -1,6 +1,8 @@
 """
 🌙 Moon Dev's New & Top Coins Agent 🔍
 
+This agent goes through and analyzes all of the new tokens that have been listed in the coin gecko and then also analyzes the top movers of the last 24 hours on coin gecko and then makes recommendations based off that data. 
+
 =================================
 📚 QUICK START GUIDE
 =================================

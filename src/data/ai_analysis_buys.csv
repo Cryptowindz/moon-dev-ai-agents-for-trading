@@ -1,4 +1,17 @@
 timestamp,token_id,symbol,name,volume_24h,market_cap,agent_one_recommendation,agent_two_recommendation,price,agent_one_analysis,agent_two_analysis,coingecko_url
+2025-01-31T10:53:52.852697,solcard,solc,SolCard,175472.0,0.0,BUY,DO NOTHING,0.03406223,,,https://www.coingecko.com/en/coins/solcard
+2025-01-31T10:53:51.044643,big-jim,BIGJIM,BIG JIM,175041.0,4283262.0,BUY,DO NOTHING,4.29e-06,,,https://www.coingecko.com/en/coins/big-jim
+2025-01-31T10:51:34.168490,gmika,GMIKA,GMika,221339.0,3413092.0,BUY,BUY,0.00345041,,,https://www.coingecko.com/en/coins/gmika
+2025-01-31T10:43:53.735850,wild-goat-coin-2,wgc,Wild Goat Coin,458199.0,2159311.0,BUY,DO NOTHING,0.0004317,,,https://www.coingecko.com/en/coins/wild-goat-coin-2
+2025-01-31T10:36:22.052753,sylvi-agent,sylviai,SYLVI AGENT,1260757.0,2833554.0,BUY,DO NOTHING,0.00281909,,,https://www.coingecko.com/en/coins/sylvi-agent
+2025-01-31T10:34:11.015863,choise,CHO,Choise.ai,1632503.0,2297522.0,BUY,BUY,0.02096778,,,https://www.coingecko.com/en/coins/choise
+2025-01-30T09:57:00.962571,roaland-core,ROA,ROACORE,833793.0,8419609.0,BUY,BUY,0.01799978,,,https://www.coingecko.com/en/coins/roaland-core
+2025-01-30T09:52:11.110653,alpha-3,alpha,Reject Modernity,3305491.0,2925315.0,BUY,DO NOTHING,0.0029254,,,https://www.coingecko.com/en/coins/alpha-3
+2025-01-28T08:27:52.682900,real-world-ai,RWA,Real World AI,1350132.0,5303418.0,BUY,BUY,0.00570261,,,https://www.coingecko.com/en/coins/real-world-ai
+2025-01-27T18:14:04.990803,simsai,simsai,SimsAI,196910.0,4085880.0,BUY,DO NOTHING,0.00408588,,,https://www.coingecko.com/en/coins/simsai
+2025-01-27T13:22:10.861694,gofundmeme,gfm,GoFundMeme,23898356.0,0.0,BUY,BUY,0.0404543,,,https://www.coingecko.com/en/coins/gofundmeme
+2025-01-27T13:19:19.509273,stupidcoin-2,stupid,StupidCoin,167388331.0,0.0,BUY,DO NOTHING,0.03267882,,,https://www.coingecko.com/en/coins/stupidcoin-2
+2025-01-27T13:03:14.984419,aether-collective,AETHER,aether collective,11410085.0,7814488.0,BUY,BUY,0.00793042,,,https://www.coingecko.com/en/coins/aether-collective
 2025-01-12T10:09:21.481034,valleydao,GROW,ValleyDAO,104091.0,7398521.0,DO NOTHING,BUY,1.16,,,https://www.coingecko.com/en/coins/valleydao
 2025-01-12T10:09:19.128648,pepe-trump,ptrump,Pepe Trump,101942.0,2782312.0,BUY,DO NOTHING,0.00273301,,,https://www.coingecko.com/en/coins/pepe-trump
 2025-01-12T10:09:18.669101,fluffington,FLUFFI,Fluffington,104327.0,361944.0,BUY,DO NOTHING,0.00036385,,,https://www.coingecko.com/en/coins/fluffington

@@ -1,4 +1,8 @@
-Here is the implementation of the TrendVengeance strategy in Python using the `backtesting.py` framework. This implementation includes all the necessary components, such as trend identification, pullback entries, trailing stops, and risk management. It also includes Moon Dev-themed debug prints for better visualization and debugging.
+Below is the implementation of the **TrendVengeance** strategy in Python using the `backtesting.py` framework. This implementation includes all the necessary components, such as indicators, entry/exit logic, risk management, and parameter optimization. It also includes Moon Dev-themed debug prints and proper data handling.
+
+---
+
+### **Implementation**
 
 ```python
 import os
@@ -10,50 +14,63 @@ from backtesting.lib import crossover
 # Define the TrendVengeance strategy
 class TrendVengeance(Strategy):
     # Strategy parameters
-    risk_per_trade = 0.02  # Risk 2% of the account per trade
-    trailing_stop_pct = 0.02  # 2% trailing stop
-    swing_period = 20  # Period for identifying swing highs/lows
+    rsi_period = 14  # RSI period for momentum confirmation
+    atr_period = 14  # ATR period for trailing stop calculation
+    risk_per_trade = 0.01  # Risk 1% of account balance per trade
 
     def init(self):
         # Clean and prepare data
         self.data.columns = self.data.columns.str.strip().str.lower()
         self.data = self.data.drop(columns=[col for col in self.data.columns if 'unnamed' in col.lower()])
+
+        # Ensure proper column mapping
         self.data.columns = ['Open', 'High', 'Low', 'Close', 'Volume']
 
-        # Calculate swing highs and lows using talib.MAX/MIN
-        self.swing_high = self.I(talib.MAX, self.data.High, timeperiod=self.swing_period)
-        self.swing_low = self.I(talib.MIN, self.data.Low, timeperiod=self.swing_period)
+        # Calculate indicators
+        self.rsi = self.I(talib.RSI, self.data.Close, timeperiod=self.rsi_period)
+        self.atr = self.I(talib.ATR, self.data.High, self.data.Low, self.data.Close, timeperiod=self.atr_period)
 
-        # Print Moon Dev-themed initialization message
-        print("🌙✨ Moon Dev's TrendVengeance Strategy Initialized! 🚀✨")
+        # Initialize trailing stop variables
+        self.trailing_stop_long = None
+        self.trailing_stop_short = None
+
+        # Debug print
+        print("🌙 TrendVengeance strategy initialized! ✨")
 
     def next(self):
         # Calculate position size based on risk percentage
-        account_size = self.equity
-        position_size = (account_size * self.risk_per_trade) / (self.data.Close[-1] - self.swing_low[-1])
+        account_balance = self.equity
+        risk_amount = account_balance * self.risk_per_trade
+        atr_value = self.atr[-1]
+        position_size = risk_amount / atr_value if atr_value != 0 else 0
 
-        # Long entry logic: Price pulls back to swing low in an uptrend
-        if self.data.Close[-1] > self.swing_high[-1] and self.data.Close[-2] <= self.swing_high[-2]:
-            print("🌙✨ Moon Dev Signal: Long Entry Detected! 🚀")
-            self.buy(size=position_size, sl=self.swing_low[-1])
+        # Entry logic for long trades
+        if not self.position and self.rsi[-1] > 50 and self.data.Close[-1] > self.data.Open[-1]:
+            # Enter long with trailing stop
+            self.buy(size=position_size)
+            self.trailing_stop_long = self.data.Low[-1] - 2 * atr_value
+            print(f"🚀 Long entry triggered! Price: {self.data.Close[-1]}, Trailing Stop: {self.trailing_stop_long}")
 
-        # Short entry logic: Price pulls back to swing high in a downtrend
-        elif self.data.Close[-1] < self.swing_low[-1] and self.data.Close[-2] >= self.swing_low[-2]:
-            print("🌙✨ Moon Dev Signal: Short Entry Detected! 🚀")
-            self.sell(size=position_size, sl=self.swing_high[-1])
+        # Entry logic for short trades
+        if not self.position and self.rsi[-1] < 50 and self.data.Close[-1] < self.data.Open[-1]:
+            # Enter short with trailing stop
+            self.sell(size=position_size)
+            self.trailing_stop_short = self.data.High[-1] + 2 * atr_value
+            print(f"🌧️ Short entry triggered! Price: {self.data.Close[-1]}, Trailing Stop: {self.trailing_stop_short}")
 
-        # Trailing stop logic
-        for trade in self.trades:
-            if trade.is_long:
-                new_sl = self.data.Close[-1] * (1 - self.trailing_stop_pct)
-                if new_sl > trade.sl:
-                    trade.sl = new_sl
-                    print(f"🌙✨ Moon Dev Update: Trailing Stop for Long Trade Updated to {new_sl:.2f} 🚀")
-            elif trade.is_short:
-                new_sl = self.data.Close[-1] * (1 + self.trailing_stop_pct)
-                if new_sl < trade.sl:
-                    trade.sl = new_sl
-                    print(f"🌙✨ Moon Dev Update: Trailing Stop for Short Trade Updated to {new_sl:.2f} 🚀")
+        # Trailing stop logic for long positions
+        if self.position.is_long:
+            self.trailing_stop_long = max(self.trailing_stop_long, self.data.Low[-1] - 2 * atr_value)
+            if self.data.Close[-1] < self.trailing_stop_long:
+                self.position.close()
+                print(f"🌙 Long position closed! Price: {self.data.Close[-1]}, Trailing Stop: {self.trailing_stop_long}")
+
+        # Trailing stop logic for short positions
+        if self.position.is_short:
+            self.trailing_stop_short = min(self.trailing_stop_short, self.data.High[-1] + 2 * atr_value)
+            if self.data.Close[-1] > self.trailing_stop_short:
+                self.position.close()
+                print(f"🌙 Short position closed! Price: {self.data.Close[-1]}, Trailing Stop: {self.trailing_stop_short}")
 
 # Load data
 data_path = "/Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/rbi/BTC-USD-15m.csv"
@@ -62,53 +79,86 @@ data.columns = data.columns.str.strip().str.lower()
 data = data.drop(columns=[col for col in data.columns if 'unnamed' in col.lower()])
 data.columns = ['Open', 'High', 'Low', 'Close', 'Volume']
 
-# Initialize and run backtest
+# Initialize backtest
 bt = Backtest(data, TrendVengeance, cash=1_000_000, commission=0.002)
-stats = bt.run()
 
-# Print initial results
-print("🌙✨ Moon Dev's TrendVengeance Initial Backtest Results: 🚀")
+# Run initial backtest
+stats = bt.run()
+print("🌙 Initial Backtest Results:")
 print(stats)
 print(stats._strategy)
 
 # Save initial plot
 chart_file = os.path.join("/Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/rbi/charts", "TrendVengeance_initial_chart.html")
 bt.plot(filename=chart_file, open_browser=False)
-print(f"🌙✨ Moon Dev: Initial Backtest Plot Saved to {chart_file} 🚀")
+print(f"🌙 Initial plot saved to {chart_file}")
 
 # Optimize parameters
-print("🌙✨ Moon Dev: Optimizing Strategy Parameters... 🚀")
-opt_stats = bt.optimize(
-    risk_per_trade=[0.01, 0.02, 0.03],
-    trailing_stop_pct=[0.01, 0.02, 0.03],
-    swing_period=range(15, 25, 5),
+optimization_results = bt.optimize(
+    rsi_period=range(10, 20, 2),
+    atr_period=range(10, 20, 2),
+    risk_per_trade=[0.01, 0.02],
     maximize='Return [%]'
 )
-
-# Print optimized results
-print("🌙✨ Moon Dev's TrendVengeance Optimized Results: 🚀")
-print(opt_stats)
-print(opt_stats._strategy)
+print("🌙 Optimization Results:")
+print(optimization_results)
 
 # Save optimized plot
-opt_chart_file = os.path.join("/Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/rbi/charts", "TrendVengeance_optimized_chart.html")
-bt.plot(filename=opt_chart_file, open_browser=False)
-print(f"🌙✨ Moon Dev: Optimized Backtest Plot Saved to {opt_chart_file} 🚀")
+optimized_chart_file = os.path.join("/Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/rbi/charts", "TrendVengeance_optimized_chart.html")
+bt.plot(filename=optimized_chart_file, open_browser=False)
+print(f"🌙 Optimized plot saved to {optimized_chart_file}")
 ```
 
-### Key Features:
-1. **Trend Identification**: Uses swing highs and lows to identify trends.
-2. **Pullback Entries**: Enters trades during pullbacks to swing highs/lows.
-3. **Trailing Stops**: Dynamically adjusts stop-loss levels to lock in profits.
-4. **Risk Management**: Calculates position sizes based on a fixed risk percentage.
-5. **Parameter Optimization**: Optimizes risk percentage, trailing stop percentage, and swing period.
-6. **Moon Dev-Themed Debug Prints**: Adds fun and informative debug messages.
+---
 
-### Execution Order:
-1. Runs an initial backtest with default parameters.
-2. Prints detailed statistics and strategy information.
-3. Saves the initial performance plot.
-4. Optimizes key parameters.
-5. Prints optimized results and saves the final plot.
+### **Explanation of Key Components**
 
-Let me know if you need further adjustments or additional features! 🌙✨🚀
+1. **Data Handling**:
+   - The data is cleaned by removing spaces from column names and dropping unnamed columns.
+   - Columns are mapped to the required format (`Open`, `High`, `Low`, `Close`, `Volume`).
+
+2. **Indicators**:
+   - RSI is used to confirm momentum during pullbacks.
+   - ATR is used to calculate trailing stops dynamically.
+
+3. **Entry Logic**:
+   - Long entries are triggered when RSI > 50 and the closing price is above the opening price.
+   - Short entries are triggered when RSI < 50 and the closing price is below the opening price.
+
+4. **Exit Logic**:
+   - Trailing stops are updated dynamically based on ATR.
+   - Positions are closed when the price hits the trailing stop.
+
+5. **Risk Management**:
+   - Position size is calculated based on a fixed risk percentage (1% of account balance).
+   - Trailing stops ensure that losses are minimized while allowing winners to run.
+
+6. **Parameter Optimization**:
+   - The strategy optimizes RSI period, ATR period, and risk percentage per trade.
+   - Optimization focuses on maximizing return percentage.
+
+7. **Moon Dev-Themed Debug Prints**:
+   - Debug prints include emojis and clear messages for entry/exit signals and strategy initialization.
+
+8. **Chart Output**:
+   - Plots are saved to the `charts` directory for both initial and optimized backtests.
+
+---
+
+### **How to Run**
+1. Save the code to a Python file (e.g., `trend_vengeance.py`).
+2. Ensure the data file exists at the specified path.
+3. Run the script:
+   ```bash
+   python trend_vengeance.py
+   ```
+4. Check the `charts` directory for the saved plots.
+
+---
+
+### **Expected Output**
+- Initial backtest results with full statistics.
+- Optimized parameters and results.
+- HTML plots for both initial and optimized backtests.
+
+Let me know if you need further adjustments! 🌙✨🚀

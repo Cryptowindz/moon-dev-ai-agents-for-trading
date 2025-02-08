@@ -1,0 +1,7 @@
+- dont make new virtul enviroments i use conda activate tflow 
+- update requirements.txt every time you use a new package
+- make sure each file stays under 800 lines of code, if longer, create a new file and update the README to explain it
+- dont move files without asking, you can create new ones but no movy movy
+- for backtesting, use backtesting.py but dont use their indicators, use pandas_ta or talib instead
+- if you ever need OHLCV data its here: /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/rbi/BTC-USD-15m.csv
+- if you need to build ai, check out our model factory here: /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/agents/model_factory.py and the readme for models /Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/models/README.md

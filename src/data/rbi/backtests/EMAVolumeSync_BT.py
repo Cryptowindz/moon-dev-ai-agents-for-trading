@@ -1,10 +1,7 @@
-Here’s the implementation of the `EMAVolumeSync` strategy in Python using the `backtesting.py` framework. The code includes all the necessary components, such as indicators, entry/exit logic, risk management, and parameter optimization. It also includes Moon Dev-themed debug prints for easier debugging.
-
-```python
 import pandas as pd
 import talib
 from backtesting import Backtest, Strategy
-from backtesting.lib import crossover, crossunder
+from backtesting.lib import crossover
 
 # Clean and prepare the data
 data = pd.read_csv("/Users/md/Dropbox/dev/github/moon-dev-ai-agents-for-trading/src/data/rbi/BTC-USD-15m.csv")
@@ -25,6 +22,10 @@ data = data.rename(columns={
 # Convert datetime column to proper format
 data['datetime'] = pd.to_datetime(data['datetime'])
 data = data.set_index('datetime')
+
+def crossunder(series1, series2):
+    """Return True if series1 crosses under series2"""
+    return crossover(series2, series1)
 
 class EMAVolumeSync(Strategy):
     # Strategy parameters
@@ -69,95 +70,68 @@ class EMAVolumeSync(Strategy):
         if is_uptrend and volume_confirmation:
             if not self.position:
                 # Calculate position size based on risk
-                stop_loss = self.red_ema[-1]  # Use Red EMA as stop loss
+                stop_loss = min(self.red_ema[-1], current_close * 0.98)  # At least 2% below entry
                 risk_amount = self.risk_per_trade * self.equity
-                position_size = risk_amount / (current_close - stop_loss)
+                position_size = risk_amount / abs(current_close - stop_loss)
+                position_size = max(1, round(position_size / current_close))  # Convert to whole units
+
+                # For longs, take profit must be above entry price
+                take_profit = current_close * (1 + (self.risk_reward_ratio * 0.02))  # 2% * RR above entry
 
                 # Enter long trade
-                self.buy(size=position_size, sl=stop_loss, tp=current_close + (current_close - stop_loss) * self.risk_reward_ratio)
-                print(f"🚀 Long Entry at {current_close} | SL: {stop_loss} | TP: {current_close + (current_close - stop_loss) * self.risk_reward_ratio}")
+                self.buy(size=position_size, sl=stop_loss, tp=take_profit)
+                print(f"🚀 Long Entry at {current_close} | SL: {stop_loss} | TP: {take_profit}")
 
         # Entry logic for short trades
         elif is_downtrend and volume_confirmation:
             if not self.position:
-                # Calculate position size based on risk
-                stop_loss = self.green_ema[-1]  # Use Green EMA as stop loss
+                # For shorts, stop loss must be above entry price
+                stop_loss = max(self.green_ema[-1], current_close * 1.02)  # At least 2% above entry
                 risk_amount = self.risk_per_trade * self.equity
-                position_size = risk_amount / (stop_loss - current_close)
+                position_size = risk_amount / abs(stop_loss - current_close)
+                position_size = max(1, round(position_size / current_close))  # Convert to whole units
+
+                # For shorts, take profit must be below entry price
+                take_profit = current_close * (1 - (self.risk_reward_ratio * 0.02))  # 2% * RR below entry
 
                 # Enter short trade
-                self.sell(size=position_size, sl=stop_loss, tp=current_close - (stop_loss - current_close) * self.risk_reward_ratio)
-                print(f"📉 Short Entry at {current_close} | SL: {stop_loss} | TP: {current_close - (stop_loss - current_close) * self.risk_reward_ratio}")
+                self.sell(size=position_size, sl=stop_loss, tp=take_profit)
+                print(f"📉 Short Entry at {current_close} | SL: {stop_loss} | TP: {take_profit}")
 
         # Exit logic
         if self.position:
-            if is_uptrend and crossunder(self.data.Close, self.red_ema):
+            if self.position.is_long and crossunder(self.data.Close, self.red_ema):
                 self.position.close()
                 print(f"🌙 Exit Long at {current_close} | Trend Reversal Detected ✨")
-            elif is_downtrend and crossover(self.data.Close, self.green_ema):
+            elif self.position.is_short and crossover(self.data.Close, self.green_ema):
                 self.position.close()
                 print(f"🌙 Exit Short at {current_close} | Trend Reversal Detected ✨")
 
-# Initialize backtest
-bt = Backtest(data, EMAVolumeSync, cash=1_000_000, commission=0.002)
+if __name__ == "__main__":
+    # Initialize backtest
+    bt = Backtest(data, EMAVolumeSync, cash=1_000_000, commission=0.002)
 
-# Run initial backtest
-stats = bt.run()
-print(stats)
-print(stats._strategy)
+    # Run initial backtest
+    print("\n🌙 Running initial backtest...")
+    stats = bt.run()
+    print("\n📊 Backtest Stats:")
+    print(stats)
 
-# Show initial performance plot
-bt.plot()
+    # # Show initial performance plot
+    # bt.plot()
 
-# Optimize parameters
-optimization_results = bt.optimize(
-    ema_period=range(15, 25, 1),
-    volume_ma_period=range(15, 25, 1),
-    risk_reward_ratio=[2, 3],
-    maximize='Return [%]'
-)
+    # # Optimize parameters
+    # print("\n✨ Running optimization...")
+    # optimization_results = bt.optimize(
+    #     ema_period=range(15, 25, 1),
+    #     volume_ma_period=range(15, 25, 1),
+    #     risk_reward_ratio=[2, 3],
+    #     maximize='Return [%]'
+    # )
 
-# Print optimized results
-print("🎉 Optimized Results 🎉")
-print(optimization_results)
+    # # Print optimized results
+    # print("\n🎉 Optimized Results 🎉")
+    # print(optimization_results)
 
-# Show optimized performance plot
-bt.plot()
-```
-
-### Explanation of the Code:
-1. **Data Preparation**:
-   - The data is cleaned and prepared by renaming columns and ensuring proper formatting.
-   - Unnamed columns are dropped, and the datetime column is set as the index.
-
-2. **Strategy Class**:
-   - The `EMAVolumeSync` class defines the strategy logic.
-   - Two EMAs (Green and Red) are calculated using the high and low prices, respectively.
-   - A volume moving average is used to confirm strong trends.
-
-3. **Entry Logic**:
-   - Long trades are entered when the price is above both EMAs and volume is above the volume moving average.
-   - Short trades are entered when the price is below both EMAs and volume is above the volume moving average.
-   - Position sizes are calculated based on risk percentage and stop-loss levels.
-
-4. **Exit Logic**:
-   - Trades are exited when the price crosses the opposite EMA, indicating a potential trend reversal.
-
-5. **Risk Management**:
-   - Risk is limited to 1% of the trading capital per trade.
-   - A fixed risk-reward ratio (2:1 or 3:1) is used for take-profit levels.
-
-6. **Optimization**:
-   - The strategy parameters (EMA period, volume MA period, and risk-reward ratio) are optimized to maximize returns.
-
-7. **Moon Dev-Themed Debug Prints**:
-   - Debug prints are added to track strategy initialization, trade entries, and exits.
-
-### Execution Order:
-1. Run the initial backtest with default parameters.
-2. Print the full stats and strategy details.
-3. Show the initial performance plot.
-4. Run the optimization process.
-5. Print the optimized results and show the final performance plot.
-
-This implementation ensures that the strategy is robust, well-optimized, and easy to debug with Moon Dev-themed messages. 🌙✨🚀
+    # # Show optimized performance plot
+    # bt.plot()

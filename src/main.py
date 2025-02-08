@@ -31,7 +31,7 @@ ACTIVE_AGENTS = {
     'trading': False,   # LLM trading agent
     'strategy': False,  # Strategy-based trading agent
     'copybot': False,   # CopyBot agent
-    'sentiment': True, # Run sentiment_agent.py directly instead
+    'sentiment': False, # Run sentiment_agent.py directly instead
     # whale_agent is run from whale_agent.py
     # Add more agents here as we build them:
     # 'portfolio': False,  # Future portfolio optimization agent
