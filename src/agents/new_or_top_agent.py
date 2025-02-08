@@ -90,6 +90,9 @@ Main Agent Code Below
 """
 
 import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from src import config
 import requests
 import pandas as pd
 import json
@@ -102,7 +105,7 @@ from typing import Dict, List
 import time
 from termcolor import colored, cprint
 import random
-import src.config as config
+import src.config
 
 # Load environment variables
 load_dotenv()
@@ -123,7 +126,7 @@ AI_MODEL = MODEL_OVERRIDE if MODEL_OVERRIDE != "0" else config.AI_MODEL
 
 # Configuration
 COINGECKO_API_KEY = os.getenv("COINGECKO_API_KEY")
-BASE_URL = "https://pro-api.coingecko.com/api/v3"
+BASE_URL = "https://api.coingecko.com/api/v3"
 RESULTS_DIR = Path("src/data/coingecko_results")
 DELAY_BETWEEN_REQUESTS = 1  # Seconds between API calls
 
